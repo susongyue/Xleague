@@ -272,6 +272,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   content:"本节分项";display:block;padding:7px 14px;background:var(--surface-2);
   font-size:.69rem;font-weight:700;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--line);
 }
+/* 「本节分项」小标题：默认隐藏，仅在编辑模式下显示 */
+/* 「本节分项」条：默认隐藏，仅在编辑模式 / 手动开启时显示 */
+.item-stack::before{display:none}
+:root[data-editing]:not(.xq-items-off) .item-stack::before{display:block}
+/* 分项条隐藏后，列表首项与容器上边圆角贴合，补一点上内边距避免文字贴边 */
+.item-stack:not(.show-items) h4:first-of-type{padding-top:10px}
 .item-stack h4{
   margin:0;padding:8px 14px;font-size:.84rem;font-weight:600;line-height:1.6;color:var(--body-2);
   border-bottom:1px solid var(--line-soft);scroll-margin-top:calc(var(--header-h) + 22px);
@@ -915,6 +921,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   <span class="editbar-hint">编辑模式 · 点击正文文字即可修改，改动自动保存在本浏览器</span>
   <span class="editbar-spacer"></span>
   <button class="editbar-btn" id="editSave" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg><span id="editSaveLabel">保存</span></button>
+  <button class="editbar-btn" id="editItems" type="button" aria-pressed="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg><span id="editItemsLabel">隐藏分项标题</span></button>
   <button class="editbar-btn primary" id="editExport" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>导出 HTML</button>
   <button class="editbar-btn" id="editDone" type="button">完成</button>
 </div>
@@ -2323,7 +2330,25 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   var editSave = document.getElementById('editSave');
   var editExport = document.getElementById('editExport');
   var editDone = document.getElementById('editDone');
+  var editItems = document.getElementById('editItems');
+  var editItemsLabel = document.getElementById('editItemsLabel');
   var editing = false;
+
+  // 「本节分项」小标题的显示偏好：默认隐藏，可记住用户选择
+  var ITEMS_KEY = 'xq-items';
+  function itemsOn(){
+    if (!document.documentElement.hasAttribute('data-editing')) return false;
+    try { return localStorage.getItem(ITEMS_KEY) !== '0'; } catch(e){ return true; }
+  }
+  function renderItems(){
+    var on = itemsOn();
+    document.documentElement.classList.toggle('xq-items-off', !on);
+    if (editItems){
+      editItems.setAttribute('aria-pressed', String(on));
+      editItems.classList.toggle('is-on', on);
+    }
+    if (editItemsLabel) editItemsLabel.textContent = on ? '隐藏分项标题' : '显示分项标题';
+  }
 
   // 读入之前保存的编辑内容；每个可编辑节点必须有「稳定 id」
   // 稳定 key 依赖：所属 section（.article/.front/.chapter）内最近的「条/章」锚点 + 类名 + 该类序号，
@@ -2396,7 +2421,10 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
       if (lb) lb.textContent = on ? '编辑中' : '编辑';
     }
     if (editbar) editbar.hidden = !on;
+    renderItems();
   }
+
+  renderItems();
 
   // 编辑内容时自动保存（防抖）
   var editSaveTimer = null;
@@ -2424,6 +2452,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
     var tg = clone.querySelector('.edit-toggle');
     if (tg) tg.parentNode.removeChild(tg);
     clone.removeAttribute('data-editing');
+    clone.classList.remove('xq-items-off');
     var html = '<!DOCTYPE html>\n' + clone.outerHTML;
     var blob = new Blob([html], {type: 'text/html;charset=utf-8'});
     var url = URL.createObjectURL(blob);
@@ -2477,6 +2506,13 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   }
   if (editExport){
     editExport.addEventListener('click', exportHtml);
+  }
+  if (editItems){
+    editItems.addEventListener('click', function(){
+      var next = !itemsOn();
+      try { localStorage.setItem(ITEMS_KEY, next ? '1' : '0'); } catch(e){}
+      renderItems();
+    });
   }
 
   // 编辑内容变化自动保存
