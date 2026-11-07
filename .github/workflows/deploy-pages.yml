@@ -31,16 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # 生成站点产物：把单文件 index.html 拷进 public/，并补齐 404 / robots / .nojekyll
-      # 脚本只用 Python 标准库，runner 自带 python3，无需安装任何依赖
-      - name: Build static site
-        run: python3 build_static.py
+      # 站点为纯静态产物，仓库里的 public/ 就是最终文件，无需任何构建步骤
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 只上传干净的站点产物，避免把 docs/ 与源 docx 一起发布
+          # 只发布站点目录，仓库其余内容不会出现在线上
           path: './public'
       - name: Deploy to GitHub Pages
         id: deployment

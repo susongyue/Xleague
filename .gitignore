@@ -1,26 +1,27 @@
-# 临时补丁脚本（每次改 index.html 时生成的 .xxx.py）
-.[a-z]*.py
-.~*
+# ============================================================
+# 白名单式忽略：默认忽略一切，只放行线上站点需要的文件
+# 这样「推送当前库文件以外的文件」在物理上就不可能发生
+# ============================================================
+*
 
-# 校验临时文件
-.check.js
-*.bak
+# --- 放行规则（每个都必须紧跟 !/ 或 !文件名） ---
+!.gitignore
+!.gitattributes
+!.github/
+!.github/workflows/
+!.github/workflows/deploy-pages.yml
+!public/
+!public/index.html
+!public/404.html
+!public/robots.txt
+!public/.nojekyll
 
-# Python
-__pycache__/
-*.py[cod]
-
-# 系统文件
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# 编辑器
-.vscode/
-.idea/
-
-# 构建产物（由 build_static.py 生成；CI 会自动重建，本地预览需要时再生成）
-# public/
-
-# 编辑器/工具本地配置
-.codebuddy/
+# ============================================================
+# 说明：以下文件仅存在于本地，不纳入版本库
+#   index.html                       —— 编辑源，发布走 public/index.html
+#   build_static.py                  —— 本地生成 public/ 的脚本
+#   M.LEAGUE日麻规则_中文翻译.docx    —— 原始素材
+#   docs/                            —— HANDOFF / TASKLIST / DEPLOY 交接文档
+#   .codebuddy/                      —— 编辑器本地配置
+#   临时补丁脚本 .xxx.py              —— 改 index.html 时的一次性脚本
+# ============================================================

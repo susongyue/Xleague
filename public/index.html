@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <title>熊熊雀庄团队赛事规则 · M.LEAGUE 官方比赛规则</title>
 <meta name="description" content="熊熊雀庄团队赛事规则：M.LEAGUE 官方比赛规则中文翻译全文，按章、条、项层级编排。">
 <style>
@@ -37,35 +37,6 @@
   --mk-men:#059669;
   --mk-open:#D97706;
   --font:"Inter","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-}
-/* 深色主题（跟随系统 + 手动切换共用 data-theme="dark"） */
-:root[data-theme="dark"]{
-  --ink:#F1F5F9;
-  --text:#E2E8F0;
-  --body:#CBD5E1;
-  --muted:#94A3B8;
-  --muted-2:#64748B;
-  --muted-3:#475569;
-  --line:#334155;
-  --line-soft:#293548;
-  --bg:#0B1220;
-  --surface:#111A2C;
-  --surface-2:#1B2637;
-  --surface-3:#1E3A5F;
-  --row-even:#121D30;
-  --accent:#60A5FA;
-  --accent-dark:#93C5FD;
-  --accent-soft:#1E3A5F;
-  --accent-soft-2:#274A7A;
-  --on-header:#F1F5F9;
-  --border-header:#0F172A;
-  --border-header-2:#334155;
-  --body-2:#B6C2D2;
-  --example-line:#F59E0B;
-  --example-bg:#2A2414;
-  --note-foot-bg:#17233B;
-  --mk-men:#34D399;
-  --mk-open:#FBBF24;
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -110,10 +81,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .brand-text p{margin:2px 0 0;font-size:.76rem;color:var(--muted-2);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .header-meta{margin-left:auto;display:flex;gap:8px;align-items:center;flex:none}
-.pill{
-  padding:5px 11px;border:1px solid var(--border-header-2);border-radius:999px;
-  font-size:.72rem;color:var(--muted-3);letter-spacing:.04em;white-space:nowrap;
-}
 .progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,#3B82F6,#60A5FA);transition:width .08s linear}
 .icon-btn{
   width:38px;height:38px;display:grid;place-items:center;border-radius:9px;
@@ -121,16 +88,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .icon-btn:hover{background:var(--border-header);color:#fff;border-color:var(--muted)}
 .menu-toggle{display:none}
-
-/* ---------- theme toggle ---------- */
-.theme-toggle{
-  width:38px;height:38px;display:grid;place-items:center;border-radius:9px;
-  border:1px solid var(--border-header-2);color:var(--muted-3);
-  transition:background .2s,color .2s,border-color .2s;
-}
-.theme-toggle:hover{background:var(--border-header);color:#fff;border-color:var(--muted)}
-.theme-toggle .icon{width:19px;height:19px}
-.theme-icon-sun{display:none}
 
 /* ---------- 编辑模式 ---------- */
 .edit-toggle{
@@ -167,8 +124,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .editbar-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .editbar-btn.primary:hover{background:var(--accent-dark);color:#fff}
 .editbar-btn .icon{width:15px;height:15px}
-:root[data-theme="dark"] .theme-icon-sun{display:block}
-:root[data-theme="dark"] .theme-icon-moon{display:none}
 
 /* ---------- sidebar ---------- */
 .backdrop{display:none;position:fixed;inset:0;z-index:60;background:rgba(15,23,42,.5);backdrop-filter:blur(2px)}
@@ -226,17 +181,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .toc-children::before{
   content:"";position:absolute;top:-6px;bottom:6px;left:-12px;width:1px;background:var(--line);
 }
-/* 二级子层（条 → 项）：箭头左端 = 上一级箭头右端 24，箭头宽 24 → 右端 48 */
-.toc-children .toc-children{margin-left:24px;padding-left:0}
-/* 二级子层同理：二级箭头列 24–48，中心 36，容器左边缘 48 → 偏移同为 -12px */
-/* 一级子层（章 → 条）与二级子层（条 → 项）用同一套缩进：
-   二级行保留与一级一致的箭头列占位，三级项再缩进 26px，确保层级越深越靠右 */
-.toc-children .toc-level-2{gap:2px}
-.toc-children .toc-level-2>.toc-toggle{width:24px}
-.toc-children .toc-level-2>.toc-link{border-left-color:transparent;padding-left:18px}
+/* 目录只保留「章 → 条」两级：二级行不再有箭头列与子层 */
+.toc-children .toc-level-2{gap:0}
+.toc-children .toc-level-2>.toc-link{border-left-color:transparent;padding-left:12px}
 .toc-level-2>.toc-link{font-size:.81rem;color:var(--body)}
-.toc-level-3{margin-left:6px;padding-left:26px;font-size:.77rem;color:var(--muted);padding-top:5px;padding-bottom:5px;padding-right:8px}
-.toc-level-3:hover{color:var(--accent-dark)}
+/* 三级项已从目录移除（2026-11-07）；以下样式保留为空占位不影响渲染 */
+.toc-level-3{display:none}
 .toc-link.is-active{
   background:var(--accent-soft);color:var(--accent-dark);font-weight:650;
   border-left-color:var(--accent);
@@ -370,38 +320,28 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 /* ---------- 移动端目录：大热区 + 拉开行距，解决选项挤在一起点不准 ---------- */
 @media (max-width:1023px){
   body{padding-top:64px}
-  .sidebar{width:min(92vw,360px)}
-  .toc{padding:10px 8px 26px}
-  .toc-group+.toc-group{margin-top:10px;padding-top:10px;border-top:1px solid var(--line-soft)}
-  .toc-row{gap:0;border-radius:10px}
-  /* 相邻项之间留 2px 呼吸位，视觉上不再糊成一片 */
+  /* 抽屉收窄到原来的约 3/4（360 → 278px），留出更多正文可见区域 */
+  .sidebar{width:min(72vw,278px)}
+  .toc{padding:8px 6px 22px}
+  .toc-group+.toc-group{margin-top:8px;padding-top:8px;border-top:1px solid var(--line-soft)}
+  .toc-row{gap:0;border-radius:9px}
   .toc-row+.toc-row,
   .toc-children>.toc-group+.toc-group{margin-top:2px}
-  .toc-toggle{width:40px;min-height:44px}
-  .toc-toggle .icon{width:17px;height:17px}
+  .toc-toggle{width:30px;min-height:44px}
+  .toc-toggle .icon{width:15px;height:15px}
   .toc-link{
-    min-height:46px;padding:11px 12px;font-size:.94rem;line-height:1.5;
-    border-radius:10px;border-left-width:3px;
+    min-height:44px;padding:10px 8px;font-size:.9rem;line-height:1.45;
+    border-radius:9px;border-left-width:3px;
   }
   .toc-link:active{background:var(--accent-soft)}
-  .toc-level-2>.toc-link{font-size:.9rem}
-  .toc-level-3{
-    min-height:42px;display:flex;align-items:center;
-    margin:2px 0;padding:10px 12px 10px 22px;font-size:.86rem;border-radius:9px;
-    background:transparent;color:var(--body-2);
-  }
-  .toc-level-3:hover{background:var(--surface-2)}
-  /* 二级行结构与一级一致（预留 40px 箭头列），三级项再缩进到其文字之下 */
+  .toc-level-2>.toc-link{font-size:.86rem}
+  /* 只有「章 → 条」两级：二级不再留缩进空档，与一级左对齐（同为左侧 12px）。
+     层級差异靠字号与字号颜色体现，不靠左边距，避免窄抽屉里文字被顶到中间 */
   .toc-children .toc-level-2{gap:0}
-  .toc-children .toc-level-2>.toc-toggle{width:40px;min-height:44px}
-  .toc-children .toc-level-2>.toc-link{padding-left:12px}
-  .toc-level-3.is-active{background:var(--accent-soft);color:var(--accent-dark);font-weight:650}
-  .toc-level-3:active{background:var(--accent-soft)}
-  .toc-children{margin-left:40px;padding-left:0}
-  .toc-children .toc-children{margin-left:40px;padding-left:0}
-  /* 移动端箭头宽 40 → 竖线相对容器左边缘偏 -20px，正好穿过箭头中心 */
-  .toc-children::before{left:-20px}
-  .toc-num{min-width:26px;font-size:.72rem;padding:2px 5px}
+  .toc-children .toc-level-2>.toc-link{padding-left:12px;border-left-color:transparent}
+  .toc-children{margin-left:0;padding-left:0}
+  .toc-children::before{display:none}
+  .toc-num{min-width:22px;font-size:.66rem;padding:1px 4px}
   .toc-label{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 }
 
@@ -414,7 +354,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   .brand-text p{font-size:.68rem}
   .header-meta{display:none}
   .sidebar{
-    top:0;bottom:0;height:100vh;z-index:70;width:min(92vw,360px);
+    top:0;bottom:0;height:100vh;z-index:70;width:min(72vw,278px);
     transform:translateX(-102%);transition:transform .28s cubic-bezier(.4,0,.2,1);
     box-shadow:8px 0 30px rgba(15,23,42,.16);
   }
@@ -561,14 +501,9 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
       </div>
     </div>
     <div class="header-meta">
-      <span class="pill">全 9 章</span><span class="pill">56 条</span><span class="pill">171 项</span>
       <button class="edit-toggle" id="editToggle" type="button" aria-pressed="false">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
         <span id="editToggleLabel">编辑</span>
-      </button>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深浅色模式" aria-pressed="false">
-        <svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
       </button>
     </div>
   </div>
@@ -605,82 +540,42 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-1" hidden>
 <div class="toc-group" data-group="art-1-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-1" aria-label="展开 第1条 比赛的构成"></button>
 <a class="toc-link" href="#art-1-1" data-target="art-1-1"><span class="toc-label">第1条 比赛的构成</span></a>
-</div>
-<div class="toc-children" id="g-art-1-1" hidden>
-<a class="toc-link toc-level-3" href="#item-1-1-1" data-target="item-1-1-1"><span class="toc-label">第1项 比赛的人数</span></a>
-<a class="toc-link toc-level-3" href="#item-1-1-2" data-target="item-1-1-2"><span class="toc-label">第2项 半庄（半荘）</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-2" aria-label="展开 第2条 用具"></button>
 <a class="toc-link" href="#art-1-2" data-target="art-1-2"><span class="toc-label">第2条 用具</span></a>
-</div>
-<div class="toc-children" id="g-art-1-2" hidden>
-<a class="toc-link toc-level-3" href="#item-1-2-1" data-target="item-1-2-1"><span class="toc-label">第1项 麻将牌</span></a>
-<a class="toc-link toc-level-3" href="#item-1-2-2" data-target="item-1-2-2"><span class="toc-label">第2项 赤牌</span></a>
-<a class="toc-link toc-level-3" href="#item-1-2-3" data-target="item-1-2-3"><span class="toc-label">第3项 麻将桌</span></a>
-<a class="toc-link toc-level-3" href="#item-1-2-4" data-target="item-1-2-4"><span class="toc-label">第4项 点棒</span></a>
-<a class="toc-link toc-level-3" href="#item-1-2-5" data-target="item-1-2-5"><span class="toc-label">第5项 起家标</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-3" aria-label="展开 第3条 起手限制"></button>
 <a class="toc-link" href="#art-1-3" data-target="art-1-3"><span class="toc-label">第3条 起手限制</span></a>
-</div>
-<div class="toc-children" id="g-art-1-3" hidden>
-<a class="toc-link toc-level-3" href="#item-1-3-1" data-target="item-1-3-1"><span class="toc-label">第1项 一番缚</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-4" aria-label="展开 第4条 场ゾロ"></button>
 <a class="toc-link" href="#art-1-4" data-target="art-1-4"><span class="toc-label">第4条 场ゾロ</span></a>
-</div>
-<div class="toc-children" id="g-art-1-4" hidden>
-<a class="toc-link toc-level-3" href="#item-1-4-1" data-target="item-1-4-1"><span class="toc-label">第1项 场ゾロ</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-5" aria-label="展开 第5条 配牌"></button>
 <a class="toc-link" href="#art-1-5" data-target="art-1-5"><span class="toc-label">第5条 配牌</span></a>
-</div>
-<div class="toc-children" id="g-art-1-5" hidden>
-<a class="toc-link toc-level-3" href="#item-1-5-1" data-target="item-1-5-1"><span class="toc-label">第1项 自动配牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-6">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-6" aria-label="展开 第6条 报牌（发声）"></button>
 <a class="toc-link" href="#art-1-6" data-target="art-1-6"><span class="toc-label">第6条 报牌（发声）</span></a>
-</div>
-<div class="toc-children" id="g-art-1-6" hidden>
-<a class="toc-link toc-level-3" href="#item-1-6-1" data-target="item-1-6-1"><span class="toc-label">第1项 报牌</span></a>
-<a class="toc-link toc-level-3" href="#item-1-6-2" data-target="item-1-6-2"><span class="toc-label">第2项 报牌的种类</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-7">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-7" aria-label="展开 第7条 对局者"></button>
 <a class="toc-link" href="#art-1-7" data-target="art-1-7"><span class="toc-label">第7条 对局者</span></a>
-</div>
-<div class="toc-children" id="g-art-1-7" hidden>
-<a class="toc-link toc-level-3" href="#item-1-7-1" data-target="item-1-7-1"><span class="toc-label">第1项 义务</span></a>
-<a class="toc-link toc-level-3" href="#item-1-7-2" data-target="item-1-7-2"><span class="toc-label">第2项 疑义</span></a>
-<a class="toc-link toc-level-3" href="#item-1-7-3" data-target="item-1-7-3"><span class="toc-label">第3项 申诉</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-1-8">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-1-8" aria-label="展开 第8条 裁判"></button>
 <a class="toc-link" href="#art-1-8" data-target="art-1-8"><span class="toc-label">第8条 裁判</span></a>
-</div>
-<div class="toc-children" id="g-art-1-8" hidden>
-<a class="toc-link toc-level-3" href="#item-1-8-1" data-target="item-1-8-1"><span class="toc-label">第1项 自动配牌</span></a>
 </div>
 </div>
 </div></div>
@@ -692,61 +587,32 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-2" hidden>
 <div class="toc-group" data-group="art-2-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-1" aria-label="展开 第1条 手牌"></button>
 <a class="toc-link" href="#art-2-1" data-target="art-2-1"><span class="toc-label">第1条 手牌</span></a>
-</div>
-<div class="toc-children" id="g-art-2-1" hidden>
-<a class="toc-link toc-level-3" href="#item-2-1-1" data-target="item-2-1-1"><span class="toc-label">第1项 张数</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-2-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-2" aria-label="展开 第2条 王牌"></button>
 <a class="toc-link" href="#art-2-2" data-target="art-2-2"><span class="toc-label">第2条 王牌</span></a>
-</div>
-<div class="toc-children" id="g-art-2-2" hidden>
-<a class="toc-link toc-level-3" href="#item-2-2-1" data-target="item-2-2-1"><span class="toc-label">第1项 王牌的构成</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-2-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-3" aria-label="展开 第3条 海底牌"></button>
 <a class="toc-link" href="#art-2-3" data-target="art-2-3"><span class="toc-label">第3条 海底牌</span></a>
-</div>
-<div class="toc-children" id="g-art-2-3" hidden>
-<a class="toc-link toc-level-3" href="#item-2-3-1" data-target="item-2-3-1"><span class="toc-label">第1项 海底牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-2-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-4" aria-label="展开 第4条 河底牌"></button>
 <a class="toc-link" href="#art-2-4" data-target="art-2-4"><span class="toc-label">第4条 河底牌</span></a>
-</div>
-<div class="toc-children" id="g-art-2-4" hidden>
-<a class="toc-link toc-level-3" href="#item-2-4-1" data-target="item-2-4-1"><span class="toc-label">第1项 河底牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-2-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-5" aria-label="展开 第5条 岭上牌"></button>
 <a class="toc-link" href="#art-2-5" data-target="art-2-5"><span class="toc-label">第5条 岭上牌</span></a>
-</div>
-<div class="toc-children" id="g-art-2-5" hidden>
-<a class="toc-link toc-level-3" href="#item-2-5-1" data-target="item-2-5-1"><span class="toc-label">第1项 岭上牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-2-6">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-2-6" aria-label="展开 第6条 悬赏牌（宝牌）"></button>
 <a class="toc-link" href="#art-2-6" data-target="art-2-6"><span class="toc-label">第6条 悬赏牌（宝牌）</span></a>
-</div>
-<div class="toc-children" id="g-art-2-6" hidden>
-<a class="toc-link toc-level-3" href="#item-2-6-1" data-target="item-2-6-1"><span class="toc-label">第1项 本宝牌</span></a>
-<a class="toc-link toc-level-3" href="#item-2-6-2" data-target="item-2-6-2"><span class="toc-label">第2项 杠宝牌</span></a>
-<a class="toc-link toc-level-3" href="#item-2-6-3" data-target="item-2-6-3"><span class="toc-label">第3项 里宝牌</span></a>
-<a class="toc-link toc-level-3" href="#item-2-6-4" data-target="item-2-6-4"><span class="toc-label">第4项 赤宝牌</span></a>
-<a class="toc-link toc-level-3" href="#item-2-6-5" data-target="item-2-6-5"><span class="toc-label">第5项 宝牌的番数</span></a>
-<a class="toc-link toc-level-3" href="#item-2-6-6" data-target="item-2-6-6"><span class="toc-label">第6项 未显示宝牌指示牌时</span></a>
 </div>
 </div>
 </div></div>
@@ -758,155 +624,67 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-3" hidden>
 <div class="toc-group" data-group="art-3-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-1" aria-label="展开 第1条 座位与起家的决定"></button>
 <a class="toc-link" href="#art-3-1" data-target="art-3-1"><span class="toc-label">第1条 座位与起家的决定</span></a>
-</div>
-<div class="toc-children" id="g-art-3-1" hidden>
-<a class="toc-link toc-level-3" href="#item-3-1-1" data-target="item-3-1-1"><span class="toc-label">第1项 座位的确定</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-2" aria-label="展开 第2条 比赛的开始与结束"></button>
 <a class="toc-link" href="#art-3-2" data-target="art-3-2"><span class="toc-label">第2条 比赛的开始与结束</span></a>
-</div>
-<div class="toc-children" id="g-art-3-2" hidden>
-<a class="toc-link toc-level-3" href="#item-3-2-1" data-target="item-3-2-1"><span class="toc-label">第1项 麻将牌的搬入</span></a>
-<a class="toc-link toc-level-3" href="#item-3-2-2" data-target="item-3-2-2"><span class="toc-label">第2项 比赛的开始</span></a>
-<a class="toc-link toc-level-3" href="#item-3-2-3" data-target="item-3-2-3"><span class="toc-label">第3项 一局的终局</span></a>
-<a class="toc-link toc-level-3" href="#item-3-2-4" data-target="item-3-2-4"><span class="toc-label">第4项 点数的维持</span></a>
-<a class="toc-link toc-level-3" href="#item-3-2-5" data-target="item-3-2-5"><span class="toc-label">第5项 点棒的补充</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-3" aria-label="展开 第3条 洗牌与筑牌"></button>
 <a class="toc-link" href="#art-3-3" data-target="art-3-3"><span class="toc-label">第3条 洗牌与筑牌</span></a>
-</div>
-<div class="toc-children" id="g-art-3-3" hidden>
-<a class="toc-link toc-level-3" href="#item-3-3-1" data-target="item-3-3-1"><span class="toc-label">第1项 洗牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-3-2" data-target="item-3-3-2"><span class="toc-label">第2项 筑牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-4" aria-label="展开 第4条 开牌与配牌"></button>
 <a class="toc-link" href="#art-3-4" data-target="art-3-4"><span class="toc-label">第4条 开牌与配牌</span></a>
-</div>
-<div class="toc-children" id="g-art-3-4" hidden>
-<a class="toc-link toc-level-3" href="#item-3-4-1" data-target="item-3-4-1"><span class="toc-label">第1项 自动配牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-2" data-target="item-3-4-2"><span class="toc-label">第2项 开牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-3" data-target="item-3-4-3"><span class="toc-label">第3项 配牌的确认</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-4" data-target="item-3-4-4"><span class="toc-label">第4项 第一次摸牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-5" data-target="item-3-4-5"><span class="toc-label">第5项 宝牌指示牌已显示时的开牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-6" data-target="item-3-4-6"><span class="toc-label">第6项 宝牌指示牌未显示时的开牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-7" data-target="item-3-4-7"><span class="toc-label">第7项 亲家未摸牌即打牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-8" data-target="item-3-4-8"><span class="toc-label">第8项 亲家第一次摸牌被摸取</span></a>
-<a class="toc-link toc-level-3" href="#item-3-4-9" data-target="item-3-4-9"><span class="toc-label">第9项 不测事态</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-5" aria-label="展开 第5条 亲家的顺序"></button>
 <a class="toc-link" href="#art-3-5" data-target="art-3-5"><span class="toc-label">第5条 亲家的顺序</span></a>
-</div>
-<div class="toc-children" id="g-art-3-5" hidden>
-<a class="toc-link toc-level-3" href="#item-3-5-1" data-target="item-3-5-1"><span class="toc-label">第1项 亲家的移动</span></a>
-<a class="toc-link toc-level-3" href="#item-3-5-2" data-target="item-3-5-2"><span class="toc-label">第2项 亲家顺序错误</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-6">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-6" aria-label="展开 第6条 取牌行为"></button>
 <a class="toc-link" href="#art-3-6" data-target="art-3-6"><span class="toc-label">第6条 取牌行为</span></a>
-</div>
-<div class="toc-children" id="g-art-3-6" hidden>
-<a class="toc-link toc-level-3" href="#item-3-6-1" data-target="item-3-6-1"><span class="toc-label">第1项 取牌行为的种类</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-7">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-7" aria-label="展开 第7条 摸打"></button>
 <a class="toc-link" href="#art-3-7" data-target="art-3-7"><span class="toc-label">第7条 摸打</span></a>
-</div>
-<div class="toc-children" id="g-art-3-7" hidden>
-<a class="toc-link toc-level-3" href="#item-3-7-1" data-target="item-3-7-1"><span class="toc-label">第1项 摸打</span></a>
-<a class="toc-link toc-level-3" href="#item-3-7-2" data-target="item-3-7-2"><span class="toc-label">第2项 摸打的一巡</span></a>
-<a class="toc-link toc-level-3" href="#item-3-7-3" data-target="item-3-7-3"><span class="toc-label">第3项 禁止事项</span></a>
-<a class="toc-link toc-level-3" href="#item-3-7-4" data-target="item-3-7-4"><span class="toc-label">第4项 摸打的方法</span></a>
-<a class="toc-link toc-level-3" href="#item-3-7-5" data-target="item-3-7-5"><span class="toc-label">第5项 摸打的节奏</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-8">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-8" aria-label="展开 第8条 自摸（ツモ）"></button>
 <a class="toc-link" href="#art-3-8" data-target="art-3-8"><span class="toc-label">第8条 自摸（ツモ）</span></a>
-</div>
-<div class="toc-children" id="g-art-3-8" hidden>
-<a class="toc-link toc-level-3" href="#item-3-8-1" data-target="item-3-8-1"><span class="toc-label">第1项 自摸</span></a>
-<a class="toc-link toc-level-3" href="#item-3-8-2" data-target="item-3-8-2"><span class="toc-label">第2项 摸牌行为的开始</span></a>
-<a class="toc-link toc-level-3" href="#item-3-8-3" data-target="item-3-8-3"><span class="toc-label">第3项 摸牌的时机</span></a>
-<a class="toc-link toc-level-3" href="#item-3-8-4" data-target="item-3-8-4"><span class="toc-label">第4项 先ヅモ</span></a>
-<a class="toc-link toc-level-3" href="#item-3-8-5" data-target="item-3-8-5"><span class="toc-label">第5项 摸牌的扱い</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-9">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-9" aria-label="展开 第9条 打牌"></button>
 <a class="toc-link" href="#art-3-9" data-target="art-3-9"><span class="toc-label">第9条 打牌</span></a>
-</div>
-<div class="toc-children" id="g-art-3-9" hidden>
-<a class="toc-link toc-level-3" href="#item-3-9-1" data-target="item-3-9-1"><span class="toc-label">第1项 打牌</span></a>
-<a class="toc-link toc-level-3" href="#item-3-9-2" data-target="item-3-9-2"><span class="toc-label">第2项 舍牌的确立</span></a>
-<a class="toc-link toc-level-3" href="#item-3-9-3" data-target="item-3-9-3"><span class="toc-label">第3项 河</span></a>
-<a class="toc-link toc-level-3" href="#item-3-9-4" data-target="item-3-9-4"><span class="toc-label">第4项 强打</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-10">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-10" aria-label="展开 第10条 舍牌"></button>
 <a class="toc-link" href="#art-3-10" data-target="art-3-10"><span class="toc-label">第10条 舍牌</span></a>
-</div>
-<div class="toc-children" id="g-art-3-10" hidden>
-<a class="toc-link toc-level-3" href="#item-3-10-1" data-target="item-3-10-1"><span class="toc-label">第1项 舍牌的排列</span></a>
-<a class="toc-link toc-level-3" href="#item-3-10-2" data-target="item-3-10-2"><span class="toc-label">第2项 舍牌的列</span></a>
-<a class="toc-link toc-level-3" href="#item-3-10-3" data-target="item-3-10-3"><span class="toc-label">第3项 对舍牌的处理</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-11">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-11" aria-label="展开 第11条 流局与听牌"></button>
 <a class="toc-link" href="#art-3-11" data-target="art-3-11"><span class="toc-label">第11条 流局与听牌</span></a>
-</div>
-<div class="toc-children" id="g-art-3-11" hidden>
-<a class="toc-link toc-level-3" href="#item-3-11-1" data-target="item-3-11-1"><span class="toc-label">第1项 流局</span></a>
-<a class="toc-link toc-level-3" href="#item-3-11-2" data-target="item-3-11-2"><span class="toc-label">第2项 听牌的认定</span></a>
-<a class="toc-link toc-level-3" href="#item-3-11-3" data-target="item-3-11-3"><span class="toc-label">第3项 听牌宣告</span></a>
-<a class="toc-link toc-level-3" href="#item-3-11-4" data-target="item-3-11-4"><span class="toc-label">第4项 听牌宣告的顺序</span></a>
-<a class="toc-link toc-level-3" href="#item-3-11-5" data-target="item-3-11-5"><span class="toc-label">第5项 听牌料</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-12">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-12" aria-label="展开 第12条 连庄（レンチャン）"></button>
 <a class="toc-link" href="#art-3-12" data-target="art-3-12"><span class="toc-label">第12条 连庄（レンチャン）</span></a>
-</div>
-<div class="toc-children" id="g-art-3-12" hidden>
-<a class="toc-link toc-level-3" href="#item-3-12-1" data-target="item-3-12-1"><span class="toc-label">第1项 连庄</span></a>
-<a class="toc-link toc-level-3" href="#item-3-12-2" data-target="item-3-12-2"><span class="toc-label">第2项 连庄的条件</span></a>
-<a class="toc-link toc-level-3" href="#item-3-12-3" data-target="item-3-12-3"><span class="toc-label">第3项 错和时的处理</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-3-13">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-3-13" aria-label="展开 第13条 积场（本场）"></button>
 <a class="toc-link" href="#art-3-13" data-target="art-3-13"><span class="toc-label">第13条 积场（本场）</span></a>
-</div>
-<div class="toc-children" id="g-art-3-13" hidden>
-<a class="toc-link toc-level-3" href="#item-3-13-1" data-target="item-3-13-1"><span class="toc-label">第1项 积场</span></a>
-<a class="toc-link toc-level-3" href="#item-3-13-2" data-target="item-3-13-2"><span class="toc-label">第2项 积场的显示</span></a>
-<a class="toc-link toc-level-3" href="#item-3-13-3" data-target="item-3-13-3"><span class="toc-label">第3项 积棒的点数</span></a>
-<a class="toc-link toc-level-3" href="#item-3-13-4" data-target="item-3-13-4"><span class="toc-label">第4项 积棒的消灭</span></a>
 </div>
 </div>
 </div></div>
@@ -918,91 +696,42 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-4" hidden>
 <div class="toc-group" data-group="art-4-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-1" aria-label="展开 第1条 比赛行为"></button>
 <a class="toc-link" href="#art-4-1" data-target="art-4-1"><span class="toc-label">第1条 比赛行为</span></a>
-</div>
-<div class="toc-children" id="g-art-4-1" hidden>
-<a class="toc-link toc-level-3" href="#item-4-1-1" data-target="item-4-1-1"><span class="toc-label">第1项 比赛行为</span></a>
-<a class="toc-link toc-level-3" href="#item-4-1-2" data-target="item-4-1-2"><span class="toc-label">第2项 比赛行为的确认</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-2" aria-label="展开 第2条 优先顺序"></button>
 <a class="toc-link" href="#art-4-2" data-target="art-4-2"><span class="toc-label">第2条 优先顺序</span></a>
-</div>
-<div class="toc-children" id="g-art-4-2" hidden>
-<a class="toc-link toc-level-3" href="#item-4-2-1" data-target="item-4-2-1"><span class="toc-label">第1项 优先顺序</span></a>
-<a class="toc-link toc-level-3" href="#item-4-2-2" data-target="item-4-2-2"><span class="toc-label">第2项 报牌迟缓</span></a>
-<a class="toc-link toc-level-3" href="#item-4-2-3" data-target="item-4-2-3"><span class="toc-label">第3项 吃后发生的碰・杠・荣和</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-3" aria-label="展开 第3条 吃（チー）"></button>
 <a class="toc-link" href="#art-4-3" data-target="art-4-3"><span class="toc-label">第3条 吃（チー）</span></a>
-</div>
-<div class="toc-children" id="g-art-4-3" hidden>
-<a class="toc-link toc-level-3" href="#item-4-3-1" data-target="item-4-3-1"><span class="toc-label">第1项 吃</span></a>
-<a class="toc-link toc-level-3" href="#item-4-3-2" data-target="item-4-3-2"><span class="toc-label">第2项 同时报牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-4" aria-label="展开 第4条 碰（ポン）"></button>
 <a class="toc-link" href="#art-4-4" data-target="art-4-4"><span class="toc-label">第4条 碰（ポン）</span></a>
-</div>
-<div class="toc-children" id="g-art-4-4" hidden>
-<a class="toc-link toc-level-3" href="#item-4-4-1" data-target="item-4-4-1"><span class="toc-label">第1项 碰</span></a>
-<a class="toc-link toc-level-3" href="#item-4-4-2" data-target="item-4-4-2"><span class="toc-label">第2项 同时报牌</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-5" aria-label="展开 第5条 杠（カン）"></button>
 <a class="toc-link" href="#art-4-5" data-target="art-4-5"><span class="toc-label">第5条 杠（カン）</span></a>
-</div>
-<div class="toc-children" id="g-art-4-5" hidden>
-<a class="toc-link toc-level-3" href="#item-4-5-1" data-target="item-4-5-1"><span class="toc-label">第1项 杠的种类</span></a>
-<a class="toc-link toc-level-3" href="#item-4-5-2" data-target="item-4-5-2"><span class="toc-label">第2项 暗杠</span></a>
-<a class="toc-link toc-level-3" href="#item-4-5-3" data-target="item-4-5-3"><span class="toc-label">第3项 明杠</span></a>
-<a class="toc-link toc-level-3" href="#item-4-5-4" data-target="item-4-5-4"><span class="toc-label">第4项 杠的限度</span></a>
-<a class="toc-link toc-level-3" href="#item-4-5-5" data-target="item-4-5-5"><span class="toc-label">第5项 杠宝牌</span></a>
-<a class="toc-link toc-level-3" href="#item-4-5-6" data-target="item-4-5-6"><span class="toc-label">第6项 抢杠</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-6">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-6" aria-label="展开 第6条 副露牌与副露法"></button>
 <a class="toc-link" href="#art-4-6" data-target="art-4-6"><span class="toc-label">第6条 副露牌与副露法</span></a>
-</div>
-<div class="toc-children" id="g-art-4-6" hidden>
-<a class="toc-link toc-level-3" href="#item-4-6-1" data-target="item-4-6-1"><span class="toc-label">第1项 副露牌</span></a>
-<a class="toc-link toc-level-3" href="#item-4-6-2" data-target="item-4-6-2"><span class="toc-label">第2项 副露法</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-7">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-7" aria-label="展开 第7条 指示牌"></button>
 <a class="toc-link" href="#art-4-7" data-target="art-4-7"><span class="toc-label">第7条 指示牌</span></a>
-</div>
-<div class="toc-children" id="g-art-4-7" hidden>
-<a class="toc-link toc-level-3" href="#item-4-7-1" data-target="item-4-7-1"><span class="toc-label">第1项 指示牌的错误</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-4-8">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-4-8" aria-label="展开 第8条 立直（リーチ）"></button>
 <a class="toc-link" href="#art-4-8" data-target="art-4-8"><span class="toc-label">第8条 立直（リーチ）</span></a>
-</div>
-<div class="toc-children" id="g-art-4-8" hidden>
-<a class="toc-link toc-level-3" href="#item-4-8-1" data-target="item-4-8-1"><span class="toc-label">第1项 立直</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-2" data-target="item-4-8-2"><span class="toc-label">第2项 立直宣言</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-3" data-target="item-4-8-3"><span class="toc-label">第3项 振听立直等</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-4" data-target="item-4-8-4"><span class="toc-label">第4项 立直宣言牌被鸣</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-5" data-target="item-4-8-5"><span class="toc-label">第5项 立直棒的取得</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-6" data-target="item-4-8-6"><span class="toc-label">第6项 见逃</span></a>
-<a class="toc-link toc-level-3" href="#item-4-8-7" data-target="item-4-8-7"><span class="toc-label">第7项 立直后的暗杠</span></a>
 </div>
 </div>
 </div></div>
@@ -1014,55 +743,27 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-5" hidden>
 <div class="toc-group" data-group="art-5-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-5-1" aria-label="展开 第1条 和牌"></button>
 <a class="toc-link" href="#art-5-1" data-target="art-5-1"><span class="toc-label">第1条 和牌</span></a>
-</div>
-<div class="toc-children" id="g-art-5-1" hidden>
-<a class="toc-link toc-level-3" href="#item-5-1-1" data-target="item-5-1-1"><span class="toc-label">第1项 和牌的形式</span></a>
-<a class="toc-link toc-level-3" href="#item-5-1-2" data-target="item-5-1-2"><span class="toc-label">第2项 和牌的手段</span></a>
-<a class="toc-link toc-level-3" href="#item-5-1-3" data-target="item-5-1-3"><span class="toc-label">第3项 和牌者</span></a>
-<a class="toc-link toc-level-3" href="#item-5-1-4" data-target="item-5-1-4"><span class="toc-label">第4项 和牌牌的选择</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-5-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-5-2" aria-label="展开 第2条 和牌宣言"></button>
 <a class="toc-link" href="#art-5-2" data-target="art-5-2"><span class="toc-label">第2条 和牌宣言</span></a>
-</div>
-<div class="toc-children" id="g-art-5-2" hidden>
-<a class="toc-link toc-level-3" href="#item-5-2-1" data-target="item-5-2-1"><span class="toc-label">第1项 和牌宣言</span></a>
-<a class="toc-link toc-level-3" href="#item-5-2-2" data-target="item-5-2-2"><span class="toc-label">第2项 自摸和时的明示</span></a>
-<a class="toc-link toc-level-3" href="#item-5-2-3" data-target="item-5-2-3"><span class="toc-label">第3项 报牌的迟缓</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-5-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-5-3" aria-label="展开 第3条 和牌的确认"></button>
 <a class="toc-link" href="#art-5-3" data-target="art-5-3"><span class="toc-label">第3条 和牌的确认</span></a>
-</div>
-<div class="toc-children" id="g-art-5-3" hidden>
-<a class="toc-link toc-level-3" href="#item-5-3-1" data-target="item-5-3-1"><span class="toc-label">第1项 和牌形的确认</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-5-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-5-4" aria-label="展开 第4条 和牌役的复合"></button>
 <a class="toc-link" href="#art-5-4" data-target="art-5-4"><span class="toc-label">第4条 和牌役的复合</span></a>
-</div>
-<div class="toc-children" id="g-art-5-4" hidden>
-<a class="toc-link toc-level-3" href="#item-5-4-1" data-target="item-5-4-1"><span class="toc-label">第1项 复合</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-5-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-5-5" aria-label="展开 第5条 振听（フリテン）"></button>
 <a class="toc-link" href="#art-5-5" data-target="art-5-5"><span class="toc-label">第5条 振听（フリテン）</span></a>
-</div>
-<div class="toc-children" id="g-art-5-5" hidden>
-<a class="toc-link toc-level-3" href="#item-5-5-1" data-target="item-5-5-1"><span class="toc-label">第1项 振听</span></a>
-<a class="toc-link toc-level-3" href="#item-5-5-2" data-target="item-5-5-2"><span class="toc-label">第2项 振听时的和牌</span></a>
-<a class="toc-link toc-level-3" href="#item-5-5-3" data-target="item-5-5-3"><span class="toc-label">第3项 同巡内振听</span></a>
-<a class="toc-link toc-level-3" href="#item-5-5-4" data-target="item-5-5-4"><span class="toc-label">第4项 立直后的见逃</span></a>
 </div>
 </div>
 </div></div>
@@ -1074,66 +775,27 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-6" hidden>
 <div class="toc-group" data-group="art-6-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-6-1" aria-label="展开 第1条 原点"></button>
 <a class="toc-link" href="#art-6-1" data-target="art-6-1"><span class="toc-label">第1条 原点</span></a>
-</div>
-<div class="toc-children" id="g-art-6-1" hidden>
-<a class="toc-link toc-level-3" href="#item-6-1-1" data-target="item-6-1-1"><span class="toc-label">第1项 原点</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-6-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-6-2" aria-label="展开 第2条 持有分・顺位点"></button>
 <a class="toc-link" href="#art-6-2" data-target="art-6-2"><span class="toc-label">第2条 持有分・顺位点</span></a>
-</div>
-<div class="toc-children" id="g-art-6-2" hidden>
-<a class="toc-link toc-level-3" href="#item-6-2-1" data-target="item-6-2-1"><span class="toc-label">第1项 持有分</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-2" data-target="item-6-2-2"><span class="toc-label">第2项 比赛顺位</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-3" data-target="item-6-2-3"><span class="toc-label">第3项 顺位点</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-4" data-target="item-6-2-4"><span class="toc-label">第4项 换算</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-5" data-target="item-6-2-5"><span class="toc-label">第5项 例</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-6" data-target="item-6-2-6"><span class="toc-label">第6项 流局结束时的立直棒</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-7" data-target="item-6-2-7"><span class="toc-label">第7项 同分时</span></a>
-<a class="toc-link toc-level-3" href="#item-6-2-8" data-target="item-6-2-8"><span class="toc-label">第8项 零头的处理</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-6-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-6-3" aria-label="展开 第3条 点数计算(1)"></button>
 <a class="toc-link" href="#art-6-3" data-target="art-6-3"><span class="toc-label">第3条 点数计算(1)</span></a>
-</div>
-<div class="toc-children" id="g-art-6-3" hidden>
-<a class="toc-link toc-level-3" href="#item-6-3-1" data-target="item-6-3-1"><span class="toc-label">第1项 符</span></a>
-<a class="toc-link toc-level-3" href="#item-6-3-2" data-target="item-6-3-2"><span class="toc-label">第2项 部分符</span></a>
-<a class="toc-link toc-level-3" href="#item-6-3-3" data-target="item-6-3-3"><span class="toc-label">第3项 连底</span></a>
-<a class="toc-link toc-level-3" href="#item-6-3-4" data-target="item-6-3-4"><span class="toc-label">第4项 连底的计算</span></a>
-<a class="toc-link toc-level-3" href="#item-6-3-5" data-target="item-6-3-5"><span class="toc-label">第5项 进位</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-6-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-6-4" aria-label="展开 第4条 点数计算(2) 翻的计算与和牌点"></button>
 <a class="toc-link" href="#art-6-4" data-target="art-6-4"><span class="toc-label">第4条 点数计算(2) 翻的计算与和牌点</span></a>
-</div>
-<div class="toc-children" id="g-art-6-4" hidden>
-<a class="toc-link toc-level-3" href="#item-6-4-1" data-target="item-6-4-1"><span class="toc-label">第1项 翻的计算</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-2" data-target="item-6-4-2"><span class="toc-label">第1项 点数的计算</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-3" data-target="item-6-4-3"><span class="toc-label">第2项 点棒的授受</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-4" data-target="item-6-4-4"><span class="toc-label">第3项 支付方法</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-5" data-target="item-6-4-5"><span class="toc-label">第4项 授受的时机</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-6" data-target="item-6-4-6"><span class="toc-label">第5项 点数的申报</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-7" data-target="item-6-4-7"><span class="toc-label">第6项 申报的顺序</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-8" data-target="item-6-4-8"><span class="toc-label">第7项 例</span></a>
-<a class="toc-link toc-level-3" href="#item-6-4-9" data-target="item-6-4-9"><span class="toc-label">第8项 交割错误</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-6-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-6-5" aria-label="展开 第6条 满贯"></button>
 <a class="toc-link" href="#art-6-5" data-target="art-6-5"><span class="toc-label">第6条 满贯</span></a>
-</div>
-<div class="toc-children" id="g-art-6-5" hidden>
-<a class="toc-link toc-level-3" href="#item-6-5-1" data-target="item-6-5-1"><span class="toc-label">第1项 满贯的种类</span></a>
 </div>
 </div>
 </div></div>
@@ -1145,66 +807,27 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-7" hidden>
 <div class="toc-group" data-group="art-7-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-7-1" aria-label="展开 第1条 罚的种类"></button>
 <a class="toc-link" href="#art-7-1" data-target="art-7-1"><span class="toc-label">第1条 罚的种类</span></a>
-</div>
-<div class="toc-children" id="g-art-7-1" hidden>
-<a class="toc-link toc-level-3" href="#item-7-1-1" data-target="item-7-1-1"><span class="toc-label">第1项 罚的种类</span></a>
-<a class="toc-link toc-level-3" href="#item-7-1-2" data-target="item-7-1-2"><span class="toc-label">第2项 认定</span></a>
-<a class="toc-link toc-level-3" href="#item-7-1-3" data-target="item-7-1-3"><span class="toc-label">第3项 和牌放弃者的义务</span></a>
-<a class="toc-link toc-level-3" href="#item-7-1-4" data-target="item-7-1-4"><span class="toc-label">第4项 违反</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-7-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-7-2" aria-label="展开 第2条 和牌放弃及其对象"></button>
 <a class="toc-link" href="#art-7-2" data-target="art-7-2"><span class="toc-label">第2条 和牌放弃及其对象</span></a>
-</div>
-<div class="toc-children" id="g-art-7-2" hidden>
-<a class="toc-link toc-level-3" href="#item-7-2-1" data-target="item-7-2-1"><span class="toc-label">第1项 对象</span></a>
-<a class="toc-link toc-level-3" href="#item-7-2-2" data-target="item-7-2-2"><span class="toc-label">第2项 多牌与少牌</span></a>
-<a class="toc-link toc-level-3" href="#item-7-2-3" data-target="item-7-2-3"><span class="toc-label">第3项 抢先摸牌</span></a>
-<a class="toc-link toc-level-3" href="#item-7-2-4" data-target="item-7-2-4"><span class="toc-label">第4项 食替</span></a>
-<a class="toc-link toc-level-3" href="#item-7-2-5" data-target="item-7-2-5"><span class="toc-label">第5项 空行为</span></a>
-<a class="toc-link toc-level-3" href="#item-7-2-6" data-target="item-7-2-6"><span class="toc-label">第6项 报牌错误</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-7-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-7-3" aria-label="展开 第3条 错行为"></button>
 <a class="toc-link" href="#art-7-3" data-target="art-7-3"><span class="toc-label">第3条 错行为</span></a>
-</div>
-<div class="toc-children" id="g-art-7-3" hidden>
-<a class="toc-link toc-level-3" href="#item-7-3-1" data-target="item-7-3-1"><span class="toc-label">第1项 错吃・错碰・错杠</span></a>
-<a class="toc-link toc-level-3" href="#item-7-3-2" data-target="item-7-3-2"><span class="toc-label">第2项 处理</span></a>
-<a class="toc-link toc-level-3" href="#item-7-3-3" data-target="item-7-3-3"><span class="toc-label">第3项 副露2张以上时</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-7-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-7-4" aria-label="展开 第4条 错和（チョンボ）及其对象"></button>
 <a class="toc-link" href="#art-7-4" data-target="art-7-4"><span class="toc-label">第4条 错和（チョンボ）及其对象</span></a>
-</div>
-<div class="toc-children" id="g-art-7-4" hidden>
-<a class="toc-link toc-level-3" href="#item-7-4-1" data-target="item-7-4-1"><span class="toc-label">第1项 处罚</span></a>
-<a class="toc-link toc-level-3" href="#item-7-4-2" data-target="item-7-4-2"><span class="toc-label">第2项 错和的对象</span></a>
-<a class="toc-link toc-level-3" href="#item-7-4-3" data-target="item-7-4-3"><span class="toc-label">第3项 故意</span></a>
-<a class="toc-link toc-level-3" href="#item-7-4-4" data-target="item-7-4-4"><span class="toc-label">第4项 有正当和牌时</span></a>
-<a class="toc-link toc-level-3" href="#item-7-4-5" data-target="item-7-4-5"><span class="toc-label">第5项 复数错和</span></a>
-<a class="toc-link toc-level-3" href="#item-7-4-6" data-target="item-7-4-6"><span class="toc-label">第6项 错和之局的处理</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-7-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-7-5" aria-label="展开 第5条 黄牌及其对象"></button>
 <a class="toc-link" href="#art-7-5" data-target="art-7-5"><span class="toc-label">第5条 黄牌及其对象</span></a>
-</div>
-<div class="toc-children" id="g-art-7-5" hidden>
-<a class="toc-link toc-level-3" href="#item-7-5-1" data-target="item-7-5-1"><span class="toc-label">第1项 黄牌</span></a>
-<a class="toc-link toc-level-3" href="#item-7-5-2" data-target="item-7-5-2"><span class="toc-label">第2项 提示时机</span></a>
-<a class="toc-link toc-level-3" href="#item-7-5-3" data-target="item-7-5-3"><span class="toc-label">第3项 累积</span></a>
-<a class="toc-link toc-level-3" href="#item-7-5-4" data-target="item-7-5-4"><span class="toc-label">第4项 红牌</span></a>
-<a class="toc-link toc-level-3" href="#item-7-5-5" data-target="item-7-5-5"><span class="toc-label">第5项 黄牌的对象</span></a>
 </div>
 </div>
 </div></div>
@@ -1216,14 +839,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-8" hidden>
 <div class="toc-group" data-group="art-8-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-8-1" aria-label="展开 第1条"></button>
 <a class="toc-link" href="#art-8-1" data-target="art-8-1"><span class="toc-label">第1条</span></a>
-</div>
-<div class="toc-children" id="g-art-8-1" hidden>
-<a class="toc-link toc-level-3" href="#item-8-1-1" data-target="item-8-1-1"><span class="toc-label">第1项 包的要件</span></a>
-<a class="toc-link toc-level-3" href="#item-8-1-2" data-target="item-8-1-2"><span class="toc-label">第2项 适用的役</span></a>
-<a class="toc-link toc-level-3" href="#item-8-1-3" data-target="item-8-1-3"><span class="toc-label">第3项 积场的负担</span></a>
-<a class="toc-link toc-level-3" href="#item-8-1-4" data-target="item-8-1-4"><span class="toc-label">第4项 双倍役满以上</span></a>
 </div>
 </div>
 </div></div>
@@ -1235,53 +851,33 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 <div class="toc-children" id="g-ch-9" hidden>
 <div class="toc-group" data-group="art-9-1">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-9-1" aria-label="展开 第1条 1翻役"></button>
 <a class="toc-link" href="#art-9-1" data-target="art-9-1"><span class="toc-label">第1条 1翻役</span></a>
-</div>
-<div class="toc-children" id="g-art-9-1" hidden>
-<a class="toc-link toc-level-3" href="#item-9-1-1" data-target="item-9-1-1"><span class="toc-label">第1项 1翻役一览</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-9-2">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-9-2" aria-label="展开 第2条 2翻役"></button>
 <a class="toc-link" href="#art-9-2" data-target="art-9-2"><span class="toc-label">第2条 2翻役</span></a>
-</div>
-<div class="toc-children" id="g-art-9-2" hidden>
-<a class="toc-link toc-level-3" href="#item-9-2-1" data-target="item-9-2-1"><span class="toc-label">第1项 2翻役一览</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-9-3">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-9-3" aria-label="展开 第3条 3翻役"></button>
 <a class="toc-link" href="#art-9-3" data-target="art-9-3"><span class="toc-label">第3条 3翻役</span></a>
-</div>
-<div class="toc-children" id="g-art-9-3" hidden>
-<a class="toc-link toc-level-3" href="#item-9-3-1" data-target="item-9-3-1"><span class="toc-label">第1项 3翻役一览</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-9-4">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-9-4" aria-label="展开 第4条 6翻役"></button>
 <a class="toc-link" href="#art-9-4" data-target="art-9-4"><span class="toc-label">第4条 6翻役</span></a>
-</div>
-<div class="toc-children" id="g-art-9-4" hidden>
-<a class="toc-link toc-level-3" href="#item-9-4-1" data-target="item-9-4-1"><span class="toc-label">第1项 6翻役一览</span></a>
 </div>
 </div>
 <div class="toc-group" data-group="art-9-5">
 <div class="toc-row toc-level-2">
-<button class="toc-toggle" type="button" aria-expanded="false" aria-controls="g-art-9-5" aria-label="展开 第5条 役满"></button>
 <a class="toc-link" href="#art-9-5" data-target="art-9-5"><span class="toc-label">第5条 役满</span></a>
-</div>
-<div class="toc-children" id="g-art-9-5" hidden>
-<a class="toc-link toc-level-3" href="#item-9-5-1" data-target="item-9-5-1"><span class="toc-label">第1项 役满一览</span></a>
 </div>
 </div>
 </div></div>
 <div class="toc-empty" hidden>没有匹配的目录条目</div>
   </nav>
-  <div class="sidebar-foot">按原文「章 → 条 → 项」层级编排，条号、术语与顺序均予保留。</div>
+  <div class="sidebar-foot">按原文「章 → 条」两级编排，条号、术语与顺序均予保留。</div>
 </aside>
 
 <main class="main" id="main">
@@ -2101,9 +1697,6 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   var anchors = Array.prototype.slice.call(document.querySelectorAll('[data-anchor]'));
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var mobileQuery = window.matchMedia('(max-width: 1023px)');
-  var themeToggle = document.getElementById('themeToggle');
-  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  var THEME_KEY = 'xq-theme';
   var chevron = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
 
   // ---------- 分页状态 ----------
@@ -2543,31 +2136,9 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
     window.scrollTo({top:0, behavior: reduceMotion.matches ? 'auto' : 'smooth'});
   });
 
-  // 深浅色模式：优先用户手动选择，否则跟随系统
-  function applyTheme(theme){
-    var dark = theme === 'dark';
-    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-    if (themeToggle){
-      themeToggle.setAttribute('aria-pressed', String(dark));
-      themeToggle.setAttribute('aria-label', dark ? '切换到浅色模式' : '切换到深色模式');
-      themeToggle.title = dark ? '切换到浅色模式' : '切换到深色模式';
-    }
-  }
-  var savedTheme = null;
-  try { savedTheme = localStorage.getItem(THEME_KEY); } catch(e){}
-  var resolved = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (darkQuery.matches ? 'dark' : 'light');
-  applyTheme(resolved);
-  if (themeToggle){
-    themeToggle.addEventListener('click', function(){
-      var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      applyTheme(cur);
-      try { localStorage.setItem(THEME_KEY, cur); } catch(e){}
-    });
-  }
-  // 未手动选择时，随系统切换
-  if (!savedTheme && typeof darkQuery.addEventListener === 'function'){
-    darkQuery.addEventListener('change', function(e){ applyTheme(e.matches ? 'dark' : 'light'); });
-  }
+  // 深色模式已移除：始终使用浅色主题，不再读取系统配色或本地记录
+  document.documentElement.setAttribute('data-theme', 'light');
+  try { localStorage.removeItem('xq-theme'); } catch(e){}
 
   resetExpansion();
   syncInert();
