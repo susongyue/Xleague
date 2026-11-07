@@ -1,0 +1,7 @@
+# 统一换行符，避免 Windows 下 index.html 的 LF 被改成 CRLF 造成整文件 diff
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.docx binary
+*.zip binary
