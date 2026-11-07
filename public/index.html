@@ -166,7 +166,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .toc-link{
   flex:1;min-width:0;display:flex;align-items:center;gap:8px;
   padding:6px 8px;border-radius:7px;color:var(--body);font-size:.83rem;line-height:1.45;
-  border-left:2px solid transparent;transition:background .18s,color .18s,border-color .18s;
+  border-left:2px solid transparent;
+  transition:background .18s,color .18s,border-color .18s,transform .16s cubic-bezier(.34,1.56,.64,1);
 }
 .toc-link:hover{background:var(--surface-2);color:var(--accent-dark)}
 .toc-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -185,6 +186,34 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .toc-children .toc-level-2{gap:0}
 .toc-children .toc-level-2>.toc-link{border-left-color:transparent;padding-left:12px}
 .toc-level-2>.toc-link{font-size:.81rem;color:var(--body)}
+/* ---------- 目录展开动效：就地展开 + 子项错峰滑入 ---------- */
+/* auto 高度无法过渡，用 grid-template-rows 0fr → 1fr；hidden 时靠 visibility 保持可测高度 */
+/* 高度过渡用显式高度（JS 测量后写内联 height），比 grid-template-rows 在
+   隐藏元素上更可靠；overflow:hidden 保证收起时内容不溢出 */
+.toc-group>.toc-children{
+  overflow:hidden;height:0;
+  transition:height .24s cubic-bezier(.16,1,.3,1);
+}
+/* 动画结束后清空内联高度，靠 .is-open 保持自适应高度（不能回落成 height:0） */
+.toc-group>.toc-children.is-open{height:auto;transition:height .24s cubic-bezier(.16,1,.3,1)}
+.toc-group>.toc-children.is-closed{
+  visibility:hidden;
+  transition:height .2s cubic-bezier(.4,0,1,1),visibility 0s linear .2s;
+}
+.toc-children>.toc-group{opacity:1;transform:translateY(0);
+  transition:opacity .2s ease,transform .24s cubic-bezier(.16,1,.3,1);}
+.toc-children.is-closed>.toc-group{opacity:0;transform:translateY(-6px)}
+/* 错峰：每项延迟 18ms，第 6 项起封顶，避免长章节展开过慢 */
+.toc-group>.toc-children.is-open>.toc-group:nth-child(1){transition-delay:0ms}
+.toc-group>.toc-children.is-open>.toc-group:nth-child(2){transition-delay:18ms}
+.toc-group>.toc-children.is-open>.toc-group:nth-child(3){transition-delay:36ms}
+.toc-group>.toc-children.is-open>.toc-group:nth-child(4){transition-delay:54ms}
+.toc-group>.toc-children.is-open>.toc-group:nth-child(5){transition-delay:72ms}
+.toc-group>.toc-children.is-open>.toc-group:nth-child(n+6){transition-delay:80ms}
+.toc-link:active{transform:scale(.97)}
+@media (prefers-reduced-motion: reduce){
+  .toc-group>.toc-children,.toc-children>.toc-group{transition-duration:.01ms !important;transition-delay:0ms !important}
+}
 /* 三级项已从目录移除（2026-11-07）；以下样式保留为空占位不影响渲染 */
 .toc-level-3{display:none}
 .toc-link.is-active{
@@ -1856,12 +1885,62 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 
   function headerHeight(){ return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 76; }
 
-  function setExpanded(id, open){
+  // 目录就地展开动效：grid-template-rows 0fr ⇄ 1fr + 子项错峰滑入
+  // [hidden] 与 grid 布局互斥（隐藏元素不参与行高计算，过渡会直接跳到终值），
+  // 因此隐藏态改用 .is-closed（grid 行高 0 + visibility:hidden），元素始终参与布局。
+  var collapseTimers = new WeakMap();
+  function setExpanded(id, open, animate){
     var box = document.getElementById(id);
     if (!box) return;
-    box.hidden = !open;
     var btn = toc.querySelector('.toc-toggle[aria-controls="' + id + '"]');
     if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var t = collapseTimers.get(box);
+    if (t) { clearTimeout(t); collapseTimers.delete(box); }
+    var instant = !animate || reduceMotion.matches;
+    var isOpen = box.classList.contains('is-open');
+
+    if (open){
+      box.hidden = false;
+      if (isOpen && !box.classList.contains('is-closed')){
+        box.style.height = '';
+        return;
+      }
+      if (instant){
+        box.style.height = '';
+        box.classList.remove('is-closed');
+        box.classList.add('is-open');
+        return;
+      }
+      box.classList.remove('is-closed');
+      box.classList.add('is-open');
+      box.style.height = 'auto';
+      var target = box.scrollHeight;
+      box.style.height = '0px';
+      void box.offsetHeight;
+      box.style.height = target + 'px';
+      collapseTimers.set(box, setTimeout(function(){
+        box.style.height = '';
+        collapseTimers.delete(box);
+      }, 260));
+    } else {
+      if (!isOpen && box.classList.contains('is-closed')) return;
+      if (instant){
+        box.style.height = '';
+        box.classList.remove('is-open');
+        box.classList.add('is-closed');
+        return;
+      }
+      var cur = box.scrollHeight;
+      box.style.height = cur + 'px';
+      void box.offsetHeight;
+      box.classList.remove('is-open');
+      box.classList.add('is-closed');
+      box.style.height = '0px';
+      collapseTimers.set(box, setTimeout(function(){
+        box.style.height = '';
+        collapseTimers.delete(box);
+      }, 220));
+    }
   }
 
   function resetExpansion(){
@@ -2091,7 +2170,8 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
     var toggle = e.target.closest('.toc-toggle');
     if (toggle && !toggle.classList.contains('empty')){
       var box = document.getElementById(toggle.getAttribute('aria-controls'));
-      if (box) setExpanded(box.id, box.hidden);
+      // 以 is-closed 类判定当前是否收起（不再依赖 hidden 属性），并开启动画
+      if (box) setExpanded(box.id, box.classList.contains('is-closed'), true);
       return;
     }
     var link = e.target.closest('.toc-link');
