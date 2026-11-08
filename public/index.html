@@ -230,7 +230,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ---------- main ---------- */
 .main{margin-left:var(--sidebar-w);min-height:calc(100vh - var(--header-h))}
-.doc{max-width:1180px;margin:0 auto;padding:38px 40px 100px}
+.doc{max-width:none;margin:0;padding:38px var(--content-pad) 100px}
 .front{
   background:var(--surface);border:1px solid var(--line);border-radius:16px;
   padding:34px 38px;margin-bottom:46px;box-shadow:0 1px 2px rgba(15,23,42,.03);
@@ -454,18 +454,11 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 .chapter{margin-bottom:0}
 
 /* 页内小节导航 chips */
-.page-sections{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px;scroll-margin-top:calc(var(--header-h) + var(--pager-h) + 14px)}
-.page-sections a{
   display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border-radius:999px;
   border:1px solid var(--line);background:var(--surface);color:var(--body-2);
   font-size:.78rem;font-weight:600;text-decoration:none;
   transition:background .16s,color .16s,border-color .16s,transform .1s;
 }
-.page-sections a:hover{background:var(--accent-soft);color:var(--accent-dark);border-color:var(--accent-soft-2);text-decoration:none}
-.page-sections a:active{transform:scale(.97)}
-.page-sections a.is-current{background:var(--accent);border-color:var(--accent);color:#fff}
-.page-sections .ps-num{opacity:.62;font-variant-numeric:tabular-nums;margin-right:4px}
-.page-sections a.is-current .ps-num{opacity:.85}
 
 /* 阅读位置记忆提示 */
 .resume-toast{
@@ -491,8 +484,6 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   .pager{top:calc(var(--header-h) + 8px);padding:10px 12px;margin-bottom:20px;border-radius:10px;gap:8px}
   .pager-btn{height:34px;padding:0 12px;font-size:.8rem}
   .pager-jump select{height:34px;font-size:.8rem}
-  .page-sections{gap:6px;margin-bottom:18px}
-  .page-sections a{padding:5px 10px;font-size:.75rem}
   .resume-toast{left:12px;right:12px;bottom:12px;transform:translateY(14px);max-width:none;justify-content:space-between}
   .resume-toast.show{transform:translateY(0)}
 }
@@ -558,7 +549,6 @@ td{border-color:var(--line-soft)}
 .pager-btn{border-radius:8px;font-size:.82rem}
 .pager-btn:active{transform:scale(.985)}
 /* 7. 页内 chips：pill 化，与参考页 chips 同一套 */
-.page-sections a,.page-sections .chip{border-radius:99px}
 /* 8. 顶栏按钮去蓝，跟随砖红强调 */
 .edit-toggle.is-on{background:var(--accent);border-color:var(--accent)}
 .theme-toggle,.icon-btn{color:rgba(255,255,255,.86)}
@@ -577,7 +567,11 @@ td{border-color:var(--line-soft)}
 }
 
 /* 12. 内容列对齐：整列统一收窄并居中，所有块共用同一条左右基线 */
-.doc{--content-w:min(100%,760px)}
+/* 内容列：左侧固定留白起排，右侧留白同值；不做居中，避免两侧留白不等 */
+/* 默认（<1024 抽屉布局）：侧栏不占宽度，正文列即「视口 - 两侧留白」 */
+.doc{--content-pad:clamp(18px,5vw,40px);--content-w:min(100%,max(0px,calc(100vw - var(--content-pad) * 2)))}
+/* ≥1024 固定侧栏：再扣掉侧栏宽度 */
+@media (min-width:1024px){ .doc{--content-pad:clamp(20px,7vw,100px);--content-w:min(100%,1040px,max(0px,calc(100vw - var(--sidebar-w) - var(--content-pad) * 2)))} }
 /* 章节头 / 正文 / 说明 / 分页条一律收到同一列宽，不再各占一套宽度 */
 .doc > .chapter-head,
 .doc > .page > .chapter-head,
@@ -589,7 +583,7 @@ td{border-color:var(--line-soft)}
 .doc > .pager-foot{
   width:var(--content-w);
   max-width:100%;
-  margin-left:auto;
+  margin-left:0;
   margin-right:auto;
 }
 /* 收窄后正文本身不再单独限宽，避免出现「列中列」 */
@@ -1876,55 +1870,9 @@ td{border-color:var(--line-soft)}
     progressBar.style.width = (totalPages > 1 ? (currentPage / (totalPages - 1)) * 100 : 0) + '%';
   }
 
-  // ---------- 页内小节导航（chips） ----------
-  var sectionHost = {};
-
-  function buildSectionNav(pageIndex){
-    var pg = pages[pageIndex];
-    if (!pg) return;
-    var old = pg.querySelector('.page-sections');
-    if (old) old.remove();
-    var firstHead = pg.querySelector('.chapter-head');
-    var heads = Array.prototype.slice.call(pg.querySelectorAll('.article-head'));
-    var nav = document.createElement('nav');
-    nav.className = 'page-sections';
-    nav.setAttribute('aria-label', pageTitle(pageIndex) + ' · 小节导航');
-    heads.forEach(function(head){
-      if (head.hasAttribute('data-unnamed')) return;
-      var badge = head.querySelector('.article-badge');
-      var title = head.querySelector('h3[data-anchor]');
-      if (!title) return;
-      var a = document.createElement('a');
-      a.href = '#' + title.id;
-      a.setAttribute('data-chip-target', title.id);
-      if (badge){
-        var s = document.createElement('span');
-        s.className = 'ps-num';
-        s.textContent = badge.textContent.trim();
-        a.appendChild(s);
-      }
-      a.appendChild(document.createTextNode(title.textContent.trim()));
-      nav.appendChild(a);
-    });
-    if (!nav.children.length) return;
-    if (firstHead && firstHead.nextElementSibling) pg.insertBefore(nav, firstHead.nextElementSibling);
-    else pg.insertBefore(nav, firstHead || pg.firstChild);
-    sectionHost[pageIndex] = nav;
-    syncSectionNav();
-  }
-
-  function syncSectionNav(){
-    var nav = sectionHost[currentPage];
-    if (!nav) return;
-    Array.prototype.forEach.call(nav.children, function(a){
-      a.classList.toggle('is-current', a.getAttribute('data-chip-target') === activeId);
-    });
-  }
-
-  function refreshSectionNav(){
-    // 只在需要时构建，避免频繁 DOM 操作
-    if (!sectionHost[currentPage]) buildSectionNav(currentPage);
-  }
+  // ---------- 页内小节导航（chips）已移除 ----------
+  function syncSectionNav(){}
+  function refreshSectionNav(){}
 
   function goToPage(n, opts){
     opts = opts || {};
@@ -2205,22 +2153,6 @@ td{border-color:var(--line-soft)}
     onScroll();
   }, {passive:true});
   window.addEventListener('resize', function(){ syncInert(); onScroll(); });
-
-  // 页内小节 chips 点击（事件委托，避免为每页重复绑定）
-  document.addEventListener('click', function(e){
-    var a = e.target.closest('.page-sections a[data-chip-target]');
-    if (!a) return;
-    e.preventDefault();
-    var el = document.getElementById(a.getAttribute('data-chip-target'));
-    if (!el) return;
-    lockSpy(reduceMotion.matches ? 60 : 900);
-    pendingNav = { id: el.id };
-    el.scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
-    if (history.replaceState) history.replaceState(null, '', '#' + el.id);
-    setActive(el.id);
-    posDirty = true;
-    scheduleSavePosition();
-  });
 
   // ---------- URL 同步：随翻阅/滚动更新 hash（不进历史栈） ----------
   function syncHash(){
