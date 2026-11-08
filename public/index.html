@@ -164,7 +164,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .toc-toggle:hover{color:var(--accent);background:var(--accent-soft)}
 .toc-toggle .icon{width:14px;height:14px;transition:transform .22s ease}
 .toc-toggle[aria-expanded="true"] .icon{transform:rotate(90deg)}
-.toc-toggle.empty{visibility:hidden}
 .toc-link{
   flex:1;min-width:0;display:flex;align-items:center;gap:8px;
   padding:6px 8px;border-radius:7px;color:var(--body);font-size:.83rem;line-height:1.45;
@@ -184,6 +183,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .toc-children::before{
   content:"";position:absolute;top:-6px;bottom:6px;left:-12px;width:1px;background:var(--line);
 }
+/* 收起时该容器被 .is-closed 关掉 visibility，伪元素也必须一并隐藏，否则竖线"悬空"伸到兄弟行 */
+.toc-group>.toc-children.is-closed::before{display:none}
 /* 目录只保留「章 → 条」两级：二级行不再有箭头列与子层 */
 .toc-children .toc-level-2{gap:0}
 .toc-children .toc-level-2>.toc-link{border-left-color:transparent;padding-left:12px}
@@ -248,7 +249,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .stat{padding:7px 14px;border:1px solid var(--line);border-radius:8px;font-size:.77rem;color:var(--muted);background:var(--surface)}
 .stat b{color:var(--ink);font-size:1rem;margin-right:4px}
 :root{--pager-h:62px}
-.chapter{margin-bottom:64px;scroll-margin-top:calc(var(--header-h) + var(--pager-h) + 14px)}
+.chapter{margin-bottom:64px}
 .chapter-head{
   display:flex;align-items:flex-start;gap:18px;padding:0 0 16px;margin:0 0 30px;
   border-bottom:1px solid var(--line);
@@ -259,7 +260,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .chapter-title{margin:0;font-size:1.62rem;line-height:1.4;font-weight:700;color:var(--ink);letter-spacing:-.01em}
 .chapter-eyebrow{display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;color:var(--accent);margin-bottom:7px}
-[data-anchor]{scroll-margin-top:calc(var(--header-h) + var(--pager-h) + 14px)}
+/* 吸顶分页条：顶距 12 + 条高 62（移动端 8 + 56）+ 14 呼吸位，锚点跳转后才不会藏在吸顶条底下 */
+[data-anchor]{scroll-margin-top:calc(var(--header-h) + 12px + var(--pager-h) + 14px)}
+/* 章标题是整页首元素：跳转落点会更远（已减去分页条上方 12px 空隙），旧的 --pager-h+14 口径偏小 */
+.chapter[data-anchor]{scroll-margin-top:calc(var(--header-h) + 12px + var(--pager-h) + 14px)}
 .article{margin:0 0 34px}
 .article-head{
   display:flex;align-items:baseline;gap:11px;margin:0 0 16px;padding:0 0 0 14px;
@@ -281,7 +285,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :root[data-editing]:not(.xq-items-off) .item-stack{display:block}
 .item-stack h4{
   margin:0;padding:8px 14px;font-size:.84rem;font-weight:600;line-height:1.6;color:var(--body-2);
-  border-bottom:1px solid var(--line-soft);scroll-margin-top:calc(var(--header-h) + 22px);
+  border-bottom:1px solid var(--line-soft);scroll-margin-top:calc(var(--header-h) + 12px + var(--pager-h) + 14px);
   white-space:pre-wrap;
 }
 .item-stack h4:last-child{border-bottom:0}
@@ -453,13 +457,6 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
 .pager-foot{margin-top:30px}
 .chapter{margin-bottom:0}
 
-/* 页内小节导航 chips */
-  display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border-radius:999px;
-  border:1px solid var(--line);background:var(--surface);color:var(--body-2);
-  font-size:.78rem;font-weight:600;text-decoration:none;
-  transition:background .16s,color .16s,border-color .16s,transform .1s;
-}
-
 /* 阅读位置记忆提示 */
 .resume-toast{
   position:fixed;left:50%;bottom:22px;transform:translate(-50%,14px);
@@ -488,10 +485,6 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   .resume-toast.show{transform:translateY(0)}
 }
 
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
-}
 @media print{
   .site-header,.sidebar,.backdrop,.to-top,.skip-link,.pager{display:none !important}
   .page{display:block !important;break-inside:avoid}
@@ -1807,6 +1800,23 @@ td{border-color:var(--line-soft)}
   var progressBar = document.getElementById('progressBar');
   var toTop = document.getElementById('toTop');
   var links = Array.prototype.slice.call(toc.querySelectorAll('.toc-link'));
+  // 目录只到「条」一级，而正文还带着 171 个「项」锚点：建立 锚点 → 最近目录链接 的映射，
+  // 让滚动高亮 / 上次阅读位置都能落到一个有目录链接的锚点上
+  var tocTargets = {};
+  links.forEach(function(a){ tocTargets[a.getAttribute('data-target')] = true; });
+  var nearestTocId = (function(){
+    var map = {};
+    var pagesForMap = Array.prototype.slice.call(document.querySelectorAll('.doc > .page'));
+    pagesForMap.forEach(function(pg){
+      var last = null;
+      Array.prototype.slice.call(pg.querySelectorAll('[data-anchor]')).forEach(function(el){
+        if (tocTargets[el.id]) last = el.id;
+        map[el.id] = last || el.id;
+      });
+    });
+    return map;
+  })();
+  function tocIdFor(id){ return nearestTocId[id] || id; }
   var anchors = Array.prototype.slice.call(document.querySelectorAll('[data-anchor]'));
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var mobileQuery = window.matchMedia('(max-width: 1023px)');
@@ -1878,7 +1888,7 @@ td{border-color:var(--line-soft)}
     opts = opts || {};
     if (n < 0) n = 0;
     if (n >= totalPages) n = totalPages - 1;
-    if (n === currentPage && !opts.force) { renderPager(); return; }
+    if (n === currentPage && !opts.force) { renderPager(); if (opts.focus) focusPage(pages[n]); return; }
     currentPage = n;
     pages.forEach(function(pg, i){ pg.classList.toggle('is-active', i === n); });
     if (typeof posDirty !== 'undefined') posDirty = true;
@@ -1889,7 +1899,15 @@ td{border-color:var(--line-soft)}
       var y = opts.scrollY != null ? opts.scrollY : 0;
       window.scrollTo({top: y, behavior: reduceMotion.matches ? 'auto' : 'smooth'});
     }
-    document.querySelector('.main').focus ? null : null;
+    if (opts.focus) focusPage(pages[n]);
+  }
+
+  // 翻页后把焦点移到新页首，读屏与键盘用户才能感知「换页」
+  function focusPage(pg){
+    if (!pg) return;
+    var target = pg.querySelector('.chapter-title, .front h2') || pg;
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    try { target.focus({preventScroll: true}); } catch(e){}
   }
 
   function pageOfAnchor(el){
@@ -1936,11 +1954,16 @@ td{border-color:var(--line-soft)}
     if (t) { clearTimeout(t); collapseTimers.delete(box); }
     var instant = !animate || reduceMotion.matches;
     var isOpen = box.classList.contains('is-open');
+    if (btn){
+      var lb = btn.getAttribute('data-label') || btn.getAttribute('aria-label') || '';
+      if (/^展开\s/.test(lb)) lb = lb.replace(/^展开\s/, '');
+      btn.setAttribute('data-label', lb);
+      btn.setAttribute('aria-label', (open ? '收起 ' : '展开 ') + lb);
+    }
 
     if (open){
       box.hidden = false;
-      if (isOpen && !box.classList.contains('is-closed')){
-        box.style.height = '';
+      if (isOpen && !box.classList.contains('is-closed') && !box.style.height){
         return;
       }
       if (instant){
@@ -1949,11 +1972,13 @@ td{border-color:var(--line-soft)}
         box.classList.add('is-open');
         return;
       }
+      // 关键：必须先切到 .is-open（height:auto）再测量，否则量到的是收起态的内联/规则高度 0
+      var prevH = box.getBoundingClientRect().height;
       box.classList.remove('is-closed');
       box.classList.add('is-open');
       box.style.height = 'auto';
       var target = box.scrollHeight;
-      box.style.height = '0px';
+      box.style.height = prevH + 'px';
       void box.offsetHeight;
       box.style.height = target + 'px';
       collapseTimers.set(box, setTimeout(function(){
@@ -1968,7 +1993,7 @@ td{border-color:var(--line-soft)}
         box.classList.add('is-closed');
         return;
       }
-      var cur = box.scrollHeight;
+      var cur = box.getBoundingClientRect().height;
       box.style.height = cur + 'px';
       void box.offsetHeight;
       box.classList.remove('is-open');
@@ -1982,15 +2007,19 @@ td{border-color:var(--line-soft)}
   }
 
   function resetExpansion(){
-    toc.querySelectorAll('.toc-children').forEach(function(box){ setExpanded(box.id, false); });
     var first = toc.querySelector('.toc-children');
+    toc.querySelectorAll('.toc-children').forEach(function(box){
+      // 保留当前已展开的章，避免清空筛选时把用户正读的章节一起收起
+      if (box === first || box.classList.contains('is-open')) return;
+      setExpanded(box.id, false);
+    });
     if (first) setExpanded(first.id, true);
   }
 
   function filterGroup(group, q){
     var row = group.querySelector(':scope > .toc-row');
     var ownLink = row ? row.querySelector('.toc-link') : null;
-    var selfMatch = !q || (ownLink && ownLink.textContent.toLowerCase().indexOf(q) !== -1);
+    var selfMatch = !q || (!!ownLink && ownLink.textContent.toLowerCase().indexOf(q) !== -1);
     var box = group.querySelector(':scope > .toc-children');
     var childMatch = false;
     if (box){
@@ -2003,12 +2032,16 @@ td{border-color:var(--line-soft)}
         }
         if (visible) childMatch = true;
       });
-      box.hidden = !(selfMatch || childMatch);
-      if (q && childMatch) setExpanded(box.id, true);
+      var showBox = !q || selfMatch || childMatch;
+      box.hidden = !showBox;
+      if (!q) box.hidden = false;
+      if (q && showBox) setExpanded(box.id, true);
     }
-    var visible = selfMatch || childMatch;
+    // 只在「本章没有任何命中」时才隐藏本行，否则会连带隐藏命中的子级
+    var visible = !q || selfMatch || childMatch;
     if (row) row.hidden = !visible;
-    group.hidden = !visible;
+    // 分组容器永远不隐藏（隐藏父级 = 连带隐藏所有命中子级），改由行 / 子箱控制可见性
+    group.hidden = false;
     return visible;
   }
 
@@ -2030,8 +2063,9 @@ td{border-color:var(--line-soft)}
     });
     var empty = toc.querySelector('.toc-empty');
     if (empty) empty.hidden = any;
+    var visLinks = links.filter(function(a){ return !a.hidden && !a.closest('[hidden]'); });
     filterHint.innerHTML = q
-      ? '匹配 <b>' + links.filter(function(a){ return !a.hidden && !a.closest('[hidden]'); }).length + '</b> 个条目'
+      ? '匹配 <b>' + visLinks.length + '</b> 个条目'
       : '共 <b>' + links.length + '</b> 个可跳转小节 · 点击目录平滑定位';
     highlightLabels(q);
     if (!q){
@@ -2122,7 +2156,7 @@ td{border-color:var(--line-soft)}
     if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4){
       current = pageAnchors[pageAnchors.length - 1];
     }
-    if (current) setActive(current.id);
+    if (current) setActive(tocIdFor(current.id));
     scheduleSavePosition();
     // 进度条：章间 + 章内滚动综合
     var max = document.documentElement.scrollHeight - window.innerHeight;
@@ -2208,10 +2242,12 @@ td{border-color:var(--line-soft)}
     if (targetPage !== currentPage){
       goToPage(targetPage, {scrollTop: false, force: true});
       requestAnimationFrame(function(){
+        if (el.hidden) el.hidden = false;
         el.scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
         requestAnimationFrame(function(){ setActive(id); });
       });
     } else {
+      if (el.hidden) el.hidden = false;
       el.scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
     }
     if (history.replaceState) history.replaceState(null, '', '#' + id);
@@ -2246,14 +2282,19 @@ td{border-color:var(--line-soft)}
   syncInert();
 
   // 分页控件事件
-  prevFoot.addEventListener('click', function(){ goToPage(currentPage - 1); });
-  nextFoot.addEventListener('click', function(){ goToPage(currentPage + 1); });
-  if (jumpTop) jumpTop.addEventListener('change', function(){ goToPage(parseInt(jumpTop.value, 10) || 0); });
-  // 键盘左右方向键翻页（焦点不在输入框时）
+  prevFoot.addEventListener('click', function(){ goToPage(currentPage - 1, {focus: true}); });
+  nextFoot.addEventListener('click', function(){ goToPage(currentPage + 1, {focus: true}); });
+  if (jumpTop) jumpTop.addEventListener('change', function(){ goToPage(parseInt(jumpTop.value, 10) || 0, {focus: true}); });
+  // 键盘左右方向键翻页（焦点不在输入框 / 可编辑区时）
   document.addEventListener('keydown', function(e){
-    var tag = (document.activeElement && document.activeElement.tagName) || '';
-    if (e.key === 'ArrowLeft' && !/INPUT|SELECT|TEXTAREA/.test(tag)){ goToPage(currentPage - 1); }
-    else if (e.key === 'ArrowRight' && !/INPUT|SELECT|TEXTAREA/.test(tag)){ goToPage(currentPage + 1); }
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    var ae = document.activeElement || {};
+    var tag = ae.tagName || '';
+    if (/INPUT|SELECT|TEXTAREA/.test(tag) || ae.isContentEditable) return;
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    // 焦点在按钮/链接上时，方向键留给控件本身（例如分页下拉框、目录）
+    if (/BUTTON|A/.test(tag)) return;
+    goToPage(currentPage + (e.key === 'ArrowLeft' ? -1 : 1), {focus: true});
   });
 
   // 初始页：优先 hash，其次上次阅读位置
@@ -2269,7 +2310,7 @@ td{border-color:var(--line-soft)}
   if (initialEl){
     requestAnimationFrame(function(){
       initialEl.scrollIntoView({behavior:'auto', block:'start'});
-      setActive(initialEl.id);
+      setActive(tocIdFor(initialEl.id));
       onScroll();
     });
   }
@@ -2291,7 +2332,7 @@ td{border-color:var(--line-soft)}
     toast.classList.remove('show');
     toast.hidden = true;
   }
-  if (savedPos && toast && toastLabel && savedPos.anchor !== activeId){
+  if (savedPos && toast && toastLabel && tocIdFor(savedPos.anchor) !== activeId){
     toastLabel.textContent = anchorLabel(savedPos.anchor, savedPos.page) || ((savedPos.page === 0 ? '序' : '第' + savedPos.page + '章'));
     showToast();
     if (toastGo) toastGo.addEventListener('click', function(){
@@ -2302,13 +2343,18 @@ td{border-color:var(--line-soft)}
         var t = document.getElementById(savedPos.anchor);
         if (t){
           t.scrollIntoView({behavior: reduceMotion.matches ? 'auto' : 'smooth', block:'start'});
-          setActive(t.id);
+          setActive(tocIdFor(t.id));
           syncSectionNav();
         }
       });
     });
     if (toastClose) toastClose.addEventListener('click', hideToast);
-    toastTimer = setTimeout(hideToast, 12000);
+    // 只把焦点自动送进提示条一次，不强制关闭：让键盘 / 读屏用户有机会点「继续阅读」
+    toast.addEventListener('keydown', function(){ clearTimeout(toastTimer); }, true);
+    toastTimer = setTimeout(function(){
+      if (toast.contains(document.activeElement)) return;
+      hideToast();
+    }, 12000);
   }
 
   // 目录/chips 跳转的收尾校正：平滑滚动结束后若目标仍偏离视口顶部，补一次定位
