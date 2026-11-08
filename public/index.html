@@ -576,13 +576,24 @@ td{border-color:var(--line-soft)}
   *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
 
-/* 12. 阅读行宽：参考页用 58ch 限制 .lede / 正文，这里给到正文容器 */
-/* 正文限宽后让文字块在同一列内左对齐（不居中，避免与标题错位） */
-.doc{--measure:76ch}
-/* 正文所在的 .article 统一收窄到阅读宽度，标题与正文保持同一条左基线 */
-.doc > .page > .article{max-width:var(--measure);margin-left:auto;margin-right:auto}
-/* 整章头与分页条仍占满，避免视觉断裂 */
-.doc > .page > .chapter-head{max-width:var(--measure);margin-left:auto;margin-right:auto}
+/* 12. 内容列对齐：整列统一收窄并居中，所有块共用同一条左右基线 */
+.doc{--content-w:min(100%,760px)}
+/* 章节头 / 正文 / 说明 / 分页条一律收到同一列宽，不再各占一套宽度 */
+.doc > .chapter-head,
+.doc > .page > .chapter-head,
+.doc > .front,
+.doc > .page > .front,
+.doc > .page > .article,
+.doc > .page > .doc-foot,
+.doc > .pager,
+.doc > .pager-foot{
+  width:var(--content-w);
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* 收窄后正文本身不再单独限宽，避免出现「列中列」 */
+.doc .para,.doc .pre-line,.doc .bullet,.doc .subitem,.doc .table-caption{max-width:none}
 /* 13. 正文微调：字号 15.5px、段落间距对齐参考页 1.65 的紧凑感 */
 .doc{font-size:15.5px}
 .para{margin:0 0 13px}
