@@ -10,33 +10,35 @@
 :root{
   --header-h:76px;
   --sidebar-w:306px;
-  --ink:#0F172A;
-  --text:#1E293B;
-  --body:#334155;
-  --muted:#64748B;
-  --muted-2:#94A3B8;
-  --muted-3:#CBD5E1;
-  --line:#E2E8F0;
-  --line-soft:#EEF2F7;
-  --bg:#F8FAFC;
+  /* 编辑级纸感配色：暖灰底 + 砖红强调（来自「视频库」参考页） */
+  --ink:#1C1B18;
+  --text:#2A2721;
+  --body:#4A463F;
+  --muted:#7B756C;
+  --muted-2:#A39C92;
+  --muted-3:#D5CFC6;
+  --line:#E2DED7;
+  --line-soft:#EFECE7;
+  --bg:#F6F5F3;
   --surface:#FFFFFF;
-  --surface-2:#F1F5F9;
-  --surface-3:#DBEAFE;
-  --row-even:#FAFCFF;
-  --accent:#2563EB;
-  --accent-dark:#1D4ED8;
-  --accent-soft:#EFF6FF;
-  --accent-soft-2:#BFDBFE;
-  --on-header:#F8FAFC;
-  --border-header:#1E293B;
-  --border-header-2:#334155;
-  --body-2:#475569;
-  --example-line:#D97706;
-  --example-bg:#FFFBEB;
-  --note-foot-bg:#F5F9FF;
-  --mk-men:#059669;
-  --mk-open:#D97706;
-  --font:"Inter","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --surface-2:#FAF9F7;
+  --surface-3:#E6EEE9;
+  --row-even:#FCFBF9;
+  --accent:#1F4D3A;
+  --accent-dark:#16392B;
+  --accent-soft:#E6EEE9;
+  --accent-soft-2:#BFD5C8;
+  --on-header:#FFFFFF;
+  --border-header:rgba(255,255,255,.14);
+  --border-header-2:rgba(255,255,255,.22);
+  --body-2:#5A554D;
+  --example-line:#1F4D3A;
+  --example-bg:#FBF7F4;
+  --note-foot-bg:#FAF9F7;
+  --mk-men:#4E8A64;
+  --mk-open:#A87828;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC",sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -63,7 +65,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------- header ---------- */
 .site-header{
   position:fixed;inset:0 0 auto 0;height:var(--header-h);z-index:50;
-  background:var(--ink);color:var(--on-header);border-bottom:1px solid var(--border-header);
+  background:#17211C;color:var(--on-header);border-bottom:1px solid rgba(255,255,255,.10);
 }
 .header-inner{
   height:100%;display:flex;align-items:center;gap:14px;
@@ -72,7 +74,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .brand{display:flex;align-items:center;gap:11px;min-width:0;flex:1 1 auto;overflow:hidden}
 .brand-mark{
   width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;
-  background:linear-gradient(145deg,#2563EB,#1E40AF);color:#fff;box-shadow:0 4px 14px rgba(37,99,235,.35);
+  background:linear-gradient(145deg,#1F4D3A,#16392B);color:#fff;box-shadow:0 4px 14px rgba(31,77,58,.30);
 }.brand-mark .icon{width:21px;height:21px}
 .brand-text{min-width:0}
 .brand-text h1{
@@ -81,7 +83,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .brand-text p{margin:2px 0 0;font-size:.76rem;color:var(--muted-2);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .header-meta{margin-left:auto;display:flex;gap:8px;align-items:center;flex:none}
-.progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,#3B82F6,#60A5FA);transition:width .08s linear}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,#1F4D3A,#5E9479);transition:width .08s linear}
 .icon-btn{
   width:38px;height:38px;display:grid;place-items:center;border-radius:9px;
   border:1px solid var(--border-header-2);color:var(--muted-3);transition:background .2s,color .2s,border-color .2s;
@@ -228,13 +230,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ---------- main ---------- */
 .main{margin-left:var(--sidebar-w);min-height:calc(100vh - var(--header-h))}
-.doc{max-width:1120px;margin:0 auto;padding:38px 44px 100px}
+.doc{max-width:1180px;margin:0 auto;padding:38px 40px 100px}
 .front{
   background:var(--surface);border:1px solid var(--line);border-radius:16px;
   padding:34px 38px;margin-bottom:46px;box-shadow:0 1px 2px rgba(15,23,42,.03);
   position:relative;overflow:hidden;
 }
-.front::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#2563EB,#60A5FA)}
+.front::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#1F4D3A,#5E9479)}
 .front-kicker{font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
 .front h2{margin:12px 0 4px;font-size:1.85rem;line-height:1.35;font-weight:700;color:var(--ink);letter-spacing:-.01em}
 .front-ja{margin:0;font-size:.92rem;color:var(--muted);letter-spacing:.04em}
@@ -274,10 +276,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 /* 「本节分项」小标题：默认隐藏，仅在编辑模式下显示 */
 /* 「本节分项」条：默认隐藏，仅在编辑模式 / 手动开启时显示 */
-.item-stack::before{display:none}
-:root[data-editing]:not(.xq-items-off) .item-stack::before{display:block}
-/* 分项条隐藏后，列表首项与容器上边圆角贴合，补一点上内边距避免文字贴边 */
-.item-stack:not(.show-items) h4:first-of-type{padding-top:10px}
+/* 「本节分项」整块（标题 + 第1项/第2项…）：默认隐藏，仅编辑模式下可见 */
+.item-stack{display:none}
+:root[data-editing]:not(.xq-items-off) .item-stack{display:block}
 .item-stack h4{
   margin:0;padding:8px 14px;font-size:.84rem;font-weight:600;line-height:1.6;color:var(--body-2);
   border-bottom:1px solid var(--line-soft);scroll-margin-top:calc(var(--header-h) + 22px);
@@ -516,6 +517,77 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   .table-wrap{overflow:visible}
   a[href^="#"]::after{content:""}
 }
+
+/* ===== 编辑级排版细化（参考「视频库」页的做法） ===== */
+/* 1. 等宽小字标签：章节/条号/统计一律走 mono + 字距，信息密度高又不吵 */
+.chapter-eyebrow,.article-badge,.toc-num,.pager-count,.pill{
+  font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;
+}
+.chapter-eyebrow{font-size:.68rem;letter-spacing:.16em;font-weight:600}
+.article-badge{
+  font-size:.68rem;letter-spacing:.06em;border:1px solid var(--accent-soft-2);
+  background:#F4F8F6;color:var(--accent);border-radius:5px;padding:3px 7px;font-weight:600;
+}
+.toc-num{font-size:.64rem;letter-spacing:.06em;border:1px solid var(--accent-soft-2);background:#F4F8F6;color:var(--accent);border-radius:4px}
+/* 2. 卡片：极浅描边 + 悬停浮起；位移和阴影同源，不做发光 */
+.item-stack,.front,.note,.example,.table-wrap{
+  border-color:var(--line);
+  box-shadow:0 1px 0 rgba(30,26,20,.02);
+}
+.item-stack{border-radius:11px}
+.item-stack::before{
+  font-family:var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  font-size:.64rem;color:var(--muted);background:var(--surface-2);
+}
+.item-stack h4{font-size:.855rem;line-height:1.7;color:var(--body-2)}
+.item-stack h4::before{background:var(--accent-soft-2)}
+/* 3. 表格：表头走 mono 小字，行分隔线更细 */
+th{font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase;font-size:.68rem!important;color:var(--muted)}
+th,td{padding:9px 13px}
+td{border-color:var(--line-soft)}
+/* 4. 正文：行高收紧到 1.9，段落间距对齐参考页节奏 */
+.para,.bullet,.subitem,.pre-line,.table-caption{line-height:1.9}
+.chapter-title{letter-spacing:-.015em;font-weight:680}
+.article-head h3{font-weight:660;letter-spacing:-.01em}
+/* 5. 目录：悬停只改底色与轻微右移，不做缩放，避免长列表抖动 */
+.toc-link{transition:background .15s,color .15s,border-color .15s,padding-left .18s}
+.toc-link:hover{padding-left:2px}
+.toc-link.is-active{border-left-color:var(--accent)}
+/* 6. 分页条：白底 + 细边，去掉大圆角的「气泡感」 */
+.pager{border-radius:11px;box-shadow:0 1px 0 rgba(30,26,20,.03)}
+.pager-btn{border-radius:8px;font-size:.82rem}
+.pager-btn:active{transform:scale(.985)}
+/* 7. 页内 chips：pill 化，与参考页 chips 同一套 */
+.page-sections a,.page-sections .chip{border-radius:99px}
+/* 8. 顶栏按钮去蓝，跟随砖红强调 */
+.edit-toggle.is-on{background:var(--accent);border-color:var(--accent)}
+.theme-toggle,.icon-btn{color:rgba(255,255,255,.86)}
+.icon-btn:hover{background:rgba(255,255,255,.12)}
+/* 9. 滚动条：细、低对比 */
+*{scrollbar-width:thin;scrollbar-color:var(--muted-3) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:var(--muted-3);border-radius:99px;border:3px solid var(--bg)}
+::-webkit-scrollbar-track{background:transparent}
+/* 10. 选中文字：砖红淡底 */
+::selection{background:var(--accent-soft);color:var(--ink)}
+/* 11. 减动效：把参考页那条规则补全到本页 */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+
+/* 12. 阅读行宽：参考页用 58ch 限制 .lede / 正文，这里给到正文容器 */
+/* 正文限宽后让文字块在同一列内左对齐（不居中，避免与标题错位） */
+.doc{--measure:76ch}
+/* 正文所在的 .article 统一收窄到阅读宽度，标题与正文保持同一条左基线 */
+.doc > .page > .article{max-width:var(--measure);margin-left:auto;margin-right:auto}
+/* 整章头与分页条仍占满，避免视觉断裂 */
+.doc > .page > .chapter-head{max-width:var(--measure);margin-left:auto;margin-right:auto}
+/* 13. 正文微调：字号 15.5px、段落间距对齐参考页 1.65 的紧凑感 */
+.doc{font-size:15.5px}
+.para{margin:0 0 13px}
+.article-head{margin-bottom:14px}
+.chapter-head{margin-bottom:18px}
 </style>
 </head>
 <body>
@@ -921,7 +993,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
   <span class="editbar-hint">编辑模式 · 点击正文文字即可修改，改动自动保存在本浏览器</span>
   <span class="editbar-spacer"></span>
   <button class="editbar-btn" id="editSave" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg><span id="editSaveLabel">保存</span></button>
-  <button class="editbar-btn" id="editItems" type="button" aria-pressed="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg><span id="editItemsLabel">隐藏分项标题</span></button>
+  <button class="editbar-btn" id="editItems" type="button" aria-pressed="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg><span id="editItemsLabel">隐藏分项列表</span></button>
   <button class="editbar-btn primary" id="editExport" type="button"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>导出 HTML</button>
   <button class="editbar-btn" id="editDone" type="button">完成</button>
 </div>
@@ -2347,7 +2419,7 @@ tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
       editItems.setAttribute('aria-pressed', String(on));
       editItems.classList.toggle('is-on', on);
     }
-    if (editItemsLabel) editItemsLabel.textContent = on ? '隐藏分项标题' : '显示分项标题';
+    if (editItemsLabel) editItemsLabel.textContent = on ? '隐藏分项列表' : '显示分项列表';
   }
 
   // 读入之前保存的编辑内容；每个可编辑节点必须有「稳定 id」
