@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/favicon-180.png">
+<title>赛事规则 · 熊熊雀庄</title>
+<meta name="description" content="熊熊雀庄赛事规则总览：团队赛（M.LEAGUE 官方规则）与段位赛（店内积分体系）。">
+<link rel="stylesheet" href="../assets/shell.css?v=9">
+<link rel="stylesheet" href="../assets/site.css?v=9">
+  <link rel="stylesheet" href="../assets/home.css?v=3">
+</head>
+<body class="site-page">
+<header class="site-top">
+  <div class="site-top-inner">
+    <a class="site-brand" href="../index.html" aria-label="熊熊雀庄 首页">
+      <span class="site-logo" aria-hidden="true"></span>
+      <span class="site-brand-text"><b>熊熊雀庄</b><i>XIONG XIONG QUE ZHUANG</i></span>
+    </a>
+    <nav class="site-nav" aria-label="站点导航"><a class="site-nav-item" href="../index.html">首页</a><a class="site-nav-item is-active" href="../rules/index.html">规则</a><a class="site-nav-item" href="../tools/">工具</a><a class="site-nav-item" href="../about/index.html">关于我们</a><a class="site-nav-item" href="../news/index.html">活动公告</a><a class="site-nav-item" href="../contact/index.html">联系方式</a><a class="site-nav-item" href="../faq/index.html">FAQ</a></nav>
+    <button class="site-menu-btn" id="siteMenuBtn" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="site-mask" id="siteMask" hidden></div>
+<main class="wrap" style="padding-top:48px;padding-bottom:16px">
+  <div class="rules-crumb"><a href="../index.html">首页</a><span>/</span><span style="color:var(--text)">规则</span></div>
+  <div class="section-head" style="margin-top:18px;margin-bottom:0">
+    <div class="eyebrow">赛事规则</div>
+    <h2>赛事规则</h2>
+    <p>熊熊雀庄共两套赛事规则。团队赛规则已完整上线；段位赛为店内自建积分体系，规则章节正在编写中，上线后会替换下方「编写中」的卡片。</p>
+  </div>
+</main>
+<section class="wrap" style="padding-bottom:24px">
+  <div class="rule-cards">
+    <article class="rule-card">
+      <span class="tag">完整</span>
+      <h3>团队赛规则</h3>
+      <p class="rule-card-desc">沿用 M.LEAGUE 官方比赛规则中文译文：按「章 → 条 → 项」三级编排，含比赛进行、和牌、计分、罚则与和牌役等全部内容。</p>
+      <div class="rule-card-chapters"><a href="team/#ch-1">1 · 比赛的基本</a><a href="team/#ch-2">2 · 手牌・王牌・海底牌・河底牌・…</a><a href="team/#ch-3">3 · 比赛的进行</a><a href="team/#ch-4">4 · 比赛的详细</a><a href="team/#ch-5">5 · 和牌（アガリ）</a><a href="team/#ch-6">6 · 计算（收支及点数）</a><a href="team/#ch-7">7 · 罚则</a><a href="team/#ch-8">8 · 包（パオ）</a><a href="team/#ch-9">9 · 和牌役</a></div>
+      <div class="rule-card-foot">
+        <a class="btn btn-primary" href="../rules/team/index.html">进入规则</a>
+        <span class="rule-card-stats">9 章 · 56 条 · 171 项 · 左侧目录可筛选</span>
+      </div>
+    </article>
+    <article class="rule-card is-soon">
+      <span class="tag tag-muted">编写中</span>
+      <h3>段位赛规则</h3>
+      <p class="rule-card-desc">个人积分制赛事：按段位分桌、月度升降段、赛季积分兑换。章节结构与团队赛一致，但具体条款尚未定稿。</p>
+      <div class="rule-card-chapters">
+        <a href="../rules/rank/index.html" aria-disabled="true">段位划分（待定）</a>
+        <a href="../rules/rank/index.html" aria-disabled="true">升降段规则（待定）</a>
+        <a href="../rules/rank/index.html" aria-disabled="true">计分与结算（待定）</a>
+      </div>
+      <div class="rule-card-foot">
+        <a class="btn btn-ghost" href="../rules/rank/index.html">查看占位页</a>
+        <span class="rule-card-stats">占位页已建好，定稿后直接替换正文</span>
+      </div>
+    </article>
+  </div>
+  <div class="stub-note">
+    <b>怎么追加新规则：</b>在 <code>rules/</code> 下新建一个目录（例如 <code>rules/tournament/</code>），把本页的「团队赛规则」卡片复制过去改标题与链接即可；正文结构照抄 <code>rules/team/index.html</code> 里的 <code>&lt;article class="doc"&gt;</code> 段。
+  </div>
+</section>
+<script src="../assets/site.js?v=4" defer></script>
+</body>
+</html>

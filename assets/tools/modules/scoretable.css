@@ -1,0 +1,873 @@
+/* ==========================================================================
+   scoretable 番符表模块（私有样式，前缀 .st-；公共组件见 ../tools.css）
+   ========================================================================== */
+
+.st {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── 子 tab ─────────────────────────────────────────────────────────────── */
+.st-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-1);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.st-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.st-tab {
+  flex: 1 1 0;
+  min-width: max-content;
+  height: 40px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, box-shadow .16s ease;
+}
+
+.st-tab:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.st-tab.is-active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, .24);
+}
+
+.st-tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.st-view[hidden],
+.st-derive[hidden] {
+  display: none !important;
+}
+
+/* ── 点数表卡片 ─────────────────────────────────────────────────────────── */
+.st-view-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.st-view-head .tools-card-sub {
+  max-width: 640px;
+}
+
+.st-table-wrap {
+  position: relative;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.st-table-wrap:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.st-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.st-table thead th {
+  padding: 10px 8px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.st-table thead th.st-fu {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  width: 66px;
+  min-width: 66px;
+  padding-left: 14px;
+  text-align: left;
+  border-right: 1px solid var(--line);
+}
+
+.st-table tbody th.st-fu {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  width: 66px;
+  min-width: 66px;
+  padding: 10px 4px 10px 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line-soft);
+  border-right: 1px solid var(--line);
+  color: var(--body);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.st-fu-unit {
+  margin-left: 2px;
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.st-table tbody tr:last-child th,
+.st-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.st-table td {
+  padding: 9px 6px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--surface);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.st-table td.st-cell {
+  position: relative;
+  cursor: pointer;
+  transition: background .14s ease, box-shadow .14s ease;
+}
+
+.st-table td.st-cell:hover {
+  background: var(--accent-soft);
+}
+
+.st-table td.st-cell:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -3px;
+  border-radius: 6px;
+}
+
+.st-table td.st-cell[aria-expanded="true"] {
+  background: var(--accent-soft);
+  box-shadow: inset 0 0 0 1.5px var(--accent-soft-2);
+}
+
+.st-ron {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: .01em;
+}
+
+.st-tsumo {
+  display: block;
+  margin-top: 1px;
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.st-empty {
+  color: #CBD5E1;
+  font-size: 12px;
+  cursor: default;
+}
+
+/* 常规列中的满贯固定格 */
+.st-cell.st-special {
+  background: #FFFBEB;
+}
+
+.st-cell.st-special:hover {
+  background: #FEF3C7;
+}
+
+.st-special .st-sp-name {
+  display: block;
+  color: #B45309;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .04em;
+}
+
+.st-special .st-ron {
+  font-size: 13.5px;
+}
+
+/* 5 番及以上合并格 */
+.st-cell.st-merge {
+  background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+  border-left: 1px solid var(--line);
+}
+
+.st-cell.st-merge:hover {
+  background: linear-gradient(180deg, #EFF6FF 0%, #DBEAFE 100%);
+}
+
+.st-merge .st-hanrange {
+  display: inline-block;
+  margin-bottom: 3px;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.st-merge .st-sp-name {
+  display: block;
+  margin-bottom: 1px;
+  color: var(--accent-dark);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.st-merge .st-ron {
+  color: #1E3A8A;
+}
+
+.st-hint {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+/* ── 算分推导 ───────────────────────────────────────────────────────────── */
+.st-derive {
+  border: 1px solid var(--accent-soft-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #F8FBFF 0%, var(--surface) 100%);
+  box-shadow: var(--shadow-1);
+  animation: st-derive-in .18s ease-out both;
+}
+
+@keyframes st-derive-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.st-derive-inner {
+  padding: 18px 20px 20px;
+}
+
+.st-derive-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.st-derive-kicker {
+  display: block;
+  color: var(--accent);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.st-derive-head h4 {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.st-derive-close {
+  flex: none;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+
+.st-derive-close:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.st-derive-close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.st-pay {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.st-pay-item {
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.st-pay-item span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.st-pay-item b {
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.st-pay-item em {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.st-steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-steps li {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+
+.st-steps li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.st-step-tag {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1.9;
+}
+
+.st-steps h5 {
+  margin: 0 0 3px;
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 650;
+}
+
+.st-steps p {
+  margin: 0;
+  color: var(--body);
+  font-size: 12.5px;
+  line-height: 1.75;
+}
+
+.st-derive-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+/* ── 符数计算 ───────────────────────────────────────────────────────────── */
+.st-calc-card .tools-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.st-calc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+}
+
+.st-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.st-label {
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.st-select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.st-select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.st-select:disabled {
+  background: var(--surface-2);
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.st-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.st-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--body);
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.st-check input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.st-check input:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.st-meld-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.st-meld {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.st-meld caption {
+  padding: 10px 12px 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .03em;
+  text-align: left;
+}
+
+.st-meld th,
+.st-meld td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--line-soft);
+  text-align: left;
+}
+
+.st-meld thead th {
+  border-top: 0;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.st-meld tbody th {
+  color: var(--body);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.st-meld tbody th span {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.st-meld td {
+  width: 92px;
+}
+
+.st-select-sm {
+  height: 32px;
+  padding: 0 8px;
+  font-size: 12.5px;
+}
+
+/* 结果 */
+.st-result {
+  display: grid;
+  grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
+  gap: 18px;
+  padding: 16px 18px;
+  border: 1px solid var(--accent-soft-2);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #EFF6FF 0%, #F8FAFC 100%);
+}
+
+.st-result-main {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  align-self: center;
+}
+
+.st-result-main span:first-child {
+  color: var(--accent-dark);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+
+.st-result-main b {
+  color: var(--accent);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.st-result-main span:last-child {
+  color: var(--accent-dark);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.st-breakdown {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 18px;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+.st-breakdown li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+  border-bottom: 1px dashed rgba(148, 163, 184, .35);
+  color: var(--body);
+}
+
+.st-breakdown li b {
+  flex: none;
+  color: var(--ink);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.st-breakdown li.is-total {
+  grid-column: 1 / -1;
+  border-bottom: 0;
+  padding-top: 5px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.st-breakdown li.is-total b {
+  color: var(--accent-dark);
+}
+
+.st-calc-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.st-calc-note:empty {
+  display: none;
+}
+
+/* 规则速查 */
+.st-rules {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+
+.st-rules summary {
+  padding: 14px 18px;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 650;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.st-rules summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+.st-rules-body {
+  padding: 0 18px 18px;
+}
+
+.st-rules-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.st-rules-table th,
+.st-rules-table td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--line-soft);
+  text-align: left;
+}
+
+.st-rules-table thead th {
+  border-top: 0;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.st-rules-table tbody th {
+  width: 96px;
+  color: var(--body);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.st-rules-table td {
+  color: var(--body);
+}
+
+.st-rules-list {
+  display: grid;
+  gap: 4px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--body);
+  font-size: 12.5px;
+  line-height: 1.8;
+}
+
+.st-rules-list b {
+  display: inline-block;
+  min-width: 58px;
+  color: var(--accent-dark);
+  font-size: 11.5px;
+}
+
+/* ── 响应式 ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .st-calc-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .st-result {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .st-result-main {
+    justify-content: flex-start;
+  }
+
+  .st-breakdown {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .st-breakdown li.is-total {
+    grid-column: auto;
+  }
+
+  .st-pay {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .st {
+    gap: 12px;
+  }
+
+  .st-table {
+    min-width: 570px;
+  }
+
+  .st-table thead th.st-fu,
+  .st-table tbody th.st-fu {
+    width: 58px;
+    min-width: 58px;
+    padding-left: 11px;
+  }
+
+  .st-table tbody th.st-fu {
+    font-size: 12.5px;
+  }
+
+  .st-table td {
+    padding: 8px 5px;
+  }
+
+  .st-ron {
+    font-size: 13px;
+  }
+
+  .st-tsumo {
+    font-size: 10px;
+  }
+
+  .st-derive-inner {
+    padding: 15px 15px 16px;
+  }
+
+  .st-steps li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+
+  .st-step-tag {
+    line-height: 1.5;
+  }
+
+  .st-pay-item b {
+    font-size: 19px;
+  }
+
+  .st-result-main b {
+    font-size: 38px;
+  }
+
+  .st-rules-body {
+    padding: 0 14px 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .st-tabs {
+    padding: 3px;
+  }
+
+  .st-tab {
+    height: 38px;
+    padding: 0 10px;
+    font-size: 12.5px;
+  }
+
+  .st-table {
+    min-width: 540px;
+  }
+
+  .st-view-head {
+    gap: 10px;
+  }
+
+  .st-view-head .tools-badge {
+    display: none;
+  }
+
+  .st-result {
+    padding: 14px;
+  }
+
+  .st-result-main b {
+    font-size: 34px;
+  }
+
+  .st-meld th,
+  .st-meld td {
+    padding: 7px 8px;
+  }
+
+  .st-meld td {
+    width: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st-derive {
+    animation: none;
+  }
+
+  .st-tab,
+  .st-table td.st-cell,
+  .st-derive-close {
+    transition: none;
+  }
+}

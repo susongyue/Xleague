@@ -1,0 +1,823 @@
+/*!
+ * 熊熊雀庄 · 何切练习模块样式
+ * 只作用于 .hoikata 作用域；公共组件复用 assets/tools/tools.css
+ */
+
+/* ============================================================
+   容器与条件区
+   ============================================================ */
+
+.hoikata {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hoikata .tools-card-head {
+  gap: 12px 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hoikata-heading {
+  min-width: 0;
+  flex: 1 1 240px;
+}
+
+.hoikata-cond-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hoikata-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hoikata-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 4px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--body);
+  white-space: nowrap;
+}
+
+.hoikata-chip-k {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.hoikata-chip b {
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.hoikata-chip.is-riichi {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.hoikata-chip.is-riichi b {
+  color: #1d4ed8;
+}
+
+.hoikata-chip.is-ippatsu {
+  border-color: #fde68a;
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.hoikata-chip.is-ippatsu b {
+  color: #b45309;
+}
+
+.hoikata-board {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.hoikata-handline {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  min-width: 0;
+}
+
+.hoikata-label {
+  flex: 0 0 auto;
+  padding-bottom: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+
+.hoikata-hand {
+  min-width: 0;
+  flex: 0 1 auto;
+  padding: 2px 0 4px;
+}
+
+/* 手牌：13 张 + 摸牌，响应式牌宽，390 宽也不溢出 */
+.hoikata-hand .mj-tiles,
+.hoikata-draw .mj-tiles {
+  flex-wrap: nowrap;
+  --tile-gap: 4px;
+}
+
+.hoikata-hand .mj-tile {
+  width: clamp(23px, 5.3vw, 46px);
+}
+
+.hoikata-hand .mj-tile img,
+.hoikata-draw .mj-tile img {
+  border-radius: 4px;
+}
+
+.hoikata-draw {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+  margin-left: 6px;
+  padding-left: 12px;
+  padding-bottom: 1px;
+  border-left: 1px dashed var(--line);
+}
+
+.hoikata-draw-box {
+  display: flex;
+  align-items: flex-end;
+  min-height: 34px;
+}
+
+.hoikata-draw .mj-tile {
+  width: clamp(28px, 6.4vw, 46px);
+}
+
+.hoikata [data-act="next"] {
+  min-width: 100px;
+}
+
+.hoikata-dorarow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  min-width: 0;
+}
+
+.hoikata-dora {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+
+.hoikata-dora .mj-tile {
+  width: 28px;
+}
+
+.hoikata-dora-text {
+  font-size: 12.5px;
+  color: var(--body);
+}
+
+/* 加载骨架 */
+.hoikata-cond-skeleton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.hoikata-skeleton {
+  height: 34px;
+  border-radius: 10px;
+}
+
+.hoikata-skeleton.is-short {
+  height: 22px;
+  width: 62%;
+}
+
+.hoikata-skeleton.is-chip {
+  width: 110px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+.hoikata-skeleton.is-hand {
+  flex: 1 1 220px;
+  height: 64px;
+}
+
+.hoikata-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 0 6px;
+}
+
+.hoikata-loading-text {
+  margin: 2px 0 0;
+  font-size: 13px;
+}
+
+/* ============================================================
+   结果区：指标表
+   ============================================================ */
+
+.hoikata-result-head {
+  align-items: center;
+}
+
+.hoikata-result-body {
+  min-width: 0;
+}
+
+.hoikata-table-wrap {
+  border-radius: 12px;
+}
+
+.hoikata-table th,
+.hoikata-table td {
+  white-space: nowrap;
+}
+
+.hoikata-table td.hoikata-col-discard {
+  width: 1%;
+}
+
+.hoikata-discard {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hoikata-discard-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.hoikata-discard .mj-tile {
+  width: 26px;
+}
+
+.hoikata-best-badge {
+  flex: 0 0 auto;
+  padding: 1px 7px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* 推荐结论条：先给答案，再给整张表 */
+.hoikata-bestline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f8fbff, #f2f7ff);
+}
+
+.hoikata-bestline-kicker {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.hoikata-bestline-tiles {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hoikata-bestline-tiles .mj-tile {
+  width: 28px;
+}
+
+.hoikata-bestline-text {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.hoikata-bestline-tag {
+  margin-left: auto;
+  padding: 2px 9px;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 11.5px;
+}
+
+.hoikata-row td.is-num,
+.hoikata-table th.is-num,
+.hoikata-bestline-text,
+.hoikata-detail-meta {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 行可点：展开该切牌的进张明细 */
+.hoikata-row {
+  cursor: pointer;
+}
+
+.hoikata-row:hover td {
+  background: #f8fafc;
+}
+
+.hoikata-row.is-best:hover td {
+  background: #eef5ff;
+}
+
+.hoikata-row:active td {
+  background: #eaf1fb;
+}
+
+.hoikata-row:focus-visible {
+  outline: none;
+}
+
+.hoikata-row:focus-visible td {
+  background: #eff6ff;
+  box-shadow: inset 0 1px 0 #bfdbfe, inset 0 -1px 0 #bfdbfe;
+}
+
+.hoikata-row.is-selected td {
+  background: #eff6ff;
+}
+
+.hoikata-row.is-selected td:first-child,
+.hoikata-row:focus-visible td:first-child {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.hoikata-detail {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.hoikata-detail[hidden] {
+  display: none;
+}
+
+.hoikata-detail-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.hoikata-detail-title {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.hoikata-detail-meta {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.hoikata-detail-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 10px;
+  margin-top: 10px;
+}
+
+.hoikata-row td {
+  transition: background-color .15s ease;
+}
+
+.hoikata-row.is-best td {
+  background: #f5f9ff;
+}
+
+.hoikata-row.is-best td:first-child {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.hoikata-row.is-retreat td {
+  color: var(--muted);
+}
+
+.hoikata-row.is-retreat td:first-child .mj-tile {
+  opacity: .62;
+}
+
+.hoikata-row.is-retreat td:nth-child(2) {
+  color: #b91c1c;
+}
+
+.hoikata-meta {
+  display: inline-block;
+  font-size: 12.5px;
+  color: var(--body);
+  white-space: nowrap;
+}
+
+.hoikata-legend {
+  margin: 12px 0 0;
+  line-height: 1.9;
+}
+
+.hoikata-legend .tools-badge {
+  margin: 0 2px;
+  vertical-align: 1px;
+}
+
+/* ============================================================
+   结果区：进张总览
+   ============================================================ */
+
+.hoikata-waits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hoikata-wait-block {
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.hoikata-wait-block.is-best {
+  border-color: #bfdbfe;
+  background: #f8fbff;
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.hoikata-wait-block.is-retreat {
+  border-color: #fecaca;
+  background: #fef7f7;
+}
+
+.hoikata-wait-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-bottom: 9px;
+}
+
+.hoikata-wait-head > .mj-tiles {
+  flex: 0 0 auto;
+}
+
+.hoikata-wait-shanten {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.hoikata-wait-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  align-items: flex-end;
+}
+
+.hoikata-wait {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 3px 4px 2px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.hoikata-wait .mj-tiles {
+  --tile-gap: 0px;
+}
+
+.hoikata-wait .mj-tile {
+  width: 24px;
+}
+
+.hoikata-wait-count {
+  font-size: 11.5px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 1;
+  padding-bottom: 2px;
+  color: var(--body);
+  font-variant-numeric: tabular-nums;
+}
+
+.hoikata-wait.is-good {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.hoikata-wait.is-good .hoikata-wait-count {
+  color: #15803d;
+}
+
+.hoikata-wait.is-bad {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.hoikata-wait.is-bad .hoikata-wait-count {
+  color: #b91c1c;
+}
+
+.hoikata-wait.is-dora {
+  box-shadow: inset 0 -2px 0 #f59e0b;
+}
+
+.hoikata-no-wait {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.hoikata-retreat-label {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: #b91c1c;
+}
+
+.hoikata-retreat-note {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #b91c1c;
+}
+
+.hoikata-legendline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--body);
+}
+
+.hoikata-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hoikata-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  background: var(--surface-2);
+}
+
+.hoikata-dot.is-good {
+  background: #86efac;
+}
+
+.hoikata-dot.is-bad {
+  background: #fca5a5;
+}
+
+.hoikata-dot.is-dora {
+  background: #fbbf24;
+}
+
+/* ============================================================
+   响应式：1024 / 768 / 520 / 390
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .hoikata-hand .mj-tile {
+    width: clamp(26px, 4.6vw, 42px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hoikata {
+    gap: 14px;
+  }
+
+  .hoikata-hand .mj-tile {
+    width: clamp(25px, 6.4vw, 40px);
+  }
+
+  .hoikata-draw .mj-tile {
+    width: clamp(30px, 7.6vw, 40px);
+  }
+}
+
+@media (max-width: 520px) {
+  .hoikata .tools-card-head {
+    align-items: flex-start;
+  }
+
+  .hoikata-bestline {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .hoikata-bestline-text {
+    font-size: 12.5px;
+  }
+
+  .hoikata-bestline-tag {
+    margin-left: 0;
+  }
+
+  .hoikata-row:hover td,
+  .hoikata-row.is-best:hover td,
+  .hoikata-row:active td {
+    background: transparent;
+  }
+
+  .hoikata-table tr.is-selected {
+    border-color: #93c5fd;
+    background: #f8fbff;
+  }
+
+  .hoikata-heading {
+    flex: 1 1 160px;
+  }
+
+  .hoikata-chips {
+    gap: 6px;
+  }
+
+  .hoikata-chip {
+    padding: 3px 9px;
+    font-size: 12px;
+  }
+
+  .hoikata-label {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .hoikata-handline {
+    gap: 6px;
+  }
+
+  .hoikata-hand {
+    order: 1;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hoikata-hand .mj-tiles {
+    width: 100%;
+    flex-wrap: wrap;
+    --tile-gap: 3px;
+  }
+
+  .hoikata-hand .mj-tile {
+    flex: 0 0 auto;
+    width: clamp(34px, 9.5vw, 40px);
+    min-width: 0;
+  }
+
+  .hoikata-draw {
+    order: 2;
+    align-self: flex-end;
+    margin-left: auto;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .hoikata-draw .mj-tile {
+    width: clamp(34px, 9.5vw, 40px);
+  }
+
+  .hoikata-result-head {
+    align-items: center;
+  }
+
+  .hoikata-view-seg {
+    width: 100%;
+  }
+
+  .hoikata-view-seg .tools-seg-btn {
+    flex: 1 1 0;
+  }
+
+  .hoikata-table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .hoikata-table-wrap {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .hoikata-table thead {
+    display: none;
+  }
+
+  .hoikata-table tbody,
+  .hoikata-table tr,
+  .hoikata-table td {
+    display: block;
+    width: auto;
+  }
+
+  .hoikata-table tr {
+    margin: 0 0 10px;
+    padding: 10px 12px 8px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+
+  .hoikata-table tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .hoikata-table td {
+    padding: 0;
+    border: 0;
+    white-space: normal;
+  }
+
+  .hoikata-table td.hoikata-col-discard {
+    margin-bottom: 6px;
+  }
+
+  .hoikata-table td[data-label] {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 3px 0;
+  }
+
+  .hoikata-table td[data-label]::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 11.5px;
+    letter-spacing: .02em;
+  }
+
+  .hoikata-row.is-best td {
+    background: transparent;
+  }
+
+  .hoikata-row.is-best td:first-child {
+    box-shadow: none;
+  }
+
+  .hoikata-table tr.is-best {
+    border-color: #bfdbfe;
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
+
+  .hoikata-row.is-retreat td:nth-child(2) {
+    color: #b91c1c;
+  }
+
+  .hoikata-discard .mj-tile {
+    width: 22px;
+  }
+
+  .hoikata-best-badge {
+    padding: 0 5px;
+    font-size: 10px;
+  }
+
+  .hoikata-wait-block {
+    padding: 10px 11px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hoikata .tools-card-body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hoikata-wait-block {
+    padding: 9px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hoikata-row td,
+  .hoikata-wait {
+    transition: none;
+  }
+}

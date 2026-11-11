@@ -1,0 +1,625 @@
+/* 算番模块私有样式（前缀 .fuhan-，公共组件见 tools.css） */
+
+.fuhan {
+  display: block;
+}
+
+/* ---------- 题面 ---------- */
+
+.fuhan .tools-card-head {
+  flex-wrap: wrap;
+}
+
+.fuhan-qhead-main {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.fuhan-toolbar {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.fuhan-hand {
+  padding: 16px 14px 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.fuhan-hand .mj-tiles {
+  --tile-w: 46px;
+  --tile-gap: 5px;
+  padding: 6px 2px 2px;
+}
+
+.fuhan-hand-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 2px 0;
+  font-size: 12.5px;
+  color: var(--body);
+}
+
+.fuhan-hand-foot b {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.fuhan-hl {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.fuhan-hl::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border: 2px solid var(--accent);
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.fuhan-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 12px 20px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+.fuhan-meta-item {
+  min-width: 0;
+}
+
+.fuhan-meta-label {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .06em;
+}
+
+.fuhan-meta-value {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ---------- 答题步骤 ---------- */
+
+.fuhan-step-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.fuhan-step-titlewrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.fuhan-step-num {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.fuhan-step-num.is-done {
+  background: #16A34A;
+}
+
+.fuhan-step-num.is-answer {
+  background: #D97706;
+}
+
+.fuhan-step-title {
+  font-size: 17px;
+}
+
+.fuhan-opts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 10px;
+  max-width: 720px;
+}
+
+.fuhan-opt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-height: 56px;
+  padding: 8px 6px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 19px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease, transform .1s ease;
+}
+
+.fuhan-opt small {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.fuhan-opt:hover {
+  border-color: var(--accent);
+  background: #F5F8FF;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, .10);
+  transform: translateY(-1px);
+}
+
+.fuhan-opt:active {
+  transform: translateY(0) scale(.99);
+}
+
+.fuhan-opt:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.fuhan-opt.is-wrong {
+  border-color: #FCA5A5;
+  background: #FEF2F2;
+  color: #B91C1C;
+  animation: fuhan-shake .28s ease;
+}
+
+.fuhan-opt.is-wrong small {
+  color: #B91C1C;
+}
+
+@keyframes fuhan-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+.fuhan-feedback {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.fuhan-feedback.is-error {
+  border-color: #FECACA;
+  background: #FEF2F2;
+  color: #B91C1C;
+}
+
+.fuhan-feedback.is-ok {
+  border-color: #BBF7D0;
+  background: #F0FDF4;
+  color: #15803D;
+}
+
+.fuhan-feedback.is-info {
+  border-color: #BFDBFE;
+  background: #EFF6FF;
+  color: #1D4ED8;
+}
+
+/* ---------- 满贯确认 ---------- */
+
+.fuhan-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.fuhan-confirm-rule {
+  margin: 0;
+  padding: 12px 14px;
+  background: var(--surface-2);
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  color: var(--body);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.fuhan-confirm-rule b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.fuhan-confirm-status {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------- 结算 ---------- */
+
+.fuhan-result {
+  display: block;
+}
+
+.fuhan-score {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fuhan-score-cell {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background: var(--surface-2);
+}
+
+.fuhan-score-cell.is-wide {
+  grid-column: 1 / -1;
+}
+
+.fuhan-score-cell.is-current {
+  border-color: #BFDBFE;
+  background: #EFF6FF;
+}
+
+.fuhan-score-label {
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+.fuhan-score-value {
+  margin-top: 3px;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.fuhan-score-value b {
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.fuhan-score-value small {
+  margin-left: 1px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.fuhan-score-sub {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+.fuhan-result-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.fuhan-block {
+  min-width: 0;
+}
+
+.fuhan-block-title {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.fuhan-yaku-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fuhan-yaku {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+}
+
+.fuhan-yaku b {
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fuhan-yaku:hover {
+  border-color: var(--accent);
+  background: #EFF6FF;
+  color: var(--accent-dark);
+}
+
+.fuhan-yaku:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.fuhan-yaku-total {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.fuhan-yaku-total b {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fuhan-note-text {
+  margin: 0;
+  color: var(--body);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* shell.css 给全局 table 设了 min-width:620px，模块内必须收回，
+   否则双栏结算中的符数明细会被撑出卡片。 */
+.fuhan-futable .tools-table {
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 13px;
+}
+
+.fuhan-futable .tools-table th,
+.fuhan-futable .tools-table td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.fuhan-futable .tools-table th:last-child,
+.fuhan-futable .tools-table td:last-child {
+  width: 84px;
+  white-space: nowrap;
+}
+
+.fuhan-futable .tools-table th,
+.fuhan-futable .tools-table td {
+  padding: 8px 12px;
+}
+
+.fuhan-fu-total td {
+  background: var(--surface-2);
+  font-weight: 700;
+}
+
+.fuhan-fold {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.fuhan-fold summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 12px;
+  color: var(--body);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.fuhan-fold summary::-webkit-details-marker {
+  display: none;
+}
+
+.fuhan-fold summary::after {
+  content: "展开";
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+.fuhan-fold[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.fuhan-fold[open] summary::after {
+  content: "收起";
+}
+
+.fuhan-fold .tools-table-wrap {
+  border: 0;
+  border-radius: 0;
+}
+
+.fuhan-result-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+.fuhan-result-foot p {
+  margin: 0;
+  font-size: 12.5px;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media (max-width: 1024px) {
+  .fuhan-hand .mj-tiles {
+    --tile-w: 40px;
+    --tile-gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fuhan-result-cols {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fuhan-hand .mj-tiles {
+    --tile-w: 36px;
+  }
+
+  .fuhan-opts {
+    grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  }
+
+  .fuhan-step-head {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fuhan-toolbar {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .fuhan-hand {
+    padding: 12px 10px 14px;
+  }
+
+  .fuhan-hand .mj-tiles {
+    --tile-w: 30px;
+    --tile-gap: 3px;
+  }
+
+  .fuhan-meta {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 14px;
+  }
+
+  .fuhan-score-value {
+    font-size: 16px;
+  }
+
+  .fuhan-score-value b {
+    font-size: 18px;
+  }
+
+  .fuhan-toolbar {
+    width: 100%;
+  }
+
+  .fuhan-toolbar .tools-btn {
+    flex: 1 1 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .fuhan-hand .mj-tiles {
+    --tile-w: 27px;
+    --tile-gap: 3px;
+  }
+
+  .fuhan-opts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fuhan-opt {
+    min-height: 48px;
+    font-size: 17px;
+  }
+
+  .fuhan-step-title {
+    font-size: 16px;
+  }
+
+  .fuhan-meta {
+    gap: 10px 12px;
+  }
+
+  .fuhan-score {
+    grid-template-columns: 1fr;
+  }
+
+  .fuhan-score-cell.is-wide {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fuhan-opt,
+  .fuhan-yaku,
+  .fuhan-fold summary {
+    transition: none;
+  }
+
+  .fuhan-opt.is-wrong {
+    animation: none;
+  }
+}

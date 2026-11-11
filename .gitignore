@@ -7,21 +7,79 @@
 # --- 放行规则（每个都必须紧跟 !/ 或 !文件名） ---
 !.gitignore
 !.gitattributes
+!README.md
 !.github/
 !.github/workflows/
 !.github/workflows/deploy-pages.yml
+
+# 站点：GitHub Pages 只发布 public/
 !public/
+!public/assets/
+!public/assets/*.css
+!public/assets/*.js
+!public/assets/*.png
+!public/assets/*.jpg
+!public/assets/*.ico
 !public/index.html
 !public/404.html
 !public/robots.txt
 !public/.nojekyll
+!public/rules/
+!public/rules/index.html
+!public/rules/team/
+!public/rules/team/index.html
+!public/rules/rank/
+!public/rules/rank/index.html
+!public/tools/
+!public/tools/index.html
+!public/assets/tools/
+!public/assets/tools/**
+!public/about/
+!public/about/index.html
+!public/news/
+!public/news/index.html
+!public/contact/
+!public/contact/index.html
+!public/faq/
+!public/faq/index.html
+
+# 根目录版的同一份页面（本地双击 index.html 预览用）
+!index.html
+!assets/
+!assets/*.css
+!assets/*.js
+!assets/*.png
+!assets/*.jpg
+!assets/*.ico
+!rules/
+!rules/index.html
+!rules/team/
+!rules/team/index.html
+!rules/rank/
+!rules/rank/index.html
+!tools/
+!tools/index.html
+!assets/tools/
+!assets/tools/**
+!about/
+!about/index.html
+!news/
+!news/index.html
+!contact/
+!contact/index.html
+!faq/
+!faq/index.html
 
 # ============================================================
-# 说明：以下文件仅存在于本地，不纳入版本库
-#   index.html                       —— 编辑源，发布走 public/index.html
-#   build_static.py                  —— 本地生成 public/ 的脚本
+# 说明：以下仅存在于本地，不纳入版本库
+#   _build/                          —— 站点生成脚本与中间产物（build_site.py / rebuild.py）
+#   _preview-*.png                   —— 设计预览截图
 #   M.LEAGUE日麻规则_中文翻译.docx    —— 原始素材
 #   docs/                            —— HANDOFF / TASKLIST / DEPLOY 交接文档
 #   .codebuddy/                      —— 编辑器本地配置
-#   临时补丁脚本 .xxx.py              —— 改 index.html 时的一次性脚本
+#   临时补丁脚本 .xxx.py              —— 改页面时的一次性脚本
+#   nohup.out / CON                  —— 运行日志、Windows 保留名残留
+#
+# 维护提示：新增一个页面（例如 rules/tournament/index.html）时，
+# 必须同时在上面的 public/ 与根目录两组白名单里加对应两行，否则不会被提交。
 # ============================================================

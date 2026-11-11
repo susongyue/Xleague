@@ -1,0 +1,6592 @@
+[
+  {
+    "_id": "f695b501-bd17-4210-aac0-b4ae312a0b93",
+    "id": "f695b501-bd17-4210-aac0-b4ae312a0b93",
+    "level": "medium",
+    "body": "4m 7m 9m 1p 2p 3p 3p 4p 7p 3s 4s 0s 2z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "4m",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。保留宝牌 **9m** 与 **7m** **9m** 坎搭，同时稳住 **3s** **4s** **赤5s** 的好形与 **1p** **2p** **3p** 的顺子，进张面广且不绕路。切 **2z**（场风）或 **5z**（白）会浪费役牌对子机会，但立直后打点已定，不如果断处理掉孤张 **4m**。"
+  },
+  {
+    "_id": "347cdb22-d8ed-453f-acb5-bf0da15282c4",
+    "id": "347cdb22-d8ed-453f-acb5-bf0da15282c4",
+    "level": "hard",
+    "body": "4m 1p 3p 0p 6p 6p 8p 2s 3s 5s 6s 7s 9s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6m",
+      "2z"
+    ],
+    "uraIndicators": [
+      "2s",
+      "2p"
+    ],
+    "recommend": "3z",
+    "ukeire": 73,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。摸进的 **3z** 虽是宝牌，但作为孤张保留会卡死手牌流动性；切掉后七张筒子和五张索子可形成多方向两嵌与顺子候选，进张面达73张，明显优于切 **9s**（66张）或 **8p**（63张）。打掉宝牌虽然可惜，但换来更广的听牌路线，是立直状态下提速的合理选择。"
+  },
+  {
+    "_id": "f13f574f-62df-4f91-b641-9400c5ea5098",
+    "id": "f13f574f-62df-4f91-b641-9400c5ea5098",
+    "level": "easy",
+    "body": "1m 2m 3m 4m 6m 7m 7m 2p 3p 4p 3s 5s 9s",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "9s",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **9s**。保留 **5z**（白）的役牌机会，且与切 **5z** 进张数相同，都不影响听牌速度；手牌已有充足的搭子，切掉边缘孤张 **9s** 更为合理。"
+  },
+  {
+    "_id": "850e0fd0-9efb-4b79-b879-a41c6a2ca121",
+    "id": "850e0fd0-9efb-4b79-b879-a41c6a2ca121",
+    "level": "hard",
+    "body": "4m 1p 4p 6p 6p 8p 8p 9p 1s 3s 4s 9s 3z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m",
+      "2m"
+    ],
+    "uraIndicators": [
+      "3z",
+      "2z"
+    ],
+    "recommend": "4m",
+    "ukeire": 43,
+    "shantenAfter": 4,
+    "note": "推荐切 **4m**。虽进张数相同，但 **4m** 孤立于手牌其他花色，切掉不影响筒子与索子已有的对子与孤张的连络潜力，而切 **1p** 或 **1s**、**9s** 会破坏同花色内建搭的可能。保留 **7z** 作为役牌孤张也无需变动，因此 **4m** 是更灵活的一打。"
+  },
+  {
+    "_id": "f1a8767e-2e28-49ce-86a8-51eaf80e78e3",
+    "id": "f1a8767e-2e28-49ce-86a8-51eaf80e78e3",
+    "level": "hard",
+    "body": "2m 4m 7m 8m 8m 5p 6p 8p 7s 9s 1z 4z 4z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2s"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "8p",
+    "ukeire": 28,
+    "shantenAfter": 3,
+    "note": "推荐切 **8p**。手牌已有两个对子（**8m** 和 **4z**），保留它们即可，**8p** 作为孤张与 **5p** **6p** 两面搭无直接关联，是效率最低的浮牌。切掉后，留有 **7z** 役牌进张的潜力，且所有搭子（**2m** **4m** 坎搭、**7s** **9s** 坎搭、**5p** **6p** 两面）均保留，后续摸牌可向好型发展。与切 **1z** 或 **7z** 相比，切 **8p** 不损失进张数，且不破坏 **8m** 对子，更利于保持牌型弹性。"
+  },
+  {
+    "_id": "985d0ecc-f0d3-4e8a-b75b-173a50571582",
+    "id": "985d0ecc-f0d3-4e8a-b75b-173a50571582",
+    "level": "easy",
+    "body": "4m 6m 7m 8m 9m 2p 6p 6p 7p 9p 5s 7s 8s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s",
+      "0m",
+      "2p"
+    ],
+    "uraIndicators": [
+      "1m",
+      "9p",
+      "3s"
+    ],
+    "recommend": "2p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **2p**。保留 **9s** 宝牌与索子 **5s** **7s** **8s** **9s** 的连续形，后续摸 **6s** 即形成两面听牌且宝牌仍在；切 **5s** 则使宝牌 **9s** 沦为孤立搭子，而 **2p** 本身是无用的孤张，不如维持索子的良形进张。"
+  },
+  {
+    "_id": "614c1f12-fff9-4370-81b5-bef4a051930a",
+    "id": "614c1f12-fff9-4370-81b5-bef4a051930a",
+    "level": "hard",
+    "body": "3m 4m 6m 3p 5p 7p 2s 2s 4s 5s 7s 2z 5z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m",
+      "9p"
+    ],
+    "uraIndicators": [
+      "5m",
+      "8p"
+    ],
+    "recommend": "5z",
+    "ukeire": 95,
+    "shantenAfter": 4,
+    "note": "推荐切 **5z**。保留双役牌 **2z**（南）和役牌 **7z**（中）能维持更高的打点潜力，且进张数与切其他字牌相同（95张）；若切 **2z** 则损失双役牌，切 **7s** 则进张数降至81张，明显不利。"
+  },
+  {
+    "_id": "a7220a90-c57b-4f49-ba4d-5cb59025500d",
+    "id": "a7220a90-c57b-4f49-ba4d-5cb59025500d",
+    "level": "hard",
+    "body": "1m 6m 7p 7p 2s 6s 7s 8s 9s 1z 3z 3z 4z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "1z",
+    "ukeire": 67,
+    "shantenAfter": 3,
+    "note": "推荐切 **1z**。保留 **4z** 自风刻子和 **3z** 对子，索子 **6s** **7s** **8s** **9s** 四连型延伸空间大，进张最广；次优切 **6s** 或 **9s** 会破坏索子连续性，进张略少且绕路。"
+  },
+  {
+    "_id": "3df1d628-ff9f-4848-9684-01b84ee839ed",
+    "id": "3df1d628-ff9f-4848-9684-01b84ee839ed",
+    "level": "hard",
+    "body": "0m 6m 6m 6m 7m 7m 4p 0p 9p 2s 6s 7s 9s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "8p"
+    ],
+    "recommend": "7z",
+    "ukeire": 73,
+    "shantenAfter": 3,
+    "note": "推荐切 **7z**。手牌已有 **6m** 刻子和 **7m** 对子，其余多为数牌孤张或弱搭，切掉 **7z**（中）后全牌转为数牌，方便追断幺且进张面最广（73张）。若保留 **7z** 切 **9s** 或 **9p**，不仅进张少，还会因字牌拖慢手牌速度，实战中先处理孤张役牌往往是正解。"
+  },
+  {
+    "_id": "4c01f3b5-ec47-4958-aaa7-ddd44c329ec6",
+    "id": "4c01f3b5-ec47-4958-aaa7-ddd44c329ec6",
+    "level": "hard",
+    "body": "1m 2m 2m 6m 5p 6p 7p 9p 1s 5s 7s 1z 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s",
+      "5z"
+    ],
+    "uraIndicators": [
+      "3z",
+      "3s"
+    ],
+    "recommend": "2z",
+    "ukeire": 63,
+    "shantenAfter": 4,
+    "note": "推荐切 **2z**。保留宝牌役牌 **6z** 和场风 **1z** 价值更高，切掉无役的 **2z** 进张数与切 **1z**、**6z** 相同，但打点更有保障。若切 **2m** 则会少 2 张进张，略显绕路。"
+  },
+  {
+    "_id": "92f2f920-1172-442e-9c44-f695eacc8705",
+    "id": "92f2f920-1172-442e-9c44-f695eacc8705",
+    "level": "hard",
+    "body": "2m 2m 3m 5m 7m 7m 2p 9p 6s 8s 1z 2z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s",
+      "4m"
+    ],
+    "uraIndicators": [
+      "1m",
+      "1z"
+    ],
+    "recommend": "4z",
+    "ukeire": 59,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。保留 **1z**（场风）、**2z**（自风）、**7z**（三元）三个役牌的单张，未来摸成对子或刻子均可增加打点；北无役，且切走后不影响其他搭子与宝牌（实际宝牌 **3s**、**5m**）。切其他役牌虽向听进张相同，但会损失役种可能性，因此优先切 **4z**。"
+  },
+  {
+    "_id": "9e2534c5-e8ee-43c1-87b4-76b3aadc538f",
+    "id": "9e2534c5-e8ee-43c1-87b4-76b3aadc538f",
+    "level": "hard",
+    "body": "6m 7m 2p 2p 3p 6p 8p 8p 1s 3s 4s 7s 8s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "1s",
+    "ukeire": 40,
+    "shantenAfter": 3,
+    "note": "推荐切 **1s**。保留 **3s** **4s** 两面搭，直接瞄准宝牌 **5s** 的好型进张；切 **1z** 虽然进张数相同，但会留下 **1s** 孤张，徒增后续调整成本，不如一步到位。"
+  },
+  {
+    "_id": "1e1eceae-1d10-4801-864f-4909e11f0ed3",
+    "id": "1e1eceae-1d10-4801-864f-4909e11f0ed3",
+    "level": "medium",
+    "body": "1m 2m 3m 5m 7m 8m 3p 5p 8p 5s 0s 8s 2z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m"
+    ],
+    "uraIndicators": [
+      "1s"
+    ],
+    "recommend": "8p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **8p**。手牌已有 **1m** **2m** **3m** 顺子和 **2z** 刻子，**5s** 对子可做雀头，保留 **5m** 宝牌和 **7m** **8m** 两面搭、**3p** **5p** 嵌搭，进张面足够广。切 **8s** 或 **5m** 虽进张相同，但会损失一张孤张调整空间或宝牌价值，因此 **8p** 最为稳妥。"
+  },
+  {
+    "_id": "4d121bb1-e123-403c-85d3-0822ebb2fc2b",
+    "id": "4d121bb1-e123-403c-85d3-0822ebb2fc2b",
+    "level": "hard",
+    "body": "2m 2m 4m 1p 2p 4p 5p 2s 2s 3s 3s 0s 7s",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "4s"
+    ],
+    "recommend": "1p",
+    "ukeire": 51,
+    "shantenAfter": 3,
+    "note": "推荐切 **1p**。筒子保留 **2p** **4p** **5p** 的好形，摸 **3p** 或 **6p** 即可成顺，同时保留发牌作为役牌雀头候选，进张面宽。切 **2p** 会使筒子变成 **1p** **4p** **5p** 的恶形，而切 **6z** 浪费了役牌，对子过多影响手牌发展。"
+  },
+  {
+    "_id": "3a8ff47d-2cf9-4dfa-a4bf-51947c1760fd",
+    "id": "3a8ff47d-2cf9-4dfa-a4bf-51947c1760fd",
+    "level": "hard",
+    "body": "3m 6m 8m 9m 1p 4p 4p 7p 7p 9p 2s 5s 8s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "3m",
+    "ukeire": 27,
+    "shantenAfter": 4,
+    "note": "推荐切 **3m**。手牌目前是四向听，万子部分 **6m** **8m** **9m** 构成复合搭子，进张 **7m** 可同时形成两面与边搭改良，而 **3m** 是孤张，打掉后不影响其他搭子的连续性与宝牌 **1z**，是效率最高的选择。"
+  },
+  {
+    "_id": "146d468a-e8f5-4b99-8f7e-d67a8045c013",
+    "id": "146d468a-e8f5-4b99-8f7e-d67a8045c013",
+    "level": "hard",
+    "body": "1m 4m 5m 1p 3p 1s 8s 8s 9s 2z 2z 4z 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "8s",
+    "ukeire": 65,
+    "shantenAfter": 4,
+    "note": "推荐切 **8s**。手牌已有 **2z**（南）对子作为场风役牌候选，保留 **4z**（自风）、**5z**（白）、**6z**（发）这三枚役牌孤张的摸对机会，而 **8s** 对子价值最低，切掉一张后形成 **8s** **9s** 边搭，牌型更易展开；相比切字牌，进张数略多且不损失役牌价值，是更顺畅的绕路选择。"
+  },
+  {
+    "_id": "8036f3bd-3af6-4405-a9b1-a0d822215a95",
+    "id": "8036f3bd-3af6-4405-a9b1-a0d822215a95",
+    "level": "hard",
+    "body": "2m 5m 7m 1p 1p 1p 5p 6p 9p 4s 0s 8s 1z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3s",
+      "9m"
+    ],
+    "uraIndicators": [
+      "3m",
+      "1m"
+    ],
+    "recommend": "2m",
+    "ukeire": 32,
+    "shantenAfter": 3,
+    "note": "推荐切 **2m**。进张数与其他候选相同，但保留 **1z**（场风）和 **3z**（自风）两个役牌对子机会，同时不破坏已形成的 **5p** **6p** 两面搭与 **4s** **赤5s** 的好型搭子（后者还是宝牌 **4s** 的关联），后续摸进万子也可灵活成搭。相较切 **1z** 损失役牌、切 **9p** 或 **8s** 虽保留役牌但削弱了手牌向听后的打点潜力，综合而言 **2m** 更优。"
+  },
+  {
+    "_id": "faa33fca-691c-4e5c-b664-d26787a794ab",
+    "id": "faa33fca-691c-4e5c-b664-d26787a794ab",
+    "level": "hard",
+    "body": "2m 4m 6m 1p 2p 1s 5s 0s 8s 9s 1z 1z 2z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6s"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "1s",
+    "ukeire": 20,
+    "shantenAfter": 3,
+    "note": "推荐切 **1s**。切掉这张幺九孤张，保留 **2z**（南，双役牌）和 **6z**（发，役牌）两个役牌单张，打点潜力更高；同时 **8s** **9s** 的边搭摸进 **7s** 即可形成宝牌顺子，好型与进张兼得。相比切 **2z** 或 **6z** 放弃役牌，这样走更平衡，也不损失有效进张。"
+  },
+  {
+    "_id": "704cb75a-3e15-40f5-9030-4b450b82c15b",
+    "id": "704cb75a-3e15-40f5-9030-4b450b82c15b",
+    "level": "medium",
+    "body": "3m 1p 2p 3p 4s 4s 5s 6s 4z 5z 6z 6z 6z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "0s"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "6z",
+    "ukeire": 45,
+    "shantenAfter": 2,
+    "note": "推荐切 **6z**。手牌中已有 **6z** 四张构成的暗刻，拆掉一张后仍保留三元牌的役牌，同时保住 **4s** 对子与 **5s** **6s** 的复合搭子——**6s** 正是宝牌，进张面覆盖 **4s** 周边及 **5s** **6s** 周围的三面/两面，比切 **4z** 或 **5z** 多出三张有效进张。切 **3m** 则破坏本就孤立的万子，进张大幅收窄，不推荐。"
+  },
+  {
+    "_id": "4abdfe30-86d4-437e-8f1f-cf420781f0d2",
+    "id": "4abdfe30-86d4-437e-8f1f-cf420781f0d2",
+    "level": "hard",
+    "body": "1m 3m 4m 5m 6p 3s 7s 9s 1z 1z 3z 4z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p",
+      "8m"
+    ],
+    "uraIndicators": [
+      "7z",
+      "8m"
+    ],
+    "recommend": "3z",
+    "ukeire": 67,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。手牌已有 **3m** **4m** **5m** 这一组顺子，剩余全是孤立数牌与字牌，保留 **4z**、**6z**、**7z** 三个役牌单张，后续摸到任何一张都能立刻成对并获得役牌，而 **3z** 不是役牌，优先舍弃，且进张数与其余切法相同，这张是最好的选择。"
+  },
+  {
+    "_id": "2634476b-ceef-4c7f-9e82-2ecbb90cc675",
+    "id": "2634476b-ceef-4c7f-9e82-2ecbb90cc675",
+    "level": "hard",
+    "body": "2m 3m 8m 8m 9m 1p 2p 3p 5s 5s 1z 2z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s",
+      "6p"
+    ],
+    "uraIndicators": [
+      "2p",
+      "2s"
+    ],
+    "recommend": "2z",
+    "ukeire": 32,
+    "shantenAfter": 3,
+    "note": "推荐切 **2z**。手牌已有1p 2p 3p顺子和两对，保留场风东 **1z** 与三元 **7z** 两个役牌孤张更有价值，后续摸成对子或刻子可直接增加番数；切掉无役的 **2z** 不影响进张数，比切 **1z** 或 **7z** 更合理。"
+  },
+  {
+    "_id": "122661c7-7027-45d3-8090-e26844e45d24",
+    "id": "122661c7-7027-45d3-8090-e26844e45d24",
+    "level": "hard",
+    "body": "2m 9m 7p 9p 3s 3s 7s 9s 1z 3z 4z 6z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z",
+      "0m"
+    ],
+    "uraIndicators": [
+      "7m",
+      "2s"
+    ],
+    "recommend": "2m",
+    "ukeire": 67,
+    "shantenAfter": 4,
+    "note": "推荐切 **2m**。手牌数牌部分非常零散，而字牌有 **6z**（发）的对子作为内核，加上 **1z**（东、自风）和 **7z**（中）两个役牌单张，保留这些字牌能最大化后续摸成对子或刻子的可能。切 **2m** 后进张数达到 67 张，明显优于切掉任一孤张字牌（如 **4z** 或 **7z** 只有 59 张），而且不损失已有的役牌潜力"
+  },
+  {
+    "_id": "eb1d989c-7a6a-419e-87d6-209ce1bed35e",
+    "id": "eb1d989c-7a6a-419e-87d6-209ce1bed35e",
+    "level": "hard",
+    "body": "1m 1m 4m 6m 7m 3p 4p 1s 6s 2z 2z 5z 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6z",
+      "2p",
+      "7s"
+    ],
+    "uraIndicators": [
+      "7p",
+      "9p",
+      "2z"
+    ],
+    "recommend": "4m",
+    "ukeire": 43,
+    "shantenAfter": 3,
+    "note": "推荐切 **4m**。手牌三对（**1m**、**2z**、**5z**）附带 **3p** **4p** 宝牌两面搭和 **6m** **7m** 两面搭，保留 **6z** 三元牌孤张可为后续增加役牌机会。切 **4m** 后四个孤张（**1s**、**6s**、**6z**）中 **4m** 本身与 **6m** **7m** 联系最紧，摸 **5m** 即形成好型，而切 **1s** 或 **6s** 会让索子孤张效率偏低，切 **6z** 则浪费三元牌，故 **4m** 是进张质量与役牌保留的最佳平衡。"
+  },
+  {
+    "_id": "a0adf855-2f6f-4319-bc47-9ad6400a839b",
+    "id": "a0adf855-2f6f-4319-bc47-9ad6400a839b",
+    "level": "hard",
+    "body": "3m 4m 1p 2p 4p 7p 1s 1s 2s 4s 6s 1z 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "4z",
+    "ukeire": 73,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。三个单张字牌中 **1z**（自风场风）与 **6z**（发）均为役牌，而 **4z**（北）无役，保留役牌更利于后续打点；切 **1p** 会破坏 **1p** **2p** 的搭子，进张减少，故优先处理无役字牌。"
+  },
+  {
+    "_id": "d690c352-bb03-4b1c-b8ae-08f4e5bf20a3",
+    "id": "d690c352-bb03-4b1c-b8ae-08f4e5bf20a3",
+    "level": "hard",
+    "body": "9m 1p 1p 3p 8p 9p 1s 3s 4s 5s 7s 2z 4z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "4z",
+    "ukeire": 69,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。保留双役牌的 **2z** 和役牌 **6z** 能最大化打点潜力，进张数与切其他字牌相同，而切掉无役的北不影响牌效率；若切 **1s** 则会损失 **1s** 与 **3s** 的坎搭，进张减少。"
+  },
+  {
+    "_id": "e9394402-2486-449f-8479-77a334553df3",
+    "id": "e9394402-2486-449f-8479-77a334553df3",
+    "level": "hard",
+    "body": "1m 4m 6m 2p 5p 1s 1s 2s 3s 5s 0s 3z 4z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3s",
+      "3s"
+    ],
+    "uraIndicators": [
+      "3z",
+      "7p"
+    ],
+    "recommend": "3z",
+    "ukeire": 67,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。立直后四个孤张字牌中，**3z**（西）无役，而 **4z**（北）为自风役牌、**6z**（发）为三元牌，保留它们才有后续成役的可能。同样向听、进张下，切 **3z** 最大化役牌保留，是合理选择。"
+  },
+  {
+    "_id": "da9daa76-ac44-4fc9-bed0-0c2e36d6efa4",
+    "id": "da9daa76-ac44-4fc9-bed0-0c2e36d6efa4",
+    "level": "hard",
+    "body": "7m 9m 1p 2p 4p 5p 7p 9p 3s 3s 8s 5z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m",
+      "5s",
+      "5s"
+    ],
+    "uraIndicators": [
+      "3z",
+      "7s",
+      "8m"
+    ],
+    "recommend": "8s",
+    "ukeire": 16,
+    "shantenAfter": 3,
+    "note": "推荐切 **8s**。手牌极其零散，当前向听均3，进张数相同的情况下，应优先保留价值更高的牌。三元牌各一张，保留它们可以增加后续摸成役牌对子的机会，提升打点；而 **8s** 是孤张，与已有 **3s** 对子无关，切掉不影响任何搭子，因此保留三元牌是最优选择。"
+  },
+  {
+    "_id": "99a40449-333f-4cdd-b076-3cd631673a0d",
+    "id": "99a40449-333f-4cdd-b076-3cd631673a0d",
+    "level": "hard",
+    "body": "3m 7m 8m 1p 7p 9p 4s 5s 6s 6s 1z 4z 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "4z",
+    "ukeire": 71,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。手牌分散，各候选切牌进张数相同，但保留 **1z**（双役牌）与 **5z**、**6z**（役牌）价值更高，切掉无役的 **4z** 最为合理。"
+  },
+  {
+    "_id": "32236168-8d80-4d7f-9008-ef4d17ab6b33",
+    "id": "32236168-8d80-4d7f-9008-ef4d17ab6b33",
+    "level": "medium",
+    "body": "3m 5m 6m 6p 7p 8p 1s 1s 6s 8s 9s 1z 3z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "1p"
+    ],
+    "recommend": "3m",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。摸进 **3z** 后西风成对，但保留 **5m** **6m** 两面搭最为均衡，后续无论摸到 **4m** 或 **7m** 均可形成好型听牌；若切 **6s** 或 **9s** 会拆散索子搭子，进张看似相同但好型率下降。切 **1z** 则浪费东的改良机会，不如保留孤张做牌效率高。"
+  },
+  {
+    "_id": "f2e050d4-8c6f-48b5-b3dd-f107090e5cbd",
+    "id": "f2e050d4-8c6f-48b5-b3dd-f107090e5cbd",
+    "level": "hard",
+    "body": "3m 9m 1p 1p 2p 5p 8p 9p 1s 3s 9s 3z 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m",
+      "6p",
+      "0s"
+    ],
+    "uraIndicators": [
+      "7p",
+      "2z",
+      "1p"
+    ],
+    "recommend": "3m",
+    "ukeire": 20,
+    "shantenAfter": 4,
+    "note": "推荐切 **3m**。手牌散乱，筒子有 **1p** 对子与 **2p**、**5p**、**8p**、**9p** 多张牌，保留筒子更易形成顺子搭，且宝牌 **7p** 与 **5p**、**8p**、**9p** 均有关联；万子仅此一张 **3m**，切掉不损进张主力，后续做牌灵活性与打点潜力更优。"
+  },
+  {
+    "_id": "17e93c9a-7ec0-4046-8619-5436b4fad194",
+    "id": "17e93c9a-7ec0-4046-8619-5436b4fad194",
+    "level": "hard",
+    "body": "1m 4m 7m 1p 3p 7p 8p 9p 2s 4s 5s 2z 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z",
+      "7s"
+    ],
+    "uraIndicators": [
+      "8m",
+      "7s"
+    ],
+    "recommend": "1m",
+    "ukeire": 68,
+    "shantenAfter": 4,
+    "note": "推荐切 **1m**。手牌搭子严重不足，需从孤张中取舍。**1m** 只能与 **2m** 形成边张或 **3m** 形成坎张，灵活性远不如保留 **4m** 与 **7m**——它们能与更多邻牌组成两面搭，且保留 **6z**（发）这一役牌孤张，后续摸成对子即有番；切 **2z** 或 **4z** 虽进张数相同，但牺牲了本无役的字牌，反而让万子孤张更难利用。"
+  },
+  {
+    "_id": "2267dd08-8bab-4241-b8e0-9a3fedc7c325",
+    "id": "2267dd08-8bab-4241-b8e0-9a3fedc7c325",
+    "level": "hard",
+    "body": "1m 2m 7m 3p 4p 7p 9p 9p 1s 1s 2s 3s 4z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z",
+      "7p"
+    ],
+    "uraIndicators": [
+      "7p",
+      "5m"
+    ],
+    "recommend": "4z",
+    "ukeire": 59,
+    "shantenAfter": 3,
+    "note": "推荐切 **4z**。手牌有 **1m** **2m**、**3p** **4p**、**2s** **3s** 三组两面搭，加上 **1s** 和 **9p** 两个对子，已具备不错的搭子储备。切掉无役的 **4z** 保留 **6z**（发）作为役牌对子候选，在同等进张数下为后续打点留下空间；若切 **6z** 则损失了这一役牌机会，而切 **7p** 或 **1s** 进张更少且可能破坏现有结构，因此 **4z** 是最从容的选择。"
+  },
+  {
+    "_id": "d0f15fe2-36c3-477a-9e38-e59f4e642b0e",
+    "id": "d0f15fe2-36c3-477a-9e38-e59f4e642b0e",
+    "level": "hard",
+    "body": "2m 2m 7m 4p 4p 6p 7p 7p 7p 9p 5s 9s 1z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "5s"
+    ],
+    "recommend": "7p",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "推荐切 **7p**，保留 **2m** 和 **4p** 两个对子，将刻子降为对子后进张面最广，后续可沿七对或碰碰胡发展。切 **7m** 或 **6p** 虽能固定 **7p** 暗刻，但进张少3枚，且手牌中其他孤张较多，不如保留对子灵活。"
+  },
+  {
+    "_id": "dc25934c-4cc8-490d-a6b3-bc8a545cf082",
+    "id": "dc25934c-4cc8-490d-a6b3-bc8a545cf082",
+    "level": "hard",
+    "body": "3m 6m 8m 9m 3p 0p 6p 9p 2s 5s 9s 1z 4z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "6m",
+    "ukeire": 103,
+    "shantenAfter": 6,
+    "note": "推荐切 **6m**。手牌中发对子已固定雀头，保留 **8m** **9m** 边搭与 **3p** 宝牌周边的搭子群更利于后续发展；切掉 **6m** 后， **3m** 孤张可待 **4m** **5m** 成搭，而 **8m** **9m** 边搭摸 **7m** 即转为两面。相比保留 **1z** 这种无役字牌，切 **6m** 能减少无用孤张，牌型更顺畅。"
+  },
+  {
+    "_id": "f96dc241-45a3-4a30-9af3-9151aa26fa16",
+    "id": "f96dc241-45a3-4a30-9af3-9151aa26fa16",
+    "level": "medium",
+    "body": "1m 1m 4m 5m 7m 2p 2p 2p 9p 3s 5s 2z 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "7s"
+    ],
+    "recommend": "7m",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **7m**。保留自风 **西** 的役牌，同时固定 **4m** **5m** 两面搭，后续进 **3m** **6m** 可直接听好型；若留下 **7m** 反而使万字部分复合形杂乱，同进张数下好型率更低，因此切 **7m** 是更高效的选择。"
+  },
+  {
+    "_id": "46084d6e-30f5-4b56-aa8e-50154c0381b9",
+    "id": "46084d6e-30f5-4b56-aa8e-50154c0381b9",
+    "level": "hard",
+    "body": "3m 6m 6m 8m 9m 9m 9m 2p 3p 3p 9p 8s 1z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "0p"
+    ],
+    "recommend": "9m",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "手牌有三张 **9m** 形成的暗刻，摸进 **3z** 后形成六万、九万、三筒三个对子，存在对对胡的潜力。切掉一张 **9m** 转化为对子，进张数最多（21张），且保留宝牌 **9p** 单张的摸成对子/刻子的可能。相比之下，切 **3m** 或 **8m** 或 **2p** 都只有18张进张，且会破坏牌型的流动性。推荐切 **9m**。"
+  },
+  {
+    "_id": "146c8734-0813-4ea5-bd19-2ddf617ef0b5",
+    "id": "146c8734-0813-4ea5-bd19-2ddf617ef0b5",
+    "level": "hard",
+    "body": "4m 5m 6m 9m 2p 5p 9p 3s 3s 7s 3z 5z 6z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "3z",
+    "ukeire": 79,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。手牌已有 **6z** 刻子确保一番，保留 **5z** 可期待摸成对子或刻子提升打点，与切 **5z** 相比进张数相同但更有价值。切 **2p** 或 **9p** 会切断搭子，进张略少。"
+  },
+  {
+    "_id": "e67b8e37-1622-4b93-ab86-bb831259d38d",
+    "id": "e67b8e37-1622-4b93-ab86-bb831259d38d",
+    "level": "hard",
+    "body": "1m 4m 0m 6m 9m 6p 7p 7p 1s 1s 2s 6s 9s",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s",
+      "7s",
+      "4s"
+    ],
+    "uraIndicators": [
+      "2p",
+      "2m",
+      "4s"
+    ],
+    "recommend": "9s",
+    "ukeire": 83,
+    "shantenAfter": 4,
+    "note": "推荐切 **9s"
+  },
+  {
+    "_id": "de898b34-f5fe-44e8-818f-a6288366e121",
+    "id": "de898b34-f5fe-44e8-818f-a6288366e121",
+    "level": "hard",
+    "body": "8m 8m 3p 6p 6p 9p 1s 4s 4s 6s 7s 9s 1z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "3p",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "推荐切 **3p**。手牌对子较多，双役牌 **2z** 价值极高，切掉孤张 **3p** 不破坏任何已有搭子，保留 **6s** **7s** 两面与三个对子的弹性。拆 **6s** 会损失好型，而 **9p** 或 **1s** 虽同为孤张，但 **3p** 与现有筒子、索子关联最弱，是进张最通畅的拆法。"
+  },
+  {
+    "_id": "d684a1a7-c16b-4f9d-929f-710dcfd8c839",
+    "id": "d684a1a7-c16b-4f9d-929f-710dcfd8c839",
+    "level": "medium",
+    "body": "1m 1m 2m 7m 9m 1p 2p 3p 3p 4p 9p 2s 2s",
+    "draw": "3s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z",
+      "2m"
+    ],
+    "uraIndicators": [
+      "2z",
+      "9p"
+    ],
+    "recommend": "9p",
+    "ukeire": 27,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。保留 **2m** 能与 **1m** 对子形成复合，靠张更广，且 **2s 2s 3s** 复合型进张丰富，整体进张最大。切 **2m** 会损失万子连接性，切 **3s** 或 **2s** 则破坏索子好型，进张明显减少。"
+  },
+  {
+    "_id": "973a0ee7-de2a-4f4f-b1f7-b33f64b8db04",
+    "id": "973a0ee7-de2a-4f4f-b1f7-b33f64b8db04",
+    "level": "medium",
+    "body": "6m 7m 7m 8m 1p 5p 7p 8p 4s 5s 0s 6s 7s",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "0p"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "7m",
+    "ukeire": 27,
+    "shantenAfter": 2,
+    "note": "推荐切 **7m**。保留索子的四连型（**4s** **5s** **赤5s** **6s** **7s**）和 **5s** 对子，进张最广；万子切掉一张 **7m** 后形成 **6m** **7m** **8m** 顺子，整体牌型流畅。相比切 **1p** 或 **4z**，进张多一张且好型比例更高，实战价值更大。"
+  },
+  {
+    "_id": "682551de-9415-4d5d-a959-6ea03dd2c026",
+    "id": "682551de-9415-4d5d-a959-6ea03dd2c026",
+    "level": "hard",
+    "body": "1m 2m 5m 3p 6p 2s 3s 4s 6s 6s 9s 2z 3z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7s"
+    ],
+    "uraIndicators": [
+      "5p"
+    ],
+    "recommend": "3z",
+    "ukeire": 68,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。手牌散乱，所有字牌均为单张，保留场风 **2z**（南）和三元牌 **6z**（发）两个役牌，对后续打点更有利；切掉非役牌的 **3z**（西）在进张上完全不亏，与其他切法进张数相同，但保留了更高的成长性。"
+  },
+  {
+    "_id": "7aca1d41-0051-40a7-b41b-d6ca6ddd9c13",
+    "id": "7aca1d41-0051-40a7-b41b-d6ca6ddd9c13",
+    "level": "hard",
+    "body": "1m 3m 9m 9m 1p 2p 4p 9p 1s 5s 8s 8s 9s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7s"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "9s",
+    "ukeire": 75,
+    "shantenAfter": 4,
+    "note": "推荐切 **9s**。保留 **8s** 宝牌对子，切掉与 **8s** 构成边搭的 **9s**，使手牌更开放，进张面广（75张）；切 **3z** 虽进张数相同，但西风孤张无役无保留价值，不如拆掉低效搭子。"
+  },
+  {
+    "_id": "94e58ecd-ea5d-4353-8cef-92aeaaa3011a",
+    "id": "94e58ecd-ea5d-4353-8cef-92aeaaa3011a",
+    "level": "hard",
+    "body": "5m 5m 3p 4p 6p 6p 7p 8p 4s 4s 8s 2z 3z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9p"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "3z",
+    "ukeire": 55,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌有三个对子，保留 **2z**（场风）和 **7z**（役牌）能提升立直后的打点，且维持最大进张面（55张）。切 **8s** 会损失大量进张，不宜考虑；而切 **2z** 或 **7z** 则主动放弃役牌，从实战价值上看不如保留。"
+  },
+  {
+    "_id": "77a94a73-745d-4255-88d6-cb29d9864f9a",
+    "id": "77a94a73-745d-4255-88d6-cb29d9864f9a",
+    "level": "hard",
+    "body": "2m 5m 0m 7m 8m 8m 9m 2p 5p 5p 4s 8s 3z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "2m",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "手牌三个对子（**5m**、**8m**、**5p**），万子已形成5‑7‑8‑9的连续形，切掉孤张 **2m** 后保留赤5m与 **8m** 对子，后续摸 **4m** 或 **6m** 即可转向好型。若切 **7m** 或 **9m** 反而破坏连续形，切 **4s** 则留下两个字牌孤张，进张质量均不如切 **2m**。"
+  },
+  {
+    "_id": "ef106e76-06e8-4b95-8aae-3d7066c17dac",
+    "id": "ef106e76-06e8-4b95-8aae-3d7066c17dac",
+    "level": "hard",
+    "body": "1m 2m 3m 4m 7m 2p 8p 9p 6s 9s 2z 3z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7s",
+      "1p"
+    ],
+    "uraIndicators": [
+      "5z",
+      "4m"
+    ],
+    "recommend": "9s",
+    "ukeire": 81,
+    "shantenAfter": 5,
+    "note": "推荐切 **9s**。手牌全是单张，保留 **4z**（自风役牌）和 **7z**（三元牌）两个潜在的役牌搭子比保留 **9s** 更有价值，且 **9s** 与 **6s** 间隔较远，成形难度大。切 **2z** 或 **3z** 同样保留两个役牌，但数牌孤张中 **9s** 最不具发展性，因此优先打掉。"
+  },
+  {
+    "_id": "dedf38c2-092b-4964-97b3-adfcc55a8573",
+    "id": "dedf38c2-092b-4964-97b3-adfcc55a8573",
+    "level": "hard",
+    "body": "2m 7m 8m 8m 4p 5p 5p 0p 2s 3s 6s 8s 9s",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4s",
+      "9s",
+      "1p"
+    ],
+    "uraIndicators": [
+      "4m",
+      "7z",
+      "5z"
+    ],
+    "recommend": "2z",
+    "ukeire": 73,
+    "shantenAfter": 3,
+    "note": "推荐切 **2z**。摸进这张场风牌后，手牌已有 **5p** 刻子和 **8m** 对子，外加 **2s** **3s** 与 **8s** **9s** 两个两面搭，剩余 **2m** **7m** **4p** **6s** 四个数牌孤张。切掉 **2z** 能保留全部数牌孤张的成搭可能，进张最广；若切 **6s** 或 **9s**，会损失一个孤张的进张，导致后续听牌变慢。立直下，更宽的进张面比保留一张孤张役牌更优先。"
+  },
+  {
+    "_id": "de643fcc-6646-407f-8c37-0520b1e364d4",
+    "id": "de643fcc-6646-407f-8c37-0520b1e364d4",
+    "level": "hard",
+    "body": "1m 3m 4m 6m 2p 6p 2s 2s 3s 0s 9s 9s 2z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z",
+      "9p"
+    ],
+    "uraIndicators": [
+      "7s",
+      "5m"
+    ],
+    "recommend": "2p",
+    "ukeire": 16,
+    "shantenAfter": 3,
+    "note": "推荐切 **2p**。手牌索子已有 **2s** 和 **9s** 两个对子，加上 **3s** 与 **赤5s** 可构成两面或坎搭，万子部分也是两坎待改良。保留 **2z**（场风）和 **6z**（发）两个役牌单张，未来摸成对子后碰出更容易获得打点；而切掉 **2p** 不影响现有搭子，后续摸进 **1p** 或 **3p** 也能灵活形成新搭子。相比切字牌，保留中张筒子靠张面更宽，在进张数相同的情况下后续好型机会更多。"
+  },
+  {
+    "_id": "ac318a29-5be7-4a6d-a29b-d33fc9f014cd",
+    "id": "ac318a29-5be7-4a6d-a29b-d33fc9f014cd",
+    "level": "hard",
+    "body": "5m 3p 8p 8p 9p 2s 4s 5s 6s 6s 9s 1z 2z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "9s",
+      "3p"
+    ],
+    "uraIndicators": [
+      "7z",
+      "1m",
+      "3s"
+    ],
+    "recommend": "3p",
+    "ukeire": 27,
+    "shantenAfter": 4,
+    "note": "推荐切 **3p**。保留 **8p** 对子和 **8p** **9p** 的边搭，同时索子 **4s** **5s** **6s** 的三连形与 **6s** 对子提供丰富好型进张，场风 **南** 的役牌和宝牌 **5m** 也得以保留，整体进张与发展优于切 **9p** 或 **2s**。"
+  },
+  {
+    "_id": "569fd685-9d96-45c3-88a4-89e16ac73f8a",
+    "id": "569fd685-9d96-45c3-88a4-89e16ac73f8a",
+    "level": "hard",
+    "body": "2m 2m 3m 5m 7m 9m 2p 7p 7p 2s 3s 9s 2z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m",
+      "6m"
+    ],
+    "uraIndicators": [
+      "9s",
+      "2m"
+    ],
+    "recommend": "2p",
+    "ukeire": 20,
+    "shantenAfter": 3,
+    "note": "推荐切 **2p**。手牌有 **2m**、**7p**、**7z** 三个对子，保留 **7z** 的役牌对子价值高，**2p** 是异色孤张，不如保留 **2s** **3s** 的连搭。切 **9s** 会破坏 **2s** **3s** 的进张潜力，切 **2z** 或 **7z** 则浪费了 **中** 的役牌对子，都不如切 **2p** 灵活。"
+  },
+  {
+    "_id": "0e057be9-e2d8-47ce-822e-6e33e6e3a807",
+    "id": "0e057be9-e2d8-47ce-822e-6e33e6e3a807",
+    "level": "hard",
+    "body": "1m 1m 2m 6m 7m 3p 4p 6p 9p 3s 4s 8s 2z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6s"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "9p",
+    "ukeire": 79,
+    "shantenAfter": 4,
+    "note": "推荐切 **9p**。这张孤张既无搭子也无役，保留 **2z**（场风役牌）等于保留了一手役的期待，且不破坏两面搭 **6m7m**、**3p4p**、**3s4s**。切 **3z** 或 **2z** 虽进张数相同，但前者放弃字牌成对可能，后者浪费役牌潜力，相比之下 **9p** 是最无价值的离场牌。"
+  },
+  {
+    "_id": "c9c0aee6-28b5-4227-9442-2ef65d842cc9",
+    "id": "c9c0aee6-28b5-4227-9442-2ef65d842cc9",
+    "level": "hard",
+    "body": "2m 2m 0m 6m 8m 3p 4p 9p 4s 4s 5s 8s 3z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m",
+      "8s"
+    ],
+    "uraIndicators": [
+      "2s",
+      "2p"
+    ],
+    "recommend": "8m",
+    "ukeire": 51,
+    "shantenAfter": 3,
+    "note": "手牌有2m、4s、西三组对子，切8m后保留赤5m与6m组成的5m 6m两面好型，同时索子部分保留8s孤张，其进张含6s7s9s三面且靠近宝牌9s。相比之下，切9p或8s会多出8m或9p等孤张，且8s本身有更宽的摸牌改良空间，因此推荐切**8m**。"
+  },
+  {
+    "_id": "14f58cad-9d6d-474c-ad28-ec772b10ff71",
+    "id": "14f58cad-9d6d-474c-ad28-ec772b10ff71",
+    "level": "hard",
+    "body": "0m 9m 1p 2p 0p 7p 9p 2s 5s 8s 9s 9s 1z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p",
+      "4m",
+      "3z"
+    ],
+    "uraIndicators": [
+      "8p",
+      "1s",
+      "7z"
+    ],
+    "recommend": "8s",
+    "ukeire": 91,
+    "shantenAfter": 5,
+    "note": "推荐切 **1z**。手牌散乱，保留役牌 **6z** 和现有的8s 9s边搭、1p 2p宝牌搭子等结构，打掉无役的东孤张，在维持相同进张数的同时不破坏已有搭子，为后续好型听牌和打点留下空间。若切 **8s** 会拆掉边搭，切 **6z** 则损失役牌，均非上策。"
+  },
+  {
+    "_id": "183358d2-0819-4c3f-9aa9-9d0eb9516fc5",
+    "id": "183358d2-0819-4c3f-9aa9-9d0eb9516fc5",
+    "level": "hard",
+    "body": "3m 5m 6m 8m 9m 2p 6p 8p 2s 6s 3z 4z 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2m",
+      "1s"
+    ],
+    "uraIndicators": [
+      "9m",
+      "4s"
+    ],
+    "recommend": "3z",
+    "ukeire": 89,
+    "shantenAfter": 5,
+    "note": "推荐切 **3z**。这手牌所有14张皆为孤张，切任何一张字牌向听与进张并无区别，但 **5z**（白）和 **7z**（中）是三元牌役牌，保留能提高后续打点，而 **3z**（西）是客风无役，优先舍去。同样可切 **4z**（北），道理相同。"
+  },
+  {
+    "_id": "ecd3fe98-f4c3-41fd-ba41-907fd01adc43",
+    "id": "ecd3fe98-f4c3-41fd-ba41-907fd01adc43",
+    "level": "hard",
+    "body": "2m 2m 5m 5m 5p 6p 7p 1s 1s 3s 3z 5z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "3z",
+    "ukeire": 39,
+    "shantenAfter": 3,
+    "note": "这手牌有3个对子和一个顺子，孤张全是字牌。立直后虽然向听相同，但保留三元牌（**5z** **6z** **7z**）能保留役牌机会，打点更有望，而**3z**（西）无役价值最低，优先切掉。进张数都一样，不必纠结，职业思路就是先扔没用的风牌。"
+  },
+  {
+    "_id": "e626a938-8b8b-4d69-bb3e-ff0e20a78cad",
+    "id": "e626a938-8b8b-4d69-bb3e-ff0e20a78cad",
+    "level": "hard",
+    "body": "2m 6m 7m 1p 7p 9p 4s 0s 6s 6s 1z 2z 5z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "1z",
+    "ukeire": 67,
+    "shantenAfter": 4,
+    "note": "推荐切 **1z**。四张孤张字牌虽然向听与进张数完全一致，但 **2z** 是场风兼自风的双役牌，**5z** 与 **7z** 分别是白和中，保留它们能为立直后的和牌提供更高打点；而 **1z** 仅为单张东且无役，毫无保留价值，优先切掉它最合理。"
+  },
+  {
+    "_id": "08f76011-3a46-41a0-bad9-868b9cea6cfa",
+    "id": "08f76011-3a46-41a0-bad9-868b9cea6cfa",
+    "level": "medium",
+    "body": "3m 5m 2p 3p 4p 7p 2s 2s 4s 3z 3z 5z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "7p",
+    "ukeire": 14,
+    "shantenAfter": 2,
+    "note": "推荐切 **7p**。保留 **5z**（白）的役牌孤张和 **2s** 的宝牌对子，进张数与切 **5z** 同为14张，但役牌价值更高。切 **7p** 后手牌仍保持 **2p** **3p** **4p** 顺子与三个对子的良好结构，后续摸进 **4m** 等牌即可形成听牌，而切 **5z** 则损失了白这一宝贵役牌，实战中得不偿失。"
+  },
+  {
+    "_id": "2dbef8e2-57ea-4a5e-9c08-4e7efa5e7c0f",
+    "id": "2dbef8e2-57ea-4a5e-9c08-4e7efa5e7c0f",
+    "level": "hard",
+    "body": "1m 7m 8m 9m 1p 4p 1s 2s 3s 9s 2z 4z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "1p",
+    "ukeire": 49,
+    "shantenAfter": 3,
+    "note": "推荐切 **1p**。手牌已有7m 8m 9m和1s 2s 3s两个顺子，7z对子可做雀头，剩下1m、1p、4p、9s及2z、4z孤张。切1p后保留所有字牌，摸进任何数牌或字牌都能大幅推进向听，进张高达49张。切2z或4z进张数相同，但2z是宝牌，损失宝牌稍亏；而1p是最孤立的孤立牌，先处理它更符合牌理。恐怕不少人第一感会切2z留宝牌，但切1p同样保有49张有效进张，且不影响后续变化。"
+  },
+  {
+    "_id": "b122498a-f03a-4865-ba78-8c663d58b027",
+    "id": "b122498a-f03a-4865-ba78-8c663d58b027",
+    "level": "hard",
+    "body": "1m 3m 3m 7m 8m 9m 2p 8p 9p 9p 1s 4s 6s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "4z",
+    "ukeire": 60,
+    "shantenAfter": 3,
+    "note": "推荐切 **4z**。北是孤立字牌，切掉后保留 **3m** 对子与 **7m** **8m** **9m** 的顺子，**9p** 对子与 **8p** 的搭子，以及 **1s** **4s** **6s** 的坎搭，进张面最广（60张）。若切 **8p** 或 **1s** 会破坏搭子，进张减少且绕路，而切 **3m** 则损失役牌搭子的可能（宝牌 **5m** 相关），不如保留北的简洁。"
+  },
+  {
+    "_id": "96b76a12-bb7b-4a5d-8b8a-852f1a9b1b10",
+    "id": "96b76a12-bb7b-4a5d-8b8a-852f1a9b1b10",
+    "level": "medium",
+    "body": "7m 8m 9m 1p 2p 2p 6p 7p 1s 1s 2s 3s 9s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "1z",
+    "ukeire": 40,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌已形成 **7m 8m 9m** 顺子、**6p 7p** 与 **2s 3s** 两面搭、以及 **2p** 和 **1s** 两个对子，打掉孤张东不影响任何复合搭子，进张数最多（40张）。比起切 **1p** 或 **9s** 会浪费一个弱搭或孤张，切 **1s** 更是破坏对子，这个选择在已立直的框架下保留了最宽的改良余地。"
+  },
+  {
+    "_id": "89ae4dd2-9189-4a94-86ac-d38c964b64fe",
+    "id": "89ae4dd2-9189-4a94-86ac-d38c964b64fe",
+    "level": "medium",
+    "body": "4m 4m 8m 2p 0p 6p 7p 4s 5s 8s 2z 2z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z",
+      "5z"
+    ],
+    "uraIndicators": [
+      "1p",
+      "2p"
+    ],
+    "recommend": "8m",
+    "ukeire": 14,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。摸进 **7z** 后形成中暗刻，保留 **南** 对子与 **4m** 对子作为雀头候选，同时 **2p** 和 **8s** 分别关联着比较完整的复合搭子，打掉孤张 **8m** 不影响主要进张。相比切 **2p** 会破坏 **2p** **赤5p** 的嵌张潜力，切 **8s** 则削弱索子侧的连接，切 **8m** 后续更易走出好型听牌。"
+  },
+  {
+    "_id": "589d8f54-e5da-4c02-9663-c46570d2ef69",
+    "id": "589d8f54-e5da-4c02-9663-c46570d2ef69",
+    "level": "medium",
+    "body": "1m 2m 5m 5m 7m 9m 1p 3p 1s 2s 3s 0s 9s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "9s",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **9s**。手牌已有 **1s** **2s** **3s** 顺子，保留 **赤5s**（宝牌）和 **7z**（役牌）更有价值，**9s** 作为孤张靠张最窄，切掉后进张数与其他候选相同，但搭子质量更优。切 **赤5s** 损失宝牌搭子，切 **7z** 损失役牌对子可能，均不如保留两者灵活。"
+  },
+  {
+    "_id": "88819c2d-fef5-4312-b99b-b80115a71c05",
+    "id": "88819c2d-fef5-4312-b99b-b80115a71c05",
+    "level": "medium",
+    "body": "1m 4m 5m 6m 7m 8m 9m 3p 5p 7p 4s 4s 7s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s"
+    ],
+    "uraIndicators": [
+      "2s"
+    ],
+    "recommend": "3z",
+    "ukeire": 65,
+    "shantenAfter": 2,
+    "note": "推荐切 **3z**。手牌中万子的 **4m** 至 **9m** 构成六连强型，保留所有数牌搭子能获得最大进张；"
+  },
+  {
+    "_id": "1803ab9f-9867-47d2-8211-0ea674f79f2d",
+    "id": "1803ab9f-9867-47d2-8211-0ea674f79f2d",
+    "level": "hard",
+    "body": "6m 7m 9m 1p 4p 5p 0p 6p 7p 1s 8s 4z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "4z",
+    "ukeire": 67,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。手牌目前较散，保留中、发两枚役牌孤张，未来若摸成对子可提高打点，且与切 **6z**、**7z** 相比进张数完全相同。切 **1p** 会破坏筒子四连型的潜力，进张略逊，因此选择切掉非役牌的北。"
+  },
+  {
+    "_id": "18ce6190-e595-4cd0-b54d-5a21b1359fb8",
+    "id": "18ce6190-e595-4cd0-b54d-5a21b1359fb8",
+    "level": "medium",
+    "body": "2m 7m 8m 4p 5p 6p 4s 4s 6s 8s 2z 4z 5z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9p",
+      "8m"
+    ],
+    "uraIndicators": [
+      "2s",
+      "1z"
+    ],
+    "recommend": "2m",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **2m**。手牌已有 **7m 8m** 好搭与 **4p 5p 6p** 顺子，保留 **5z**（白）对子作为役牌。切 **2m** 与切 **2z**、**4z** 进张数相同，但保留字牌孤张在后续更易形成安全牌或对子，而 **2m** 的数牌价值最低，是三者中最合理的弃牌。"
+  },
+  {
+    "_id": "85bc9f58-cc34-4647-a908-a9cf0da78053",
+    "id": "85bc9f58-cc34-4647-a908-a9cf0da78053",
+    "level": "easy",
+    "body": "3m 8m 8m 1p 1p 7p 7p 9p 2s 2s 8s 2z 2z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "3m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **3m**。这副牌是五对子加四个孤张的牌型，走七对或碰碰和均可。切掉 **3m** 后保留 **5z**（白）作为役牌孤张，进张数与切 **9p**、**8s**、**5z** 一致，但摸到 **5z** 成对即可获得一番，打点预期更高，且不损失宝牌 **2z** 对子的价值，实战更为合理。"
+  },
+  {
+    "_id": "80d466e0-b62a-45c9-94d1-fa5f72b0b051",
+    "id": "80d466e0-b62a-45c9-94d1-fa5f72b0b051",
+    "level": "hard",
+    "body": "2m 3m 6m 6m 6m 9m 3p 8p 8p 1z 4z 5z 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "3s"
+    ],
+    "recommend": "4z",
+    "ukeire": 54,
+    "shantenAfter": 3,
+    "note": "推荐切 **4z**。手牌已立直，切掉无役的北风，保留场风 **1z** 与三元牌 **6z** 两个役牌孤张，进张数同为 54 张，但保留役牌带来的打点提升空间。切 **9m** 会损失边张搭子的靠张，进张更少，故不优先。"
+  },
+  {
+    "_id": "69a11183-dc9b-4eee-b5d0-3843526b1f54",
+    "id": "69a11183-dc9b-4eee-b5d0-3843526b1f54",
+    "level": "hard",
+    "body": "3m 4m 6m 7m 9m 9m 1p 2p 4p 8p 1s 5s 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "1p",
+    "ukeire": 20,
+    "shantenAfter": 3,
+    "note": "推荐切 **1p**。保留 **2p** **4p** 的坎搭与中间张 **4p**，同时不损失 **1s** **5s** 的改良空间，比切 **4p**（丢掉中心 **4p**）或切 **8p**（丢边张 **8p** 但留下更弱的 **1p**）更为均衡。切 **1s** 则彻底放弃索子侧的潜在搭子，后续发展受限。"
+  },
+  {
+    "_id": "b857f739-3912-45ac-a298-323e86109c27",
+    "id": "b857f739-3912-45ac-a298-323e86109c27",
+    "level": "easy",
+    "body": "1m 2m 3m 3p 4p 8p 8p 5s 5s 0s 2z 2z 3z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "8p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **8p**。手牌已有一组顺子和一组暗刻，保留 **3p** **4p** 两面搭能最大化进张，摸 **2p** 或 **5p** 即可听对倒，摸 **2z** 或 **3z** 则听两面。切 **2z** 或 **3z** 虽进张数相同，但会留下孤张，绕路且听牌质量较低。"
+  },
+  {
+    "_id": "8c820c5c-b11d-4ad9-a6a0-0efac053f953",
+    "id": "8c820c5c-b11d-4ad9-a6a0-0efac053f953",
+    "level": "hard",
+    "body": "2m 4m 5m 2p 2s 3s 3s 7s 9s 2z 3z 5z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s"
+    ],
+    "uraIndicators": [
+      "1s"
+    ],
+    "recommend": "2z",
+    "ukeire": 75,
+    "shantenAfter": 4,
+    "note": "推荐切 **2z**。手牌孤张中有南（非役牌）、西（自风）、白（三元），保留 **3z** 和 **5z** 能保留将来役牌对子的机会，而 **2z** 没有役种价值。进张上切 **2z** 与切 **3z**、**5z** 同为75张，但切 **2z** 不损失任何可能的役牌，是最优的取舍。"
+  },
+  {
+    "_id": "813c024c-7003-4b48-a07e-b276424eb3b3",
+    "id": "813c024c-7003-4b48-a07e-b276424eb3b3",
+    "level": "hard",
+    "body": "7m 1p 2p 2p 2p 5p 7p 8p 3s 9s 4z 5z 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "6s"
+    ],
+    "uraIndicators": [
+      "6z",
+      "5s"
+    ],
+    "recommend": "7z",
+    "ukeire": 83,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。保留 **5z** 对子和 **7z** 单张的役牌搭子，进张数与切 **7z** 相同，但 **7z** 后续成对或成刻时打点更高。切 **1p** 或 **5p** 会减少进张，且破坏边缘搭子的可能性。"
+  },
+  {
+    "_id": "fe9a0248-938f-4d24-83ad-3d9cf0679194",
+    "id": "fe9a0248-938f-4d24-83ad-3d9cf0679194",
+    "level": "medium",
+    "body": "5m 6m 1p 2p 4p 4p 7p 8p 9p 3s 1z 4z 4z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9p"
+    ],
+    "uraIndicators": [
+      "1s"
+    ],
+    "recommend": "3s",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **3s**。保留 **7z**（中）和 **4z**（自风役牌）的对子，打点有保障； **3s** 与手牌花色不连，切掉后剩余 **1z** 与 **7z**，后续摸进 **7z** 可形成双役牌对子，进张数与次优切法相同，但役牌保留更利于做牌。"
+  },
+  {
+    "_id": "36e48add-18b6-45eb-8d24-f4ff3d91ffa1",
+    "id": "36e48add-18b6-45eb-8d24-f4ff3d91ffa1",
+    "level": "hard",
+    "body": "1m 6m 7m 9m 2p 3p 4p 3s 6s 6s 2z 5z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "5z",
+    "ukeire": 62,
+    "shantenAfter": 4,
+    "note": "手牌零散，但南是双役牌、发是宝牌，价值远高于白与中。在进张数完全相同的前提下，优先保留役牌与宝牌，推荐切 **5z**。"
+  },
+  {
+    "_id": "9400697d-ae8a-461b-aa9a-73a63286896c",
+    "id": "9400697d-ae8a-461b-aa9a-73a63286896c",
+    "level": "hard",
+    "body": "1m 4m 7m 8m 2p 3p 5p 8p 9p 1s 5s 7s 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z",
+      "9m"
+    ],
+    "uraIndicators": [
+      "6m",
+      "1z"
+    ],
+    "recommend": "4m",
+    "ukeire": 24,
+    "shantenAfter": 3,
+    "note": "推荐切 **4m**。手牌拥有 **发** 对子作为役牌，同时 **1m** 是宝牌，保留它后续摸成对或刻能提升打点；而 **4m** 与周围搭子距离远，作为孤张价值最低，优先处理。虽然切 **5p**、**1s** 或 **1m** 的进张数相同，但保留宝牌优势更明显。"
+  },
+  {
+    "_id": "5ea84c55-67b8-4c15-85f9-7e75cd7ef137",
+    "id": "5ea84c55-67b8-4c15-85f9-7e75cd7ef137",
+    "level": "hard",
+    "body": "1m 2m 8m 9m 1p 2p 4p 4p 4p 8p 6s 7s 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "8p",
+    "ukeire": 50,
+    "shantenAfter": 3,
+    "note": "推荐切 **8p**。保留自风役牌 **2z** 的同时，手牌仍有三组两面搭（**1m** **2m**、**1p** **2p**、**6s** **7s**），进张宽裕且好型率高。**8p** 虽是宝牌 **9p** 的邻牌，但孤张价值不如役牌单张，切掉后手牌更紧凑；若切 **2z** 则丢失役牌机会，切 **3z** 则作用相近但无役，综合看保留 **2z** 是更实战的选择。"
+  },
+  {
+    "_id": "a56de051-c844-4563-9f56-527b3e3a5753",
+    "id": "a56de051-c844-4563-9f56-527b3e3a5753",
+    "level": "hard",
+    "body": "4m 5m 7m 8m 1p 2p 2p 3p 7p 9p 1s 8s 9s",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3s",
+      "9p"
+    ],
+    "uraIndicators": [
+      "8s",
+      "2p"
+    ],
+    "recommend": "2p",
+    "ukeire": 50,
+    "shantenAfter": 3,
+    "note": "推荐切 **2p**。打掉多余的对子后，1p宝牌搭子完好，1-2-3顺子成型，同时保留自风 **3z** 的役牌价值，进张50张为最高。相比切 **1s** 或 **3z**，不仅进张多1张，且不会损失役牌或破坏已经成型的顺子结构。"
+  },
+  {
+    "_id": "2ad9d99e-665c-408f-a18b-7917e424a974",
+    "id": "2ad9d99e-665c-408f-a18b-7917e424a974",
+    "level": "hard",
+    "body": "1m 3m 3p 5p 8p 8p 1s 1s 1s 2s 1z 3z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1m",
+      "5m"
+    ],
+    "uraIndicators": [
+      "4p",
+      "4p"
+    ],
+    "recommend": "3z",
+    "ukeire": 31,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌已有1s暗刻和8p对子，剩余孤张中双役牌 **1z** 和三元牌 **7z** 价值更高，保留它们能在有进张时提升打点。切 **3z** 与切 **4z**、**7z**、**1z** 的进张数相同，但舍弃非役牌孤张最为合理，不浪费未来的役种机会。"
+  },
+  {
+    "_id": "839d6b2b-6149-4524-8f0a-9ac9f895610b",
+    "id": "839d6b2b-6149-4524-8f0a-9ac9f895610b",
+    "level": "hard",
+    "body": "2m 3m 5m 9m 6p 7p 7p 9p 9p 5s 7s 8s 8s",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "9m",
+    "ukeire": 47,
+    "shantenAfter": 3,
+    "note": "推荐切 **9m**。保留 **5m** 的靠搭潜力（摸 **4m** 或 **6m** 可形成两面），同时 **2m** **3m** 的两面搭不变，整体进张宽广。切 **5m** 则留下边 **9m** 效率偏低；切 **3z** 虽保留自风役牌，但孤张干等对子，不如中张牌灵活。"
+  },
+  {
+    "_id": "bb59b2e1-aab5-4c08-a60a-e936b2bfd57f",
+    "id": "bb59b2e1-aab5-4c08-a60a-e936b2bfd57f",
+    "level": "hard",
+    "body": "3m 6m 9m 9m 3p 5p 6p 1s 4s 5s 6s 4z 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6p"
+    ],
+    "uraIndicators": [
+      "8s"
+    ],
+    "recommend": "4z",
+    "ukeire": 78,
+    "shantenAfter": 4,
+    "note": "既然进张数相同，优先保留价值更高的字牌。推荐切 **4z**，因为它是非役牌的孤张，保留 **5z** 与 **6z** 两枚三元牌，未来摸成对子可获番。切 **3m** 则减少进张，不如留字牌。"
+  },
+  {
+    "_id": "aa4c5f85-850e-427f-8343-0038ab5e0e83",
+    "id": "aa4c5f85-850e-427f-8343-0038ab5e0e83",
+    "level": "medium",
+    "body": "4m 4m 5m 3p 4p 4p 1s 1s 4s 8s 9s 1z 1z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4p",
+      "7p"
+    ],
+    "uraIndicators": [
+      "2z",
+      "2s"
+    ],
+    "recommend": "3p",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **3p**。保留 **4p** 对子与宝牌 **5p** 的关联，同时留下 **4s** 作为中张孤张，靠张比 **3p** 更广，且不影响 **8s** **9s** 边搭的改良。次优切 **4s** 虽进张数相同，但 **3p** 的靠张（**2p** 及 **4p** 残张）略逊于 **4s**，实战中切 **3p** 更易迈向好型听牌。"
+  },
+  {
+    "_id": "f56b6828-573d-41a4-aeb4-cc3a8bcba75a",
+    "id": "f56b6828-573d-41a4-aeb4-cc3a8bcba75a",
+    "level": "hard",
+    "body": "1m 6m 9m 2p 2p 3p 6p 7p 8p 2s 4s 7s 7s",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "9m",
+    "ukeire": 56,
+    "shantenAfter": 3,
+    "note": "推荐切 **9m**。手牌已立直，进张宽度为首要标准，切 **9m** 与切 **7z** 进张数相同，但保留 **7z**（中）的单张可在后续摸成对子时获得役牌，对快速听牌和打点均有帮助，而 **9m** 作为与手牌关联最弱的边张，优先舍去更合理。"
+  },
+  {
+    "_id": "16ef462d-bde6-47ef-b6af-63d3ee89e59d",
+    "id": "16ef462d-bde6-47ef-b6af-63d3ee89e59d",
+    "level": "easy",
+    "body": "1m 2m 3m 1p 1p 3p 3p 3p 6p 7p 2s 6s 6s",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "1m"
+    ],
+    "recommend": "2s",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2s**。手牌已有两对（**1p**、**6s**）和 **6p 7p** 搭子，保留孤张 **5z**（白）是役牌，进张数相同但打点更高，后续摸到白可形成役牌雀头，比保留无役的 **2s** 更有价值。"
+  },
+  {
+    "_id": "ce7cfda3-89e0-41b3-8bb4-b6de4a1d9c19",
+    "id": "ce7cfda3-89e0-41b3-8bb4-b6de4a1d9c19",
+    "level": "hard",
+    "body": "3m 3m 6m 7m 4p 5p 6p 8p 3s 6s 6s 7s 3z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2s",
+      "4s",
+      "2m"
+    ],
+    "uraIndicators": [
+      "6s",
+      "5z",
+      "7m"
+    ],
+    "recommend": "3z",
+    "ukeire": 63,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌已有两对（**3m** 和 **6s**）及 **6m** **7m** 两面搭，保留 **6z**（发）能保留役牌机会，且进张数与切 **6z** 相同；切 **6s** 会破坏对子，进张明显减少，不如拆孤张字牌稳妥。"
+  },
+  {
+    "_id": "53386e63-e485-4409-a05a-23aea41bcb20",
+    "id": "53386e63-e485-4409-a05a-23aea41bcb20",
+    "level": "hard",
+    "body": "5m 9m 9m 2p 4p 5p 8p 9p 9p 2s 2s 4s 1z",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "2p",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "推荐切 **2p**。保留了 **4p** **5p** 的两面搭和 **8p** **9p** 的边张，同时手中 **9m**、**9p**、**2s** 三个对子能灵活充当雀头或搭子，后续摸到 **3p**、**6p**、**7p** 等牌即可很快形成好型听牌。切 **4p** 会拆掉 **4p** **5p** 两面，留下 **2p** **5p** 的坎搭和 **5p** **8p** 的卡搭，绕路且好型率明显下降。"
+  },
+  {
+    "_id": "09541b26-1458-4baf-9ff8-6487319fc886",
+    "id": "09541b26-1458-4baf-9ff8-6487319fc886",
+    "level": "hard",
+    "body": "2m 3m 4m 8m 3p 4p 6p 8p 9p 1s 6s 7s 7s",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "9m"
+    ],
+    "recommend": "5z",
+    "ukeire": 74,
+    "shantenAfter": 3,
+    "note": "推荐切 **5z**。手牌已有顺子 **2m** **3m** **4m** 和 **7s** 的对子，保留所有搭子可最大化进张宽度；切掉孤张白牌不影响任何好型搭子，且后续摸到宝牌 **4p** 相关牌或 **1s** **6s** 等仍有充足改良空间。若切 **1s** 则损失一个可能的边张面子，进张略少，切 **8m** 或 **6s** 则破坏现有搭子，综合来看保留全部搭子的 **5z** 最符合立直后的进张效率。"
+  },
+  {
+    "_id": "a3c08564-375e-49d7-8aa6-90e14e464c45",
+    "id": "a3c08564-375e-49d7-8aa6-90e14e464c45",
+    "level": "hard",
+    "body": "3m 3p 8p 1s 2s 3s 5s 0s 6s 8s 1z 3z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "3z",
+    "ukeire": 68,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。保留 **1z**（双役牌）与 **6z** **7z**（三元牌）能在听牌后大幅提升打点，而切掉非役牌 **3z** 不影响进张数，是这里最合理的取舍。"
+  },
+  {
+    "_id": "c7dab3cf-c96c-417e-bde2-57880b363335",
+    "id": "c7dab3cf-c96c-417e-bde2-57880b363335",
+    "level": "medium",
+    "body": "2m 3m 4m 5m 0m 6m 8m 3p 0p 6p 7p 8s 1z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "1p"
+    ],
+    "recommend": "1z",
+    "ukeire": 46,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌中 **1z** 是孤张东，既非役牌也非宝牌，而 **6z** 是三元牌，保留它能提升打点机会。切 **6z** 虽然进张同样有46张，但损失了役牌价值；切 **8s** 或 **3p** 进张明显更少，且 **3p** 与 **赤5p** 的搭子并不理想，因此弃东留发更为合理。"
+  },
+  {
+    "_id": "b2fd8253-2151-4331-a137-9914bd1e448e",
+    "id": "b2fd8253-2151-4331-a137-9914bd1e448e",
+    "level": "hard",
+    "body": "3m 5m 9m 9m 2p 8p 9p 1s 3s 9s 2z 3z 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6s",
+      "1z"
+    ],
+    "uraIndicators": [
+      "7s",
+      "5p"
+    ],
+    "recommend": "2p",
+    "ukeire": 57,
+    "shantenAfter": 4,
+    "note": "推荐切 **2p**。手牌散乱，所有字牌（**3z** 自风、**5z** 三元、**7z** 三元）和宝牌 **2z** 均为孤张，保留它们未来有役种价值；但切 **2p** 能保留最多进张（57张），让后续更容易形成搭子，而切任何一张字牌都会损失近10张有效进张，在远向听阶段优先追求进张面更广。"
+  },
+  {
+    "_id": "ed9779c5-558e-4347-a99d-49a0fe7a99fd",
+    "id": "ed9779c5-558e-4347-a99d-49a0fe7a99fd",
+    "level": "hard",
+    "body": "4m 6m 6m 1p 2p 7p 8p 1s 8s 8s 9s 4z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z",
+      "8p"
+    ],
+    "uraIndicators": [
+      "9m",
+      "6p"
+    ],
+    "recommend": "1s",
+    "ukeire": 47,
+    "shantenAfter": 3,
+    "note": "推荐切 **1s**。手牌已有 **7z** 暗刻和 **6m** **8s** 两个对子，切掉 **1s** 不会破坏任何好形搭子，保留了 **4z**（自风牌）的摸对机会，与切 **4z** 相比进张数相同但打点潜力更高。切 **9s** 或 **4m** 会损失 8s9s 的好形进张，绕路且进张更少。"
+  },
+  {
+    "_id": "838644ab-ecc4-4977-bb7e-e13113ad8b2f",
+    "id": "838644ab-ecc4-4977-bb7e-e13113ad8b2f",
+    "level": "hard",
+    "body": "5m 5m 8m 5p 7p 9p 2s 4s 5s 7s 7s 2z 3z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p",
+      "6p",
+      "3z"
+    ],
+    "uraIndicators": [
+      "8p",
+      "7z",
+      "5s"
+    ],
+    "recommend": "3z",
+    "ukeire": 79,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。保留 **4z**（自风兼宝牌）和 **2z**（场风）的役牌价值，而 **3z** 既无役也不参与任何搭子，切掉后手牌形状不变，进张数与切其他字牌相同，但保留了更高的打点潜力。切 **8m** 会减少万子方向的进张，得不偿失。"
+  },
+  {
+    "_id": "bf68fb22-3c2a-4758-8252-c0b902dfdc5c",
+    "id": "bf68fb22-3c2a-4758-8252-c0b902dfdc5c",
+    "level": "medium",
+    "body": "1m 5m 8m 8m 1p 2p 3p 4p 5p 7p 9p 3s 4s",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "1m",
+    "ukeire": 19,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。手牌已有 **8m** 对子与筒子的连续形，保留自风 **4z** 的役牌机会，以及 **5m** 的中间张靠牌能力，切掉最孤立的边张 **1m** 最为合理。若切 **4z** 则失去役牌价值，且留下两个靠张效率较低的孤张。"
+  },
+  {
+    "_id": "6bd9a432-e8af-4abf-adce-9f2acdadaf7a",
+    "id": "6bd9a432-e8af-4abf-adce-9f2acdadaf7a",
+    "level": "hard",
+    "body": "2m 3m 4m 7m 8m 9m 3p 4p 6p 2s 9s 1z 2z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "1z",
+    "ukeire": 61,
+    "shantenAfter": 3,
+    "note": "立直后三人听牌，进张数均为61张，但切 **1z** 能保留场风 **南** 与三元牌 **中** 这两个有役牌的单张，增加后续摸成对子时的打点空间，比切 **2z** 或 **7z** 更优。切 **9s** 进张少8张，明显绕路。"
+  },
+  {
+    "_id": "43cfcf72-ebf0-45be-a3a5-fbcaa5a46af3",
+    "id": "43cfcf72-ebf0-45be-a3a5-fbcaa5a46af3",
+    "level": "hard",
+    "body": "1m 2m 3m 8m 0p 7p 8p 9p 2s 4s 9s 3z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "3z",
+    "ukeire": 54,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌中 **9s** 孤张且无进张优势，而 **6z**（发）与 **7z**（中）均为三元牌，保留它们可保留役牌机会，在向听数与进张数相同（54张）的前提下更值得保留。切掉无役的 **3z**，后续摸万、筒、索子均能有效降低向听。"
+  },
+  {
+    "_id": "c6fd2912-5ca6-4c20-8712-e958a289a5ee",
+    "id": "c6fd2912-5ca6-4c20-8712-e958a289a5ee",
+    "level": "hard",
+    "body": "2m 8m 1p 2p 4p 5p 9p 1s 6s 6s 8s 9s 1z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "1z",
+    "ukeire": 69,
+    "shantenAfter": 4,
+    "note": "推荐切 **1z**。保留摸进的 **6z** 作为宝牌，能在同向听下提升手牌打点；进张数同为69张，与切 **6z** 相比并不绕路，但保留宝牌的价值更高。"
+  },
+  {
+    "_id": "14fc6046-427d-4654-8c0a-f7eb01a00491",
+    "id": "14fc6046-427d-4654-8c0a-f7eb01a00491",
+    "level": "hard",
+    "body": "4m 4m 6m 9m 1p 1p 6p 7p 1s 2s 7s 1z 5z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p",
+      "9p"
+    ],
+    "uraIndicators": [
+      "0p",
+      "8s"
+    ],
+    "recommend": "9m",
+    "ukeire": 79,
+    "shantenAfter": 4,
+    "note": "推荐切 **9m**。手牌孤立数牌与役牌字牌较多，切掉边张 **9m** 可精简形状，同时保留 **1z**、**5z**、**7z** 三枚役牌，后续摸成对子或刻子时能大幅提升打点。其他切法如切 **1z** 进张数相同，但会保留 **9m** 这一低效孤立牌且损失役牌机会，实战中稍逊一筹。"
+  },
+  {
+    "_id": "752a4859-c408-44aa-b70a-ee49826cd6bc",
+    "id": "752a4859-c408-44aa-b70a-ee49826cd6bc",
+    "level": "hard",
+    "body": "6m 9m 1p 2p 5p 6p 7p 8p 8p 6s 6s 7s 1z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m",
+      "2s",
+      "9s"
+    ],
+    "uraIndicators": [
+      "4p",
+      "5z",
+      "2z"
+    ],
+    "recommend": "9m",
+    "ukeire": 52,
+    "shantenAfter": 3,
+    "note": "推荐切 **9m**。手牌虽有6m宝牌，但9m作为孤张价值最低，保留6m、1z、5z进张相同（52张），而1z与5z均无直接搭子，且5z是役牌孤张不易成对，切9m可最大化利用宝牌优势同时维持搭子结构。"
+  },
+  {
+    "_id": "243ba381-30c3-4188-929c-687e8eb08eee",
+    "id": "243ba381-30c3-4188-929c-687e8eb08eee",
+    "level": "hard",
+    "body": "2m 3m 1p 2p 4p 4p 5p 0p 9p 1s 3s 4s 7s",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9s"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "9p",
+    "ukeire": 24,
+    "shantenAfter": 3,
+    "note": "推荐切 **9p**。打掉最孤立的 **9p**，保留索子 **1s** **3s** **4s** **7s** 的复合搭子与宝牌 **1s**，同时留住 **6z（发）** 作为役牌对子的潜力。后续摸进 **2s**、**5s**、**6s** 等都能形成好型，进张面广；切 **7s** 会破坏索子连续性，切 **1s** 损失宝牌，切 **6z** 则放弃役牌机会，综合来看 **9p** 最合理。"
+  },
+  {
+    "_id": "5d34e703-e003-4d14-88ef-4af54606806b",
+    "id": "5d34e703-e003-4d14-88ef-4af54606806b",
+    "level": "hard",
+    "body": "1m 2m 7m 7m 1p 5p 8p 1s 4s 6s 7s 3z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "7s"
+    ],
+    "recommend": "1s",
+    "ukeire": 83,
+    "shantenAfter": 5,
+    "note": "推荐切 **1s**。保留 **3z**（自风役牌）与 **7z**（三元牌）两个役牌孤张，后续摸成对子即可获得确定番；索子部分 **4s** **6s** **7s** 保留了三面好搭潜力（坎 **5s** 与两面 **6s** **7s**），比切掉役牌后留下 **1s** 的零散索子更容易形成好型。四种切法向听与进张数完全相同，但保留役牌和优质搭子更有利于实战的巡目效率与打点上限。"
+  },
+  {
+    "_id": "57342525-ade2-4e07-821c-73bafac7ac92",
+    "id": "57342525-ade2-4e07-821c-73bafac7ac92",
+    "level": "hard",
+    "body": "1m 2m 2m 3m 7m 6p 7p 2s 8s 9s 9s 3z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m"
+    ],
+    "uraIndicators": [
+      "7m"
+    ],
+    "recommend": "3z",
+    "ukeire": 79,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。这张西牌既非场风也非自风，是纯粹的孤张，切掉后保留 **6z** 发和 **7z** 中两个三元牌，为后续做牌保留役牌可能性。虽然 **6z** 或 **7z** 进张数相同，但切掉一个役牌会丢掉该役种，代价更大；而 **8s** 虽可保留边搭可能，但进张略少且破坏索子后续发展。"
+  },
+  {
+    "_id": "ee2bdf28-f645-4e47-b874-ea21093d2e30",
+    "id": "ee2bdf28-f645-4e47-b874-ea21093d2e30",
+    "level": "hard",
+    "body": "2m 6m 9m 2p 2p 3p 7p 9p 1s 2s 2s 3s 7s",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "0m"
+    ],
+    "recommend": "9m",
+    "ukeire": 91,
+    "shantenAfter": 4,
+    "note": "推荐切 **9m**。虽然与切 **4z** 进张相同，但保留 **1s** **2s** **2s** **3s** 的索子复合型，后续摸进 **1s** **3s** **4s** 等牌时能形成好型听牌；而 **9m** 作为边张孤张，与手牌其他搭子无直接关联，切掉后不影响整体进张潜力。立直状态下，同样进张数优先选择后续良形变化更丰富的切法。"
+  },
+  {
+    "_id": "fad678c5-7b28-41c3-92eb-9e473180a418",
+    "id": "fad678c5-7b28-41c3-92eb-9e473180a418",
+    "level": "medium",
+    "body": "4m 0m 7m 8m 2p 5p 6p 7p 2s 4s 6s 8s 5z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "5s"
+    ],
+    "recommend": "2p",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **2p**。手牌中 **2p** 是孤张，切掉后保留万字 **4m** **赤5m** 两面、**7m** **8m** 两面、筒子 **5p** **6p** **7p** 的双面搭、以及索子 **2s** **4s** 和 **6s** **8s** 两副坎搭，进张最广且后续好型多。若切 **2s** 或 **8s** 会破坏索子搭子，切 **4m** 则损失 **4m** **赤5m** 的两面，进张均不如切 **2p**。"
+  },
+  {
+    "_id": "109fb283-7ac6-495f-95ab-db55151e515a",
+    "id": "109fb283-7ac6-495f-95ab-db55151e515a",
+    "level": "easy",
+    "body": "3m 4m 0m 8m 1p 2p 3p 5p 1s 2s 3s 4s 4s",
+    "draw": "8s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7s",
+      "2p"
+    ],
+    "uraIndicators": [
+      "1z",
+      "5s"
+    ],
+    "recommend": "8m",
+    "ukeire": 35,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。手牌已有三组顺子和一对 **4s**，剩下 **5p** 与 **8s** 两张单牌。保留 **8s** 能活用宝牌，且 **5p** 比 **8m** 更容易形成好搭（进张 **4p**、**6p** 或 **5p** 本身）。切 **8s** 会损失宝牌打点，切 **5p** 进张略少，因此保留 **8s**、打掉 **8m** 最为均衡。"
+  },
+  {
+    "_id": "6b9313ba-4977-4562-b42e-6c1d93868c56",
+    "id": "6b9313ba-4977-4562-b42e-6c1d93868c56",
+    "level": "hard",
+    "body": "2m 4m 6m 7m 9m 1p 4p 5p 3s 0s 9s 2z 2z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "9m",
+    "ukeire": 24,
+    "shantenAfter": 3,
+    "note": "推荐切 **9m**。立直后向听未变，但 **9m** 与周围毫无关联，而 **4z** 作为自风役牌孤张值得保留，**1p** 和 **9s** 至少保留与相邻牌形成搭子的余地。三张孤张进张数相同，切 **9m** 能最快理顺牌形，避免无谓的重复浪费。"
+  },
+  {
+    "_id": "6b9986a3-410d-453a-93a7-2c987dbf50b8",
+    "id": "6b9986a3-410d-453a-93a7-2c987dbf50b8",
+    "level": "hard",
+    "body": "1m 3m 3p 6p 6p 9p 9p 1s 6s 9s 1z 3z 5z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "1m",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "推荐切 **1m**。手牌已有三个对子（6p、9p、白），保留白对子作为役牌。1m与3m虽是坎2m的搭子，但1m是端牌，切掉后保留3m中张，后续若摸2m仍可形成坎搭，与其他孤张相比更易向顺子发展。进张数相同下，这一选择让手牌形状更均衡。"
+  },
+  {
+    "_id": "dc7da847-4ac2-4b37-91dd-689ece0463ef",
+    "id": "dc7da847-4ac2-4b37-91dd-689ece0463ef",
+    "level": "hard",
+    "body": "1m 4m 4m 4m 6m 6m 1p 2s 3s 5s 2z 3z 4z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "3z",
+    "ukeire": 58,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。手牌虽散，但四张字孤张中仅 **3z** 不是役牌，切掉它可保留 **2z**（场风）、**4z**（自风）与 **6z**（发）三个有望成对增番的役牌，其余切法进张数相同却白白损失役牌潜力。"
+  },
+  {
+    "_id": "2a664e45-20bb-474e-9be1-021bbd194cb1",
+    "id": "2a664e45-20bb-474e-9be1-021bbd194cb1",
+    "level": "hard",
+    "body": "2m 2m 7m 9m 5p 6p 7p 7p 3s 5s 9s 2z 3z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "2z",
+    "ukeire": 47,
+    "shantenAfter": 3,
+    "note": "推荐切 **2z**。保留宝牌兼自风役牌的 **3z**，同时刚摸进的 **4z** 与手牌其余搭子走向无冲突，进张数与切 **4z** 相同，但保留新牌更符合实战节奏。切 **3z** 会损失宝贵的役牌与宝牌，明显不可取；切 **9s** 则减少有效进张，绕路且无收益。"
+  },
+  {
+    "_id": "b3084da9-fc1b-420d-a973-225f51185235",
+    "id": "b3084da9-fc1b-420d-a973-225f51185235",
+    "level": "hard",
+    "body": "5m 6m 9m 4p 5p 5p 6p 1s 0s 6s 6s 6s 8s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "0m",
+      "2m"
+    ],
+    "uraIndicators": [
+      "7s",
+      "9p"
+    ],
+    "recommend": "3z",
+    "ukeire": 61,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌已有 **6s** 暗刻与 **5p** 对子，**5m** **6m** 两面搭，其余 **9m** **4p** **6p** **1s** **赤5s** **8s** 均为孤立牌，摸进客风 **3z** 并无役种或搭子价值，切掉后保留全部孤立牌的进张空间（可摸 **7m** **8m**、**3p** **7p**、**2s** **3s**、**7s** **9s** 等），进张达61张，远优于切 **9m**、**1s** 或 **8s** 的57张。考虑到宝牌 **6m** 恰在 **5m** **6m** 搭子上，保留此搭子更有机会利用宝牌提升打点。"
+  },
+  {
+    "_id": "df2aaea2-b579-4081-947b-e5f6bb5ff20e",
+    "id": "df2aaea2-b579-4081-947b-e5f6bb5ff20e",
+    "level": "medium",
+    "body": "3m 2p 2p 3p 5p 1s 2s 5s 6s 6s 7s 7s 3z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6s",
+      "3s"
+    ],
+    "uraIndicators": [
+      "2s",
+      "7p"
+    ],
+    "recommend": "3m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。手牌目前有**6z**（発）这张役牌孤张，保留它作为可能的役牌对子机会，同时万子3m是孤张，切掉后不影响筒索两面的搭子进张。切**3z**会放弃西的孤张，切**6z**则直接丢掉役牌，打点潜力下降。在进张数相同的情况下，保留**6z**的役牌价值是更优选择。"
+  },
+  {
+    "_id": "4170af11-7f7e-41ef-9c5f-5a2685229dd4",
+    "id": "4170af11-7f7e-41ef-9c5f-5a2685229dd4",
+    "level": "medium",
+    "body": "3m 8m 9m 4p 5p 0p 9p 9p 2s 3s 1z 1z 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z",
+      "8p"
+    ],
+    "uraIndicators": [
+      "4z",
+      "8s"
+    ],
+    "recommend": "3m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切**3m**。手牌有三个对子（北自风役牌、宝牌**9p**、**东**）和两个好搭（**8m 9m**边搭、**4p 5p**两面），打掉孤张**3m**能完整保留这些搭子和宝牌**赤5p**，后续进张后容易取得好型听牌。若切**8m**或**9m**会破坏边搭、增加孤独张，切**4p**则损失两面搭，都不如保留现有结构合理。"
+  },
+  {
+    "_id": "6d8380e9-6dcf-4c61-b303-318026a61034",
+    "id": "6d8380e9-6dcf-4c61-b303-318026a61034",
+    "level": "medium",
+    "body": "5m 7m 8m 9m 2p 4p 5p 6p 1s 6s 7s 9s 9s",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "1z",
+    "ukeire": 57,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌有多个两面搭子和顺"
+  },
+  {
+    "_id": "8c3c8460-4aac-4619-b2e6-9a991c9f6727",
+    "id": "8c3c8460-4aac-4619-b2e6-9a991c9f6727",
+    "level": "medium",
+    "body": "7m 7m 1p 2p 3p 6p 7p 3s 5s 6s 8s 8s 1z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "3s",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **3s**。立直状态下保留宝牌 **7m** 对子与役牌 **1z**、**7z** 孤张，切 **3s** 不破坏 **6p** **7p** 两面及 **3s** **5s** **6s** 的连形，进张最多且维持搭子弹性。若切 **1z** 或 **7z** 虽进张相同，但损失役牌打点可能，牌型走向更狭窄。"
+  },
+  {
+    "_id": "5db53f7c-8b8c-4ebd-bcc7-926b004e0d4c",
+    "id": "5db53f7c-8b8c-4ebd-bcc7-926b004e0d4c",
+    "level": "hard",
+    "body": "1m 3m 4m 9m 2p 6p 8p 1s 1s 4s 9s 3z 5z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9s",
+      "6z"
+    ],
+    "uraIndicators": [
+      "7m",
+      "1s"
+    ],
+    "recommend": "3z",
+    "ukeire": 91,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**（西）。手牌已有 **5z**（白）和 **1s** 两组对子，切掉孤张西风保留役牌对子，同时维持 **1m** **3m** **4m** 的复合搭子与 **2p** **6p** **8p** 的改良空间，进张最广。相比切 **1m** 虽能保留连形，但进张略少且可能损失好型。"
+  },
+  {
+    "_id": "f46f54c5-e19b-4a46-b135-d4e4a8323076",
+    "id": "f46f54c5-e19b-4a46-b135-d4e4a8323076",
+    "level": "hard",
+    "body": "0m 7m 3p 7p 1s 1s 4s 7s 9s 1z 4z 6z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z",
+      "8p"
+    ],
+    "uraIndicators": [
+      "6m",
+      "6z"
+    ],
+    "recommend": "1z",
+    "ukeire": 83,
+    "shantenAfter": 4,
+    "note": "推荐切 **1z**。手牌已有中的暗刻，1z虽是宝牌但为孤张，切掉后与切 **4z**、**6z** 同样保留83张进张，而切 **3p** 会减少进张，不利于快速听牌。在立直状态下，优先确保进张宽度比单张宝牌的打点更重要，因此先舍弃孤张宝牌。"
+  },
+  {
+    "_id": "3e700ea1-df94-4168-b424-93a64203c8f4",
+    "id": "3e700ea1-df94-4168-b424-93a64203c8f4",
+    "level": "hard",
+    "body": "1m 3m 8m 4p 6p 8p 9p 7s 7s 8s 2z 4z 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "4s"
+    ],
+    "recommend": "4z",
+    "ukeire": 49,
+    "shantenAfter": 4,
+    "note": "推荐切 **4z**。手牌极度分散，所有孤张切法向听和进张数相同，此时优先保留 **2z**（场风）、**5z**（白）、**6z**（发）三个役牌单张，未来摸成对子即可获得役牌价值；而 **4z**（北）无役，且不影响任何已有搭子，是最应舍出的字牌。"
+  },
+  {
+    "_id": "57dc709e-9467-4969-87e6-0a9de3ec7409",
+    "id": "57dc709e-9467-4969-87e6-0a9de3ec7409",
+    "level": "hard",
+    "body": "1m 1m 4m 4m 2p 4p 7p 7p 1s 3s 4s 7s 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m",
+      "3z"
+    ],
+    "uraIndicators": [
+      "1s",
+      "3m"
+    ],
+    "recommend": "1s",
+    "ukeire": 39,
+    "shantenAfter": 3,
+    "note": "推荐切 **1s**。保留白、中两张役牌，为后续成对提供打点保障，同时留下 **3s** **4s** 的两面好搭与 **7s** 孤张，进张质量更高。若切字牌，索子部分只能保留一个两面搭并多出两个边张孤张，役牌机会减半，实战中稍逊。"
+  },
+  {
+    "_id": "2a953d34-c7ea-4104-b330-66c8ff157e5b",
+    "id": "2a953d34-c7ea-4104-b330-66c8ff157e5b",
+    "level": "hard",
+    "body": "1m 2m 4m 8m 9m 1p 2p 8p 9p 1s 4s 6s 2z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z",
+      "6s"
+    ],
+    "uraIndicators": [
+      "0s",
+      "4z"
+    ],
+    "recommend": "1m",
+    "ukeire": 59,
+    "shantenAfter": 4,
+    "note": "推荐切 **1m**。虽然进张数与切 **4m**、**1s** 完全一致，但保留 **2m** 与 **4m** 的坎搭潜力，同时不破坏 **4s** **6s** 的坎搭和 **2z**（自风+宝牌）的摸对机会，后续好型听牌更容易成型。切 **5z** 会失去三元牌役牌，价值不如保留 **2z**，故优先选择 **1m**。"
+  },
+  {
+    "_id": "f4902e8e-c1a6-45b5-b89d-d2422c2aaa39",
+    "id": "f4902e8e-c1a6-45b5-b89d-d2422c2aaa39",
+    "level": "hard",
+    "body": "2m 2m 3m 6m 7m 3p 8p 2s 4s 9s 1z 6z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s",
+      "2p"
+    ],
+    "uraIndicators": [
+      "9m",
+      "7s"
+    ],
+    "recommend": "6z",
+    "ukeire": 87,
+    "shantenAfter": 4,
+    "note": "推荐切 **1z**。手牌散乱，保留 **7z** 对子和 **6z** 孤张，切掉自风牌东。相比切 **3m** 或 **9s**，切字牌能保留更多搭子空间，进张多出8张；与切 **6z** 相比进张相同，但 **6z** 是三元牌孤张，后续摸成对子或刻子有役牌一番，而自风东孤张价值略低，因此切 **1z** 稍好。"
+  },
+  {
+    "_id": "9abb160b-d545-4abc-9636-278ab741a17e",
+    "id": "9abb160b-d545-4abc-9636-278ab741a17e",
+    "level": "hard",
+    "body": "3m 6m 7m 7m 9m 6p 6p 8p 2s 2s 5s 8s 9s",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "3m",
+    "ukeire": 41,
+    "shantenAfter": 3,
+    "note": "推荐切 **3m**。手牌有三对，保留 **7m** 的好型复合（6‑7‑7‑9），进张集中且听牌时形较好；切 **2z** 或 **5s** 虽进张数相同，但 **3m** 的孤立性更强，保留它会拖慢搭子形成。立直阶段更看重进张质量与后续好型，故优先处理万子中作用最小的 **3m**。"
+  },
+  {
+    "_id": "9f779651-9271-4160-985e-82bea62d4e0e",
+    "id": "9f779651-9271-4160-985e-82bea62d4e0e",
+    "level": "hard",
+    "body": "5m 8m 3p 6p 6p 8p 8p 9p 2s 3s 7s 9s 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p",
+      "3m",
+      "6z"
+    ],
+    "uraIndicators": [
+      "9p",
+      "1p",
+      "0p"
+    ],
+    "recommend": "2z",
+    "ukeire": 83,
+    "shantenAfter": 4,
+    "note": "推荐切 **2z**。手牌中 **2z**（南）与 **3z**（西）均为无役字牌孤张，切掉哪张对搭子结构无影响；保留刚摸的 **3z** 稍留余裕，而 **9p** 是唯一宝牌不宜先弃，切 **8m** 会破坏 **5m**-**8m** 的两卡搭子使进张减少，因此切 **2z** 最合理。"
+  },
+  {
+    "_id": "b0d368ac-5b83-4c5d-af05-c3c7be394da8",
+    "id": "b0d368ac-5b83-4c5d-af05-c3c7be394da8",
+    "level": "medium",
+    "body": "6m 7m 2p 4p 4p 7p 8p 9p 2s 4s 5s 0s 8s",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m"
+    ],
+    "uraIndicators": [
+      "4s"
+    ],
+    "recommend": "8s",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **8s**。当前立直状态下，保留白板作为役牌有后续成对或碰出的价值，而 **8s** 与手牌其他索子无法形成有效搭子，是纯粹的孤张。打 **5z** 虽进张数相同，但弃掉役牌后索子多出一张孤立的 **8s**，后续改良方向更窄，因此 **8s** 是更合理的弃牌。"
+  },
+  {
+    "_id": "c1b452b4-5563-4300-bdc5-c2905e2b10dd",
+    "id": "c1b452b4-5563-4300-bdc5-c2905e2b10dd",
+    "level": "hard",
+    "body": "6m 6m 7m 2p 3p 5p 6p 7p 8p 4s 6s 1z 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "5z",
+    "ukeire": 57,
+    "shantenAfter": 3,
+    "note": "推荐切 **1z**。手牌有6m对子与7m形成搭子，加上2p3p两面、5p 6p 7p 8p四连型以及4s6s坎搭，进张面很广，切掉任意一张孤张役牌都不影响57张的进张。保留5z与6z两枚三元牌，后续若能形成暗刻或对子，打点优于场风牌 **1z**，因此优先切掉这张东。"
+  },
+  {
+    "_id": "299761ed-b335-498e-946d-561da258246d",
+    "id": "299761ed-b335-498e-946d-561da258246d",
+    "level": "hard",
+    "body": "1m 2m 2m 3m 5m 9m 2p 3p 7p 6s 1z 2z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "2z",
+    "ukeire": 91,
+    "shantenAfter": 5,
+    "note": "推荐切 **2z**。保留双役牌的 **1z** 和三元牌的 **7z**，切掉无役的南风，后续摸成对子或刻子能提升打点。虽然四种切法向听和进张数一致，但保留高价值字牌是更优的长线选择。"
+  },
+  {
+    "_id": "d4946c4b-693e-43fd-a153-b6cd4d4e006d",
+    "id": "d4946c4b-693e-43fd-a153-b6cd4d4e006d",
+    "level": "medium",
+    "body": "3m 9m 2p 3p 4p 5p 7p 2s 3s 4s 9s 9s 1z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5z",
+      "1p"
+    ],
+    "uraIndicators": [
+      "7p",
+      "8p"
+    ],
+    "recommend": "1z",
+    "ukeire": 39,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。保留 **7z**（中）这枚三元牌，立直后若摸成对子可直接增加一番，打点更高；切 **1z** 与切 **7z** 进张数相同，但 **1z** 无役，保留价值更低。切 **9m** 或 **3m** 会减少有效进张，且破坏万子搭子形成的可能性，不如前两者。"
+  },
+  {
+    "_id": "64472608-dc8d-4ea8-a85e-01c6d1d39e91",
+    "id": "64472608-dc8d-4ea8-a85e-01c6d1d39e91",
+    "level": "medium",
+    "body": "1m 3m 4m 5m 4p 4p 4p 6p 7p 9p 4s 5z 5z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p"
+    ],
+    "uraIndicators": [
+      "3m"
+    ],
+    "recommend": "7z",
+    "ukeire": 53,
+    "shantenAfter": 2,
+    "note": "推荐切 **7z**。手中已有 **白** 对子作为役牌，保留万子的复杂连接（1m 3m 4m 5m）进张广泛，且维持 **6p** **7p** 搭子和 **4p** 暗刻。切 **7z** 后退向听进张最多（53张），相比切 **9p** 保留了更多好型机会，"
+  },
+  {
+    "_id": "5eb9d60d-11be-4dc0-9bb8-f4c326df3a30",
+    "id": "5eb9d60d-11be-4dc0-9bb8-f4c326df3a30",
+    "level": "hard",
+    "body": "1m 2m 1p 3p 7p 1s 2s 3s 5s 1z 2z 3z 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "3z",
+    "ukeire": 57,
+    "shantenAfter": 4,
+    "note": "推荐切 **3z**。手牌全为孤张，向听4无法化简，但保留的东（自风）、南（场风）、白、发均为一翻役牌，只有 **3z** 非役牌，优先切掉以保留下可能成对的役牌搭子。次优切法如 **1z** 会损失自风役牌，而进张数一致，所以实战保留役牌更优。"
+  },
+  {
+    "_id": "1756c3c0-eece-4579-aca8-250f0bafe4b5",
+    "id": "1756c3c0-eece-4579-aca8-250f0bafe4b5",
+    "level": "hard",
+    "body": "4m 0m 4p 5p 0p 6p 8p 3s 3s 5s 8s 2z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "7s"
+    ],
+    "recommend": "2z",
+    "ukeire": 71,
+    "shantenAfter": 3,
+    "note": "推荐切 **2z**。手牌已有 **6z** 和 **3s** 两对，双役牌 **2z** 作为孤张价值有限，切掉后保留所有数牌搭子，进张面最广。次优切法如 **8p** 或 **8s** 会破坏搭子，**赤5p** 则拆掉 **5p** 对子，进张均少于切 **2z**。已立直状态下，最大进张数优先。"
+  },
+  {
+    "_id": "b2288eac-2c79-4d73-af75-e579f0eb3ff8",
+    "id": "b2288eac-2c79-4d73-af75-e579f0eb3ff8",
+    "level": "hard",
+    "body": "5m 8m 9m 5p 6p 6p 7p 9p 3s 6s 8s 9s 2z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p",
+      "2p",
+      "4z"
+    ],
+    "uraIndicators": [
+      "5s",
+      "8s",
+      "2s"
+    ],
+    "recommend": "2z",
+    "ukeire": 77,
+    "shantenAfter": 4,
+    "note": "推荐切 **2z**。白板是三元役牌，保留它在四向听阶段能增加未来打点；同样进张77张的情况下，留役牌孤张比切掉无役的南牌更有前途。切 **9p** 或 **6s** 会使筒子/索子的搭子变薄，进张也略少，不如保留役牌机会。"
+  },
+  {
+    "_id": "fabd93eb-b040-4a10-b095-e0b567444a71",
+    "id": "fabd93eb-b040-4a10-b095-e0b567444a71",
+    "level": "hard",
+    "body": "1m 6m 6m 1p 6p 9p 9p 2s 2s 7s 8s 1z 6z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "1m",
+    "ukeire": 21,
+    "shantenAfter": 3,
+    "note": "推荐切 **1m**。手牌已有三组对子和 **7s** **8s** 的两面搭，切掉最孤立的 **1m** 不影响进张广度，同时保留 **1p** **6p** 等可能靠张的孤张；与切 **1p** 或 **6p** 相比，**1m** 后续几乎无法形成好型，实战中优先处理这类边张更稳妥。"
+  },
+  {
+    "_id": "594104a8-669f-47a3-a6f5-5644c348ad13",
+    "id": "594104a8-669f-47a3-a6f5-5644c348ad13",
+    "level": "hard",
+    "body": "6m 6m 7m 8m 8m 2p 4p 6p 7p 3s 7s 1z 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p",
+      "8s"
+    ],
+    "uraIndicators": [
+      "3p",
+      "8p"
+    ],
+    "recommend": "3s",
+    "ukeire": 27,
+    "shantenAfter": 3,
+    "note": "推荐切 **3s**。手牌已有役牌东的孤张和宝牌 **6p**，打点潜力值得保留。切 **3s** 后 **7s** 的靠张（ **5s** **6s** **8s** **9s** ）形成两面搭子的机会略优于 **3s**，且筒子 **2p** **4p** **6p** **7p** 与万子 **6m** **7m** **8m** 的复合型进张路广，同为 27 张进张但好型更多；若切字牌会失去役牌东的培养可能，综合来看 **3s** 最合理。"
+  },
+  {
+    "_id": "61551b25-ef3f-457d-abea-16b944cffc70",
+    "id": "61551b25-ef3f-457d-abea-16b944cffc70",
+    "level": "hard",
+    "body": "9m 1p 2p 4p 1s 2s 3s 7s 8s 2z 2z 3z 4z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "3z",
+    "ukeire": 48,
+    "shantenAfter": 3,
+    "note": "推荐切 **3z**。手牌有 **2z**(南场风) 与 **5z**(白) 两个役牌对子，保留它们能为和牌提供稳定打点；切 **3z** 或 **4z**（同为无役孤张）进张相同，但不应切 **5z** 破坏役牌对子，而切 **9m** 会缩小进张范围。实战中先打最不必要的孤张，留足役牌碰牌机会即可。"
+  },
+  {
+    "_id": "2b5d57ba-d373-4713-9975-fe9967f98a98",
+    "id": "2b5d57ba-d373-4713-9975-fe9967f98a98",
+    "level": "hard",
+    "body": "5m 0m 9m 6p 8p 9p 1s 2s 3s 3s 2z 6z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "7z",
+    "ukeire": 55,
+    "shantenAfter": 3,
+    "note": "推荐切 **2z**。手牌已有 **6z** 对子和 **5m** 对子，保留万子和索子的顺子结构。切 **2z** 后，保留 **7z** 和 **6z** 的役牌组合，与切 **7z** 相比进张数相同，但保留中章牌 **7z** 在后续摸到中时能形成双役牌对子，打点潜力更高，故优先切出孤张场风牌。"
+  },
+  {
+    "_id": "b284dda3-6c9f-42be-9266-a100d067f604",
+    "id": "b284dda3-6c9f-42be-9266-a100d067f604",
+    "level": "medium",
+    "body": "1m 7m 7m 1p 1p 4p 4p 6p 3s 3s 4s 7s 8s",
+    "draw": "9s",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2m",
+      "1z"
+    ],
+    "uraIndicators": [
+      "7z",
+      "3p"
+    ],
+    "recommend": "1m",
+    "ukeire": 35,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。手牌已有四组对子，打掉唯一的孤立数牌 **1m** 后进入七对子一向听，进张极广（35 张），能有效提升听牌速度。次优切 **6p** 会损失部分索子上的好型进张，不如保对子路线合理。"
+  },
+  {
+    "_id": "ae2166fb-c899-4aec-a164-af9987989f16",
+    "id": "ae2166fb-c899-4aec-a164-af9987989f16",
+    "level": "medium",
+    "body": "2m 6m 2p 4p 2s 3s 3s 4s 4s 5s 6s 6s 9s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1m"
+    ],
+    "uraIndicators": [
+      "5p"
+    ],
+    "recommend": "7z",
+    "ukeire": 47,
+    "shantenAfter": 2,
+    "note": "推荐切 **7z**。保留索子丰富的复合形，可朝三色同顺或一杯口等方向发展，进张数最多且能维持好型搭子。切 **9s** 或 **2m** 虽向听相同，但进张少了8张，且容易破坏索子部分的多面潜力。"
+  },
+  {
+    "_id": "f89d7267-e641-45e9-9ab9-f041bdc0f93d",
+    "id": "f89d7267-e641-45e9-9ab9-f041bdc0f93d",
+    "level": "medium",
+    "body": "2m 2m 5m 6p 1s 1s 2s 4s 7s 7s 1z 4z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "8s"
+    ],
+    "recommend": "6p",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **6p**。保留 **1s** **2s** **4s** **7s** 的复杂索子结构，可以同时期待 **3s**、**6s** 等进张形成两嵌或更多搭子候选，而切掉 **1z** 虽能除孤张，但 **6p** 作为孤张与索子无关，并无保留价值；切 **2s** 或 **4s** 反而破坏索子连续性与进张密度。后续摸进索子中张时容易形成好型听牌，是这一局面下最灵活的选择。"
+  },
+  {
+    "_id": "ebbfecc4-fc2e-4648-ad41-67548e37e0b4",
+    "id": "ebbfecc4-fc2e-4648-ad41-67548e37e0b4",
+    "level": "medium",
+    "body": "2m 2m 2m 0m 6m 6m 7m 3p 3s 7s 9s 1z 2z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "1z",
+    "ukeire": 60,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌已有南对子（场风役牌）值得保留，切掉孤张东能最大化进张数，万子"
+  },
+  {
+    "_id": "48cd87cd-834b-4c2c-814d-95ccba3125ea",
+    "id": "48cd87cd-834b-4c2c-814d-95ccba3125ea",
+    "level": "medium",
+    "body": "1m 2m 3m 4m 4m 9m 3p 4p 4s 6s 6s 7s 9s",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p",
+      "7m"
+    ],
+    "uraIndicators": [
+      "1s",
+      "1p"
+    ],
+    "recommend": "9m",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **9m**。手牌已有1m 2m 3m 4m的连续形与4m对子，切掉边张 **9m** 后万子部分更加紧凑，配合6s 6s 7s复合搭和3p 4p两面，进张集中且好型率高；保留 **3z** 虽也是孤张，但字牌后续靠对概率与9m相近，且 **9m** 远离主结构，切它不会浪费宝牌8m的靠张机会——但宝牌并非本局主要突破口，进张与好型优先。"
+  },
+  {
+    "_id": "2b5e7999-8d0b-4397-898a-a0c7b735f6af",
+    "id": "2b5e7999-8d0b-4397-898a-a0c7b735f6af",
+    "level": "medium",
+    "body": "1m 2m 3m 6m 8m 3p 5p 6p 6s 1z 3z 3z 6z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s"
+    ],
+    "uraIndicators": [
+      "4z"
+    ],
+    "recommend": "3p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **3p**。手牌已有1m 2m 3m顺子，保留5p 6p两面搭与西、发两对，进张充分且牌型简洁；摸4p或7p可直接形成顺子，向听推进更顺畅。切6s或1z虽进张同为16张，但会留下3p孤张，后续转听时手牌多一张冗余，不如切3p紧凑。"
+  },
+  {
+    "_id": "b5cf3652-a704-4077-9d82-02b4d750385f",
+    "id": "b5cf3652-a704-4077-9d82-02b4d750385f",
+    "level": "medium",
+    "body": "2m 4m 2p 2p 3p 3p 3p 9p 1s 1s 3s 3s 4s",
+    "draw": "7s",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "9p",
+    "ukeire": 30,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。手牌已有3p刻子，三个对子（2p、1s、3s），保留 **4s** 与 **7s** 能与 **1s**、**3s** 形成更连续的索子复合形，未来进张广且易出好型；切 **7s** 则切断索子联系，虽进张数相同，但后续好型概率略低。宝牌 **4m** 在坎搭中，保留不影响。"
+  },
+  {
+    "_id": "72748cc1-dc4e-4b8e-a572-efe3a1147280",
+    "id": "72748cc1-dc4e-4b8e-a572-efe3a1147280",
+    "level": "medium",
+    "body": "1m 1m 3m 1p 2p 3p 7p 8p 5s 5s 6s 7s 9s",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "9s",
+    "ukeire": 48,
+    "shantenAfter": 2,
+    "note": "推荐切 **9s**。保留 **7z** 虽有三元牌打点潜力，但切 **9s** 后索子形成 **5s** 对子加 **6s** **7s** 两面搭，牌型更紧凑，后续进张容易导向好型听牌。与切 **7z** 相比进张数相同，但 **9s** 作为边张冗余，切掉后整体效率更高。"
+  },
+  {
+    "_id": "8695cba8-b4c3-45c5-a410-f2b25ded63d5",
+    "id": "8695cba8-b4c3-45c5-a410-f2b25ded63d5",
+    "level": "medium",
+    "body": "2m 2m 4m 7m 7m 5p 8p 3s 5s 1z 2z 2z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "4m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。保留 **1z**（场风）与 **7z**（中）两个役牌对子，同时 **5p** 与 **8p** 留作靠近宝牌 **6p** 的搭子机会，进张宽度与其他切法持平但后期听牌形态更优。切 **5p** 或 **8p** 会损失宝牌关联，切 **3s** 则破坏索子坎搭潜力，相比之下 **4m** 作为孤立牌对整体结构影响最小。"
+  },
+  {
+    "_id": "841041ff-f287-4339-8535-ef6543df42c7",
+    "id": "841041ff-f287-4339-8535-ef6543df42c7",
+    "level": "medium",
+    "body": "0m 6m 8m 3p 7p 8p 3s 4s 5s 9s 9s 2z 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p"
+    ],
+    "uraIndicators": [
+      "7m"
+    ],
+    "recommend": "8m",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。向听数同为2且进张数均为20张的情况下，切 **8m** 能把万子 **6m** **8m** 的坎搭改良为 **赤5m** **6m** 的两面搭，多出 **4m** 的进张，同时保留红宝牌与 **6p** 的筒子搭子，后续更容易听好型；而切 **3p** 或 **3z** 则维持万子坎搭，好型机会更少。"
+  },
+  {
+    "_id": "b04aee43-0b7f-408d-9b60-71e608f73787",
+    "id": "b04aee43-0b7f-408d-9b60-71e608f73787",
+    "level": "medium",
+    "body": "1m 9m 9m 2p 2p 5p 8p 1s 5s 0s 8s 1z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9p",
+      "2s",
+      "4m"
+    ],
+    "uraIndicators": [
+      "2p",
+      "7z",
+      "6z"
+    ],
+    "recommend": "1m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。立直后需保留宝牌赤5s与役牌发对子，1m与其余牌无有效关联，切掉后索子侧1s、5s、8s仍可形成顺子搭，进张质量较高。虽切 **8p** 或 **1s** 进张数相同，但1m的灵活性最差，优先打出更合理。"
+  },
+  {
+    "_id": "6d7d85e7-6604-4a81-bb74-e77641fbbbf2",
+    "id": "6d7d85e7-6604-4a81-bb74-e77641fbbbf2",
+    "level": "medium",
+    "body": "2m 4m 2p 3p 4p 4p 9p 2s 3s 5s 6s 7s 9s",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5m",
+      "4z"
+    ],
+    "uraIndicators": [
+      "2z",
+      "7m"
+    ],
+    "recommend": "9p",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。保留 **6z**（发）作为役牌潜在对子，同时 **9s** 可与 **8s** 形成搭子，进张数与切 **9s**、**6z** 相同，但保留 **6z** 有打点优势。切 **4p** 则破坏对子，进张减少。"
+  },
+  {
+    "_id": "f8f7ef3e-4f92-4d3a-b2e3-be00c06a1eb9",
+    "id": "f8f7ef3e-4f92-4d3a-b2e3-be00c06a1eb9",
+    "level": "medium",
+    "body": "3m 4m 6m 6m 2p 7p 7p 7p 1s 3s 6s 8s 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3m",
+      "8s",
+      "9m"
+    ],
+    "uraIndicators": [
+      "2z",
+      "1p",
+      "3z"
+    ],
+    "recommend": "2p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **2p**。立直后保留两张三元牌孤张，进张相同但后续摸到 **6z** 或 **7z** 即可确保役牌，打点明显优于切掉役牌保留 **2p**。切 **6z** 或 **7z** 虽进张数一致，却无谓放弃了一个役牌机会，实战中应优先追求高打点。"
+  },
+  {
+    "_id": "8501be7c-c756-469a-a3e6-4a74f6c747a3",
+    "id": "8501be7c-c756-469a-a3e6-4a74f6c747a3",
+    "level": "easy",
+    "body": "1m 3m 4m 5m 1p 2p 1s 2s 3s 8s 9s 2z 2z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "0m"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "1m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **1m**。保留 **7z**（中）的役牌对子，不仅能维持两对两面搭的一向听好形，摸进 **1p** **2p** **7s** **8s** **9s** **2z** **7z** 均可直接听牌，且中的三元牌役确保打点底力，比拆除中役牌、留下 **1m** 孤张的切法更有价值。"
+  },
+  {
+    "_id": "91a647f4-cd6b-43af-8254-c4e58021293a",
+    "id": "91a647f4-cd6b-43af-8254-c4e58021293a",
+    "level": "medium",
+    "body": "1m 2m 9m 3p 4p 6p 7p 8p 1s 2s 3s 3s 2z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z",
+      "6z"
+    ],
+    "uraIndicators": [
+      "6s",
+      "9p"
+    ],
+    "recommend": "3s",
+    "ukeire": 21,
+    "shantenAfter": 2,
+    "note": "推荐切 **3s**。保留 **1s** **2s** 的两面搭子，同时维持 **3s** 对子作为雀头，进张面最广（21张）。相比切 **9m** 或 **2z**（自风牌），虽然牺牲了役牌可能的打点，但多出1张有效进张，顺位优先更实际。"
+  },
+  {
+    "_id": "696e26ab-acfc-4e7a-82e7-405432ddb9e9",
+    "id": "696e26ab-acfc-4e7a-82e7-405432ddb9e9",
+    "level": "medium",
+    "body": "2m 4m 2p 6p 6p 8p 3s 3s 4s 6s 6s 7s 8s",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p"
+    ],
+    "uraIndicators": [
+      "4z"
+    ],
+    "recommend": "2p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **2p**。保留 **6p** 宝牌对子和 **1z**（场风）的役牌机会，同时索子已有 **6s** **7s** **8s** 顺子和 **3s** 对子，搭子数量充足；若切 **1z** 虽进张数相同，但损失了役牌发展，且 **2p** 作为孤张更难利用。切 **8p** 或 **6p** 则会破坏宝牌对子或降低进张效率，综合来看 **2p** 最佳。"
+  },
+  {
+    "_id": "9a3e767c-0072-4c73-b904-e9928eb4752a",
+    "id": "9a3e767c-0072-4c73-b904-e9928eb4752a",
+    "level": "medium",
+    "body": "8m 1p 3p 3p 4p 7p 7p 9p 2s 8s 8s 9s 3z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9s"
+    ],
+    "uraIndicators": [
+      "9m"
+    ],
+    "recommend": "8m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。**8m** 是唯一与其他牌毫无关联的孤张，切掉后保留 **3p**-**4p**、**7p**-**9p**、**8s**-**9s** 等搭子，进张面不受损失。**3z**（西）是自风役牌对子，作为雀头价值较高，不宜拆散。相比切 **4p** 或 **9p** 会破坏已有好型搭子，**8m** 是更稳妥的弃牌。"
+  },
+  {
+    "_id": "5f4b2422-81c3-421f-9ad2-7cebee2387eb",
+    "id": "5f4b2422-81c3-421f-9ad2-7cebee2387eb",
+    "level": "medium",
+    "body": "1m 2m 5m 6m 7m 1p 1p 2p 4p 6p 1z 3z 3z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m",
+      "7p",
+      "4s"
+    ],
+    "uraIndicators": [
+      "5m",
+      "3s",
+      "4m"
+    ],
+    "recommend": "1z",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌万子有 **1m** **2m** 边搭和 **5m** **6m** **7m** 顺子，饼子 **1p** 对子搭配 **2p** **4p** **6p**，字牌只有 **3z** 对子和刚摸的 **5z** 白役牌。切 **1z** 保留白，进张 **3m** **3p** **5p** 等 16 张，与切 **5z** 向听相同但打点更有潜力；切 **1p** 或 **2p** 会破坏对子或搭子，进张仅 12 张，明显劣后。"
+  },
+  {
+    "_id": "65a91011-422f-44e9-8b0c-b037b975e370",
+    "id": "65a91011-422f-44e9-8b0c-b037b975e370",
+    "level": "medium",
+    "body": "2m 2m 5m 6m 6m 5p 6p 2s 4s 7s 8s 9s 2z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "7m"
+    ],
+    "uraIndicators": [
+      "8p",
+      "4p"
+    ],
+    "recommend": "3z",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **3z**。保留双役牌 **2z**（南）的潜在价值，同时进张数与切 **2z** 相同，但后者会损失两番的役牌机会。切 **6m** 或 **5m** 进张更少且破坏搭子结构，并不明智。"
+  },
+  {
+    "_id": "7d9c11b6-5afe-4702-9f96-c8c9d75f634d",
+    "id": "7d9c11b6-5afe-4702-9f96-c8c9d75f634d",
+    "level": "medium",
+    "body": "1m 1m 8m 4p 9p 1s 2s 3s 4s 7s 9s 4z 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5p",
+      "2z"
+    ],
+    "uraIndicators": [
+      "3s",
+      "4m"
+    ],
+    "recommend": "9p",
+    "ukeire": 60,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。手牌已有一对 **1m** 与北刻子（自风役牌），打掉 **9p** 后保留 **8m** 和 **4p** 两个孤张，同时 **1s**～**4s** 和 **7s**～**9s** 形成两道搭子，进张覆盖最广，后续摸到 **5p**、**6m** 等牌都能快速改善形状。相比之下切 **8m** 或 **4p** 会损失一部分好型搭子的空间，进张数略逊。"
+  },
+  {
+    "_id": "7dde1caa-51b4-4413-94a9-b125ec0eeaac",
+    "id": "7dde1caa-51b4-4413-94a9-b125ec0eeaac",
+    "level": "medium",
+    "body": "1p 2p 6p 7p 2s 2s 2s 3s 3s 4s 0s 8s 1z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m",
+      "2p"
+    ],
+    "uraIndicators": [
+      "6p",
+      "7p"
+    ],
+    "recommend": "8s",
+    "ukeire": 31,
+    "shantenAfter": 2,
+    "note": "推荐切 **8s**。手牌索子侧已形成 2s 暗刻 + 3s 对子 + 4s 赤5s 的连续形，打掉 **8s** 后保留这一紧凑结构，进张覆盖 **2s** **3s** **4s** **5s** **6s** 等大量好型听牌机会。1z 和 4z 均为无役孤张，此时切任何一张进张数相同，但保留字牌无助于牌型发展，而 **8s** 远离主体，优先处理更合理。"
+  },
+  {
+    "_id": "de782011-ff8c-4c62-bcd7-bfc1312318a4",
+    "id": "de782011-ff8c-4c62-bcd7-bfc1312318a4",
+    "level": "medium",
+    "body": "1m 2m 0m 7m 4p 6p 8p 2s 3s 4s 6s 9s 9s",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3p",
+      "7p"
+    ],
+    "uraIndicators": [
+      "9s",
+      "8m"
+    ],
+    "recommend": "6s",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "手牌万子与筒子各有一个坎搭，索子已有 **2s** **3s** **4s** 顺子与 **9s** 对子，摸进 **5z**（白）形成役牌。推荐切 **6s**，保留白增加立直时的一番，同时维持最大进张。若切 **5z** 虽进张相同，但丢掉役牌不划算；切 **8p** 或 **4p** 则破坏宝牌搭子（**4p** 和 **8p** 是宝牌），进张也较少。"
+  },
+  {
+    "_id": "122605dc-646a-41e5-8503-4509ede81cab",
+    "id": "122605dc-646a-41e5-8503-4509ede81cab",
+    "level": "medium",
+    "body": "3m 4m 5m 8m 1p 1p 3p 9p 1s 1s 3s 4s 5s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "7s",
+      "9m"
+    ],
+    "uraIndicators": [
+      "5s",
+      "4p",
+      "6z"
+    ],
+    "recommend": "9p",
+    "ukeire": 45,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。手牌已有两组顺子和两对，保留 **9s** 能等待宝牌 **8s** 的进张，同时摸 **8s** 或 **9s** 都能形成好搭；而 **9p** 的靠张价值相对较低，且与其他搭子不关联。切 **9p** 与切 **9s** 进张数相同，但保留 **9s** 有宝牌优势，更为合理。"
+  },
+  {
+    "_id": "335e9b10-ef67-474f-bca7-7d10eb454f01",
+    "id": "335e9b10-ef67-474f-bca7-7d10eb454f01",
+    "level": "medium",
+    "body": "1m 2m 2m 6m 7m 1p 4p 5p 6p 7p 7p 7p 9p",
+    "draw": "7s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "1m",
+    "ukeire": 48,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。手牌已立直，进张数量是核心，切 **1m** 保留 **2m** 对子和 **6m** **7m** 两面搭，筒子部分 **1p** 虽是孤张但后续摸成搭子即可，整体听牌面最广。切 **9p** 虽保留宝牌 **1m**，但进张少1张，且 **1m** 作为孤张打点贡献有限。"
+  },
+  {
+    "_id": "27be6f79-cffb-49e4-b549-76aa8a965209",
+    "id": "27be6f79-cffb-49e4-b549-76aa8a965209",
+    "level": "medium",
+    "body": "1m 1m 1p 2p 8p 9p 4s 4s 7s 8s 9s 9s 1z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "0m"
+    ],
+    "recommend": "9s",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **9s**。保留 **1z** 这一宝牌双役牌价值极高，同时 **7s** **8s** **9s** 顺子已成型，手牌有 **1m** 和 **4s** 两个对子做雀头候选，进张宽裕。若切 **1z** 或 **5z** 会损失高价值牌，得不偿失。"
+  },
+  {
+    "_id": "8ff21b8c-ff88-4e4a-8c9d-e16db2072bec",
+    "id": "8ff21b8c-ff88-4e4a-8c9d-e16db2072bec",
+    "level": "easy",
+    "body": "3m 3m 7m 8m 9m 4p 5p 8p 9p 2s 3s 4s 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3s"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "5z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **5z**。手牌已有 **7m** **8m** **9m** 和 **2s** **3s** **4s** 两组顺子，保留 **3m** 对子与 **4p** **5p** 两面、**8p** **9p** 边张搭子，切掉孤张 **5z** 后进张集中在数牌，与切 **6z** 的进张数相同，且两者都无役牌对子，但 **5z** 更远离宝牌 **4s** 关联，后续摸牌更具弹性。"
+  },
+  {
+    "_id": "0a15901c-0818-418b-9801-c6cfd431a003",
+    "id": "0a15901c-0818-418b-9801-c6cfd431a003",
+    "level": "easy",
+    "body": "3m 4m 6m 6m 6m 7m 7m 1s 7s 8s 9s 1z 1z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m",
+      "7s"
+    ],
+    "uraIndicators": [
+      "6z",
+      "9m"
+    ],
+    "recommend": "1s",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1s**。保留白（**5z**）作为三元牌搭子，后续摸到白即可获得役牌加番；对比之下 **1s** 是纯粹的孤张，与现有 7s 8s 9s 顺子无法连接，利用价值极低。两者向听进张相同，但切 **1s** 保留了更具潜力的役牌材料，更符合实战中的效率与得分考虑。"
+  },
+  {
+    "_id": "f2d7be5d-9272-49a8-91c3-e7a180332976",
+    "id": "f2d7be5d-9272-49a8-91c3-e7a180332976",
+    "level": "medium",
+    "body": "1m 4m 5m 6m 8m 4p 8p 1s 2s 3s 8s 7z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2m",
+      "4p"
+    ],
+    "uraIndicators": [
+      "1z",
+      "2p"
+    ],
+    "recommend": "1m",
+    "ukeire": 63,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。手牌已有 **7z**（中）的暗刻，立直后保留这一确定役牌，同时 **1m** 是孤立最远的数牌，切掉后进张覆盖 3m、7m 等万子改良与搭子形成，相比于切 **8p** 或 **8m**，进张宽度更优，也能避免破坏 **4m** **5m** **6m** 的连续形与宝牌 **3m** 的关联。"
+  },
+  {
+    "_id": "bda9fb51-6e9c-462d-9655-7339945edee4",
+    "id": "bda9fb51-6e9c-462d-9655-7339945edee4",
+    "level": "medium",
+    "body": "3m 4m 5m 6m 3p 3p 5p 5p 7p 3s 4s 0s 7s",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6z",
+      "6s",
+      "9m"
+    ],
+    "uraIndicators": [
+      "5z",
+      "2m",
+      "4s"
+    ],
+    "recommend": "3z",
+    "ukeire": 73,
+    "shantenAfter": 2,
+    "note": "推荐切 **3z**。这张孤张没有役牌价值，打掉后手牌保留万子的四连型（**3m**-**6m**）和两个对子（**3p** **5p**），索子部分 **3s** **4s** **赤5s** **7s** 好型完整，尤其 **7s** 是宝牌，不应破坏。切 **7p** 或 **7s** 虽也二向听，但会损失筒子或索子的进张，不如切 **3z** 进张面广。"
+  },
+  {
+    "_id": "09bdc38e-740e-452f-a013-f492b6bf2783",
+    "id": "09bdc38e-740e-452f-a013-f492b6bf2783",
+    "level": "medium",
+    "body": "5m 7m 7m 3p 4p 7p 7p 1s 1s 2s 3s 5s 6s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "1s",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **1s**。手牌三对子冗余，拆掉 **1s** 后索子顺势组成 1-2-3 顺子，与 5-6 两面搭连成两面子，进张全面且保留 **2p**（宝牌）的摸牌机会；若切 **3z** 则保留多余对子，孤张增多，牌形更散。"
+  },
+  {
+    "_id": "64db4384-e921-4da6-8570-a9c1c4c885f6",
+    "id": "64db4384-e921-4da6-8570-a9c1c4c885f6",
+    "level": "medium",
+    "body": "3m 9m 4p 6p 7p 7p 7p 9p 0s 7s 2z 2z 5z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z",
+      "3z"
+    ],
+    "uraIndicators": [
+      "7m",
+      "3p"
+    ],
+    "recommend": "3m",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。手牌已形成 **7p** 刻子、**2z**（南）与 **5z**（白）两对，以及 **4p** **6p** 和 **赤5s** **7s** 两个坎搭；保留 **9m** 未来可摸成对子或好型，**9p** 则能与 **7p** 刻子联动（摸 **8p** 可成顺子），只有 **3m** 的进张最孤立、搭子质量最差。切 **3m** 后向听不变，但留出更优的摸牌空间。"
+  },
+  {
+    "_id": "532bd9f4-e0e2-4dbf-8460-81eec09dfc83",
+    "id": "532bd9f4-e0e2-4dbf-8460-81eec09dfc83",
+    "level": "medium",
+    "body": "1m 2m 7m 7m 1p 4p 5p 6p 2s 7s 9s 1z 1z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "1p",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。东对是双役牌，必须保留；切掉 **1p** 既不影响 **4p 5p 6p** 顺子，又保留了 **2s** 和 **北** 的进张，且后续摸到宝牌 **3p** 能直接组成 **3p 4p 5p** 顺子，相比切 **2s** 或 **北** 更灵活。"
+  },
+  {
+    "_id": "8f78b6a3-2756-4d4a-a76b-472742e462cf",
+    "id": "8f78b6a3-2756-4d4a-a76b-472742e462cf",
+    "level": "medium",
+    "body": "3m 0m 8m 1p 3p 7p 8p 1s 7s 8s 9s 1z 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "8m",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。北对已确保自风一番作为雀头，筒子 **1p** **3p** 的坎搭含宝牌 **2p** 进张是关键，切 **8m** 后留下 **1s** 与 **1z** 两孤张，但 **8m** 可与 **3m** **5m** 同花色形成两面改良（如摸 **7m**），而 **1s** 或 **1z** 作为边缘孤张的后续搭子质量明显更低，因此同样向听下保留 **8m** 的未来走型更优。"
+  },
+  {
+    "_id": "fb8464a2-0ecc-46fc-8674-681202f3db22",
+    "id": "fb8464a2-0ecc-46fc-8674-681202f3db22",
+    "level": "medium",
+    "body": "2p 2p 3p 0p 6p 7p 8p 1s 6s 6s 9s 2z 2z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s",
+      "9m"
+    ],
+    "uraIndicators": [
+      "6z",
+      "2m"
+    ],
+    "recommend": "1s",
+    "ukeire": 10,
+    "shantenAfter": 2,
+    "note": "推荐切 **1s**。打掉孤张 **1s**，保留 **9s** 宝牌和 **赤5p** 的坎搭，同时留下南的场风对子；后续摸进 **4p** 可形成带宝牌的顺子，摸进 **2p**/**6s**/南或 **9s** 也能有效推进。打 **3z** 会多留无用的 **1s**，打 **9s** 则损失宝牌，均不如直接切 **1s** 合理。"
+  },
+  {
+    "_id": "b97f6341-82e2-4161-826a-de797152053d",
+    "id": "b97f6341-82e2-4161-826a-de797152053d",
+    "level": "medium",
+    "body": "3m 4m 0m 7m 8m 0p 7p 2s 2s 4s 0s 9s 1z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2m"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "9s",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **9s**。向听与进张数与另外两切相同，但保留 **1z** 和 **3z** 两个役牌孤张，后续摸成对子可直接获得番数，而 **9s** 作为端牌价值最低。同时索子部分成为 **2s** 对子与 **4s** **5s** 两面搭，牌型紧凑，后续进张选择更灵活。"
+  },
+  {
+    "_id": "3ec31ded-124d-4852-a39c-5fbba6063e06",
+    "id": "3ec31ded-124d-4852-a39c-5fbba6063e06",
+    "level": "medium",
+    "body": "7m 7m 8m 5p 5p 8p 1s 3s 3s 4s 5s 0s 9s",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s",
+      "3z"
+    ],
+    "uraIndicators": [
+      "2p",
+      "0p"
+    ],
+    "recommend": "8m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。本手牌有多个对子，切 **8m** 能保留 **7m** 对作为雀头，同时留下 **8p** 与 **5p** 的潜在搭子以及索子 **4s** 与 **3s** **5s** 的好型，进张数相同下更利于利用宝牌 **3s** 对子。相比之下切 **8p** 会丧失筒子唯一的连搭，切 **1s** 或 **4s** 则削弱索子好型，因此推荐 **8m**。"
+  },
+  {
+    "_id": "d3f8d95e-47d1-4469-b88a-6ad94f48dbfb",
+    "id": "d3f8d95e-47d1-4469-b88a-6ad94f48dbfb",
+    "level": "medium",
+    "body": "3m 1p 2p 3p 4p 6p 6p 7p 8p 2s 3s 6s 8s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "3m",
+    "ukeire": 43,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。保留 **7z**（中）作为役牌，能有效提升立直后的打点预期，同时筒子部分（1p 2p 3p 4p、6p 7p 8p）与索子 **2s** **3s**、**6s** **8s** 形成的搭子非常灵活，进张达到最大。若切 **7z** 虽进张数相同，但损失这一番，实战中打点略逊一筹。"
+  },
+  {
+    "_id": "977a1c0b-f6a6-4f21-8ebc-3f2db60c0de4",
+    "id": "977a1c0b-f6a6-4f21-8ebc-3f2db60c0de4",
+    "level": "medium",
+    "body": "1m 4m 2p 3p 4p 7p 8p 9p 2s 4s 7s 9s 3z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z",
+      "9m"
+    ],
+    "uraIndicators": [
+      "8m",
+      "9p"
+    ],
+    "recommend": "4m",
+    "ukeire": 17,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。手牌已有两副顺子，剩余搭子以坎形为主，保留 **1m** 宝牌能在进张后提升打点，且相比切 **4z** 保留自风 **3z**， **1m** 作为宝牌更直接，也更容易形成好形搭子。切 **4m** 后进张面不输于切 **4z**，但宝牌利用率更高，是实战中更细致的判断。"
+  },
+  {
+    "_id": "80a5f125-df71-4c87-b55b-fd73aeba67c7",
+    "id": "80a5f125-df71-4c87-b55b-fd73aeba67c7",
+    "level": "medium",
+    "body": "3m 5m 0m 9m 9p 2s 2s 6s 7s 1z 1z 1z 2z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6z",
+      "7s"
+    ],
+    "uraIndicators": [
+      "3m",
+      "4s"
+    ],
+    "recommend": "9m",
+    "ukeire": 30,
+    "shantenAfter": 2,
+    "note": "推荐切 **9m**。手牌有东暗刻和南对子（场风），保留南对子保留场风役牌机会；切 **9m** 与切 **9p** 进张数相同，但 **3m** 保留后未来摸到 **4m** 可形成好型搭子，而 **9p** 改良空间更窄，从搭子延展性看 **9m** 损失更小。"
+  },
+  {
+    "_id": "522b15a2-0cc9-4738-9495-614a439897b5",
+    "id": "522b15a2-0cc9-4738-9495-614a439897b5",
+    "level": "easy",
+    "body": "3m 4m 5m 7m 3p 4p 7p 2s 2s 2s 4s 0s 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "5s"
+    ],
+    "recommend": "7m",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **7m**。与切 **7p** 相比，两者向听与进张数完全一致，但保留 **7p** 后筒子方向有 **3p** **4p** 两面搭配合，未来更容易形成连续形，而 **7m** 与已成的 **3m** **4m** **5m** 顺子间隔较远，实用性略低，因此选择切 **7m**。"
+  },
+  {
+    "_id": "550805ab-a969-494c-8ec7-1217b3367dad",
+    "id": "550805ab-a969-494c-8ec7-1217b3367dad",
+    "level": "medium",
+    "body": "4m 6m 1p 1s 2s 2s 3s 4s 0s 6s 7s 7s 9s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "1z",
+    "ukeire": 44,
+    "shantenAfter": 2,
+    "note": "推荐切 **1z**。手牌索子部分有较强的连续性，保留2s和7s对子作为雀头，摸进 **5s** 或 **8s** 即可形成顺子；切掉无关的东牌能最大化进张，且不破坏任何搭子。相比切 **1p** 或 **9s** 会损失有效进张，切 **2s** 则拆掉对子绕路，切 **1z** 最合理。"
+  },
+  {
+    "_id": "393bfda5-22aa-4b75-acde-844492bfe819",
+    "id": "393bfda5-22aa-4b75-acde-844492bfe819",
+    "level": "medium",
+    "body": "1m 2m 3m 4m 5m 8m 2p 2s 4s 6s 8s 3z 3z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "9m"
+    ],
+    "recommend": "8m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。保留1m 2m 3m 4m 5m的连续形与2p的边张，进张 **3m**、**6m** 能直接形成好型顺子，同时留下 **中** 的役牌机会。次优切 **2p** 虽进张数相同，但 **8m** 孤张与已有顺子缺乏联系，后续容易绕路。"
+  },
+  {
+    "_id": "bde892b2-fe06-47f5-96b4-1adb489cd121",
+    "id": "bde892b2-fe06-47f5-96b4-1adb489cd121",
+    "level": "easy",
+    "body": "2m 3m 4m 6m 6m 8m 9m 1s 3s 7s 7s 7s 3z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z",
+      "5p"
+    ],
+    "uraIndicators": [
+      "5s",
+      "4p"
+    ],
+    "recommend": "3z",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "向听均为1，进张数相同，但推荐切 **3z**。保留 **4z** 在后续摸进 **4z** 可形成对子，而 **3z** 是无役客风，优先打掉更合理；手牌已有 **7s** 刻子和 **2m 3m 4m** 顺子，剩下 **6m 6m** 对子与 **8m 9m** 边搭、**1s 3s** 坎搭，切掉孤张后进张集中在 **5m** **7m** **2s** **4s** 等，听牌好型概率更高。"
+  },
+  {
+    "_id": "3f768cac-c8ba-459c-883f-4c28009fe639",
+    "id": "3f768cac-c8ba-459c-883f-4c28009fe639",
+    "level": "medium",
+    "body": "2m 2m 0m 9m 9m 3p 5p 6s 7s 1z 4z 4z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5p",
+      "8m"
+    ],
+    "uraIndicators": [
+      "2s",
+      "2z"
+    ],
+    "recommend": "3p",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **3p**。手牌已有 **6z** 刻子与 **9m** **2m** **4z** 三个对子，保留 **6s** **7s** 两面搭比 **3p** **5p** 坎搭更易进张，且切掉 **3p** 后 **5p** 邻接宝牌 **6p**，后续可形成好型，优于切 **1z** 留下无役的东牌。虽然进张数相同，但切 **3p** 在后续好型与宝牌关联上更占优。"
+  },
+  {
+    "_id": "25c21de0-bda7-4c1f-9a59-60cba45163f2",
+    "id": "25c21de0-bda7-4c1f-9a59-60cba45163f2",
+    "level": "medium",
+    "body": "2m 3m 4m 6m 8m 8m 1p 8p 8p 2s 3s 5s 6s",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "1p",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。已立直，手牌有两组好形两面（**2s** **3s** 与 **5s** **6s**）和两个对子（**8m**、**8p**），保留 **2z** 作为安全牌更有利于后续防守；切 **1p** 后进张数与切 **2z** 同为 20 张，但不破坏已搭的顺子与对子结构，后续摸进 **7m** 或 **4s**/**7s** 均能顺利听牌，牌型更舒展。"
+  },
+  {
+    "_id": "c6148c11-1513-4d4b-acd7-6a791908132e",
+    "id": "c6148c11-1513-4d4b-acd7-6a791908132e",
+    "level": "medium",
+    "body": "6m 7m 2p 2p 3p 5p 2s 4s 7s 7s 8s 9s 3z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7s"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "7s",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **7s**，将索子整理为 **7s** **8s** **9s** 顺子，同时保留三元牌 **6z**（发）的役牌价值；相比切 **3z** 或 **6z**，进张数相同但手牌结构更整齐，后续摸进更容易形成好型听牌。"
+  },
+  {
+    "_id": "e1e02935-c270-4a4e-998e-f37f697beb80",
+    "id": "e1e02935-c270-4a4e-998e-f37f697beb80",
+    "level": "medium",
+    "body": "4m 4m 6m 8m 1p 3p 4p 8p 8p 2s 3s 4s 5z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m",
+      "9m",
+      "4z"
+    ],
+    "uraIndicators": [
+      "7z",
+      "1s",
+      "7p"
+    ],
+    "recommend": "1p",
+    "ukeire": 22,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。目前手牌已有 **2s** **3s** **4s** 顺子，四个搭子分别是 **4m** 对子、**6m** **8m** 坎搭、**3p** **4p** 双面搭、**8p** 对子，加上 **5z** 对子作雀头候补。切掉 **1p** 后保留全部好形搭子与宝牌 **4m** 对子，进张最多，摸 **2p**/**5p** 或 **7m** 可直接听牌；若切 **4m** 则损失宝牌对子且进张减少，不如前者灵活。"
+  },
+  {
+    "_id": "72eb1370-1543-4a8e-a5ee-1fdaaad3969e",
+    "id": "72eb1370-1543-4a8e-a5ee-1fdaaad3969e",
+    "level": "medium",
+    "body": "6m 9m 9m 6p 9p 7s 7s 7s 9s 9s 2z 5z 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "6z"
+    ],
+    "recommend": "7s",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **7s**。手牌已有 **7s** 暗刻与三组对子，切掉一张 **7s** 可保留四对子结构，既能沿七对子发展，也方便碰碰和；相比打掉 **6m** 或 **6p** 等孤张，进张多出 3 张，且不会破坏役牌 **5z**（白）的对子与 **7z**（中）的单张潜力，是两向听下最灵活的一打。"
+  },
+  {
+    "_id": "84664900-eb2f-4b5c-b648-402197e2e6cd",
+    "id": "84664900-eb2f-4b5c-b648-402197e2e6cd",
+    "level": "medium",
+    "body": "2m 3m 4m 5m 6m 1p 2p 4p 5s 5s 9s 2z 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "1p",
+    "ukeire": 19,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。保留 **4p** 宝牌的同时，筒子留 **2p** **4p** 坎搭，摸进 **3p** 即可形成宝牌顺子，打点优势明显。若切 **4p** 则丢掉宝牌，切 **6z** 或 **9s** 虽保留对子，但后续容易陷入对碰或单骑，不如保持万子五连与筒子搭子的灵活性。"
+  },
+  {
+    "_id": "6fe6698b-cbd6-4aa1-aa3f-ca5c23197347",
+    "id": "6fe6698b-cbd6-4aa1-aa3f-ca5c23197347",
+    "level": "medium",
+    "body": "4m 8m 9m 9m 3p 5p 5p 8p 3s 3s 4s 8s 8s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "4m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切**4m**。这手牌中**4m**是唯一完全远离任何搭子的孤张，保留**8m**与**9m**的边搭和**3p**与**5p**的坎搭，后续进张互补。切**8m**或**3p**会破坏已有好型，而切**8p**虽保留相同搭子，但**8p**至少与**5p**有间隔，**4m**则更为孤立，故推荐**4m**。"
+  },
+  {
+    "_id": "15b4fb73-5a06-4103-8009-63ef413c8f8a",
+    "id": "15b4fb73-5a06-4103-8009-63ef413c8f8a",
+    "level": "medium",
+    "body": "1m 3m 3m 3m 1p 1p 3p 6p 8p 3s 4s 0s 8s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "7z",
+    "ukeire": 44,
+    "shantenAfter": 2,
+    "note": "推荐切 **7z**。手牌已有 **3m** 暗刻和 **1p** 对子，其余搭子尚在整理中，切掉孤张 **7z** 能保留所有数牌进张，进张面最广（44张）。如果切 **1m** 或 **8s** 会破坏边搭或索子连型，进张明显减少且绕路，实战中不必为一张无役的客风牌浪费搭子。"
+  },
+  {
+    "_id": "3bf6a489-72f1-4c49-bcd8-2edfd68d9db1",
+    "id": "3bf6a489-72f1-4c49-bcd8-2edfd68d9db1",
+    "level": "medium",
+    "body": "6m 6m 7m 7m 9m 9m 2p 2p 3p 0p 7p 1z 2z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1z",
+      "6z"
+    ],
+    "uraIndicators": [
+      "7z",
+      "2s"
+    ],
+    "recommend": "3p",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **3p**。保留 **2z**（自风+宝牌）与 **1z**（场风）的同时，留下 **赤5p**（赤5）与 **7p** 的搭子潜力，万子部分 **6m6m7m7m9m9m** 也更容易通过摸进 **5m** 或 **8m** 等形成一杯口或一气通贯的好型。切 **4z** 虽保留全部役牌，但 **3p** 与 **2p** 对子构成的复合型效率更低，进张质量反而不如本手。"
+  },
+  {
+    "_id": "cb322348-6c26-407a-b86a-8ccff2ec6064",
+    "id": "cb322348-6c26-407a-b86a-8ccff2ec6064",
+    "level": "medium",
+    "body": "3m 4m 5m 7m 9m 1p 2p 5p 7p 7p 5s 7s 2z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1m"
+    ],
+    "uraIndicators": [
+      "4s"
+    ],
+    "recommend": "5p",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **5p**。手牌已形成 **3m 4m 5m** 顺子、**7p** 对子，以及 **1p2p**、**5s7s**、**7m9m** 三组搭子，孤张中 **2z** 与 **7z** 虽无直接联系，但保留 **7z** 有机会摸成役牌对子增添打点，而 **5p** 是孤立数牌，与周围搭子无衔接，切掉后进张效率与其他切法相当，且保留字牌更利于平衡打点与防守。"
+  },
+  {
+    "_id": "5a4cdf3d-7b43-4404-a000-b0a60a17ac0e",
+    "id": "5a4cdf3d-7b43-4404-a000-b0a60a17ac0e",
+    "level": "medium",
+    "body": "1m 3m 6m 1p 6p 7p 8p 2s 3s 4s 5s 2z 2z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2m"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "7z",
+    "ukeire": 60,
+    "shantenAfter": 2,
+    "note": "推荐切 **7z**。手牌已有南对子作为场风役牌，保留单张的中反而拖慢速度；切掉 **7z** 后，形成 **6p** **7p** **8p** 顺子、**2s** **3s** **4s** **5s** 四连型，搭配 **1m** **3m** 的坎搭和 **6m** **1p** 的孤张，进张面极广，且摸到 **2m**（宝牌）或 **2s** 等牌能直接形成好型听牌。相比切 **1p** 留下中，这一手进张更多、牌型更流畅。"
+  },
+  {
+    "_id": "5b6a93c0-bad5-4afa-97ac-ff4cdd28248f",
+    "id": "5b6a93c0-bad5-4afa-97ac-ff4cdd28248f",
+    "level": "medium",
+    "body": "8m 6p 6p 7p 8p 8p 1s 3s 0s 6s 8s 9s 9s",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1m",
+      "4z",
+      "5m"
+    ],
+    "uraIndicators": [
+      "7z",
+      "4s",
+      "6z"
+    ],
+    "recommend": "8m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **8m**。保留场风役牌 **2z**，同时索子一侧的 **1s**–**3s** 坎、**赤5s**–**6s** 两面、**8s**–**9s** 边搭均完整，筒子 **6p**–**8p** 的对子与 **7p** 可灵活转换，进张质量最优。切 **8s** 会破坏 **8s**–**9s** 搭子，切 **2z** 则丢掉役牌，两者虽也是15进张但形状与打点均略逊。"
+  },
+  {
+    "_id": "512ffc9e-164c-4d1d-baa0-61c90f0d91ef",
+    "id": "512ffc9e-164c-4d1d-baa0-61c90f0d91ef",
+    "level": "medium",
+    "body": "1m 6m 8m 1p 8p 2s 3s 4s 0s 6s 6s 7s 7s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p",
+      "8p"
+    ],
+    "uraIndicators": [
+      "7z",
+      "5s"
+    ],
+    "recommend": "1m",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **1m**。万子中 **1m** 是孤立远张，切掉后 **6m** **8m** 形成坎搭，进 **7m** 即可成顺，保留宝牌 **8p** 的同时有效整合了杂牌；若切北或 **1p**，则万子或筒子会多出一张无效率孤张，方向不如 **1m** 清晰。"
+  },
+  {
+    "_id": "daf35c5e-458c-4bc9-8f2c-99e2828d88a2",
+    "id": "daf35c5e-458c-4bc9-8f2c-99e2828d88a2",
+    "level": "easy",
+    "body": "1m 1m 3m 4m 5m 7m 9m 9m 1p 7p 8p 9p 3s",
+    "draw": "5s",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "1s"
+    ],
+    "uraIndicators": [
+      "8m",
+      "6p"
+    ],
+    "recommend": "1p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。保留 **1m** 与 **9m** 双对子，让 **3m** **4m** **5m** 顺子与 **7p** **8p** **9p** 顺子固定，加上 **3s** **5s** 坎搭，进张 **4s** 与 **7m** 可直接听牌，且 **9m** 对子保留碰牌机会。切 **7m** 或 **9m** 会导致进张下降，且 **9m** 是宝牌 **5m** 的相邻牌，保留更灵活。"
+  },
+  {
+    "_id": "c2db1297-468e-4ebc-b65f-32fe0ce5d050",
+    "id": "c2db1297-468e-4ebc-b65f-32fe0ce5d050",
+    "level": "medium",
+    "body": "1m 3m 6m 2p 3p 4p 5p 6p 8p 5s 6s 7s 9s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1m"
+    ],
+    "uraIndicators": [
+      "1p"
+    ],
+    "recommend": "6m",
+    "ukeire": 30,
+    "shantenAfter": 2,
+    "note": "推荐切**6m**。这里保留**1m** **3m**的坎搭，因为摸到宝牌**2m**就能形成高打点顺子，价值突出；切掉兼有进张的**6m**反而让牌型更集中，避免万子方向冲突，后续靠筒子五连与索子完成面子即可。另一候补**9s**虽进张数相同，但保留**6m**会多出一个与宝牌无关的孤张，效率稍逊；而切**1z**虽打掉废牌，却留下两个数牌孤张，不如直接精简万子结构。"
+  },
+  {
+    "_id": "3dff628c-bd1c-4419-87ef-223dfc1271df",
+    "id": "3dff628c-bd1c-4419-87ef-223dfc1271df",
+    "level": "easy",
+    "body": "1m 1m 3m 4m 5m 3p 3p 3p 3s 0s 7s 8s 2z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3s"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "5z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2z**。保留 **5z**（白）为孤张，与切 **5z** 进张完全相同（均听 **4s** **6s** **9s**），但三元牌在任何场都是稳定役牌，而场风南仅限本局，保留 **5z** 在未来摸成对子时更灵活，因此优先打掉场风南。"
+  },
+  {
+    "_id": "e020620c-9830-41c9-a27d-aeab150bd427",
+    "id": "e020620c-9830-41c9-a27d-aeab150bd427",
+    "level": "medium",
+    "body": "2m 4m 5m 5m 0m 8m 1p 5p 6p 7p 7p 2s 4z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "8s"
+    ],
+    "recommend": "1p",
+    "ukeire": 56,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。这张孤张没有留下任何搭子，保留 **5p** **6p** 的两面搭、**7p** 对子以及 **5m** 暗刻，进张路线最广。切 **8m** 或 **2s** 会损失后续的连形，而切 **7p** 则破坏已有的对子，进张均不如切 **1p**。"
+  },
+  {
+    "_id": "669666bc-c500-45e7-9a92-705fe13c1957",
+    "id": "669666bc-c500-45e7-9a92-705fe13c1957",
+    "level": "medium",
+    "body": "3m 4m 4m 8m 8m 8p 1s 5s 7s 7s 2z 2z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "4z"
+    ],
+    "recommend": "3m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。虽然进张数相同，但保留 **3m** 会使万子产生重复进张（摸 **4m** 时与宝牌对子重叠，摸 **2m** 后仍需处理 **4m** 对子），切掉后手牌的四组对子（**4m**、**8m**、**7s**、**2z**）更简洁，单张中留有役牌的 **6z** 和 **7z** 以及两端连络的 **1s**、**5s**、**8p**，后续摸牌向好听牌更顺畅。"
+  },
+  {
+    "_id": "12f4e2da-2796-4b0b-b156-8719be160b18",
+    "id": "12f4e2da-2796-4b0b-b156-8719be160b18",
+    "level": "medium",
+    "body": "5m 6m 7m 1p 7p 1s 2s 2s 3s 4s 1z 2z 2z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "0s",
+      "1p"
+    ],
+    "uraIndicators": [
+      "3m",
+      "8p"
+    ],
+    "recommend": "4z",
+    "ukeire": 38,
+    "shantenAfter": 2,
+    "note": "推荐切 **4z**。手牌已有 **2s** 和 **2z** 两个对子，保留自风 **1z** 的役牌潜力比保留无役的 **4z** 更有价值，二者进张数相同（38张），切 **4z** 后摸到 **1z** 可成役牌对子，提升打点。切 **1p** 或 **7p** 则减少进张，且 **2p** 是宝牌，但 **1p** 本身无直接关联，不必强留。"
+  },
+  {
+    "_id": "97436e2b-ffd8-476b-a11b-9ad550d7348d",
+    "id": "97436e2b-ffd8-476b-a11b-9ad550d7348d",
+    "level": "medium",
+    "body": "0m 7m 2p 3p 7p 9p 9p 5s 6s 9s 9s 9s 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "7p",
+    "ukeire": 20,
+    "shantenAfter": 2,
+    "note": "推荐切 **7p**，保留 **6z** 役牌单张。9s暗刻与9p对子稳定，2p3p、5s6s两面及5m7m坎搭已构成足够要素，切掉7p后两个字牌孤张的进张（**2z** **6z**）不影响现有好形，且未来摸进字牌对子能直接替换雀头或凑役，打点优势明显。相比之下切字牌会失去役牌潜力，或让7p的进张与9p对子冲突，故优先选择切 **7p**。"
+  },
+  {
+    "_id": "2689685f-520b-4f40-9134-baf4951abcc1",
+    "id": "2689685f-520b-4f40-9134-baf4951abcc1",
+    "level": "medium",
+    "body": "1m 1m 5m 7m 3p 4p 2s 2s 4s 5s 8s 8s 8s",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4m",
+      "0p"
+    ],
+    "uraIndicators": [
+      "3z",
+      "2p"
+    ],
+    "recommend": "2z",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **2z**。保留 **1m** 和 **2s** 两个对子作为雀头或碰牌素材，同时两面的 **3p** **4p** 与 **4s** **5s** 进张丰富，补上 **6m** 还能形成好型，比拆对子或拆搭子更灵活。切掉场风牌并不会损失有价值的搭子，后续进张更广，容易走向听牌。"
+  },
+  {
+    "_id": "a9a03fc6-2b7c-4595-b6ff-104326a543c4",
+    "id": "a9a03fc6-2b7c-4595-b6ff-104326a543c4",
+    "level": "medium",
+    "body": "5m 1p 3p 0p 6p 8p 4s 5s 6s 7s 8s 9s 2z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2m",
+      "8s"
+    ],
+    "uraIndicators": [
+      "5p",
+      "7m"
+    ],
+    "recommend": "3z",
+    "ukeire": 27,
+    "shantenAfter": 2,
+    "note": "推荐切 **3z**。保留场风 **2z** 作为役牌孤张，同时留下 **5m** 作为可能的雀头候选，未来摸进 **2z** 或 **5m** 可形成对子，而索子六连与筒子搭子已构成充足进张结构。切 **3z** 与切 **5m** 向听进张数相同，但保留役牌更具价值；切 **8p** 会破坏筒子搭子，进张明显减少，不推荐。"
+  },
+  {
+    "_id": "e8dcbf95-7142-4e65-b45b-2c1550c0ca62",
+    "id": "e8dcbf95-7142-4e65-b45b-2c1550c0ca62",
+    "level": "medium",
+    "body": "4m 7m 8m 9m 1p 2p 2p 4p 3s 6s 8s 8s 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9p",
+      "0m"
+    ],
+    "uraIndicators": [
+      "5s",
+      "8p"
+    ],
+    "recommend": "4m",
+    "ukeire": 12,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。打掉 **4m** 后保留 **7m** **8m** **9m** 顺子和 **1p** 宝牌搭子，筒子 **1p** **2p** **4p** 能形成 **2p** 对子与 **1p** **2p** 边张、**2p** **4p** 坎张，索子 **3s** **6s** 坎搭与 **8s** 对子保留足够进张，与切 **3s** 相比进张数相当但搭子结构更均衡，宝牌 **1p** 也得到有效保护。"
+  },
+  {
+    "_id": "50d54ea9-3858-4db7-8608-d54d4cb1454e",
+    "id": "50d54ea9-3858-4db7-8608-d54d4cb1454e",
+    "level": "medium",
+    "body": "4m 7m 8m 9m 1p 1p 2p 1s 2s 3s 5s 6s 4z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "4z",
+    "ukeire": 43,
+    "shantenAfter": 2,
+    "note": "推荐切 **4z**。保留 **5z**（白）的役牌进张，同时万子、索子已形成较好形状，切掉客风北不影响牌效。切 **5z** 虽进张相同，但会浪费三元牌的役牌机会，实战中优先保留有番的牌。"
+  },
+  {
+    "_id": "60455bea-b3e8-45be-aa3e-6db796f8f5d2",
+    "id": "60455bea-b3e8-45be-aa3e-6db796f8f5d2",
+    "level": "medium",
+    "body": "1m 2m 3m 3m 4m 5m 7m 8m 1p 3p 6p 4s 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6p",
+      "5s",
+      "2z"
+    ],
+    "uraIndicators": [
+      "7s",
+      "4z",
+      "8p"
+    ],
+    "recommend": "6p",
+    "ukeire": 21,
+    "shantenAfter": 2,
+    "note": "推荐切 **6p**。手牌已有 **3m** 雀头，万子两侧 **4m 5m** 与 **7m 8m** 两面搭扎实，筒子 **1p** **3p** 坎搭形状欠佳。保留 **4s** 与 **6z** **7z** 两个三元牌孤张，摸 **发** 或 **中** 可立即获得役牌雀头，同时 **4s** 的进张（**2s**～**6s**）能补强索子一侧，整体进张数与切其他牌相同，但好型率和役牌收益更优。切 **6p** 避免了筒子再进张后形成双搭分散牌力，是更紧凑的一手。"
+  },
+  {
+    "_id": "a9d61528-654a-4d0b-80c7-a2a12785cc5e",
+    "id": "a9d61528-654a-4d0b-80c7-a2a12785cc5e",
+    "level": "medium",
+    "body": "1m 2m 3m 6m 7m 6p 1s 3s 4s 6s 7s 7s 9s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "6p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **6p**。保留自风牌 **北** 作为役牌机会，进张数与切 **9s** 或 **4z** 相同，但 **北** 能提升打点潜力，实战更优。切 **9s** 虽也留北，但 **6p** 的孤立度更高、靠搭效率略低，故舍弃 **6p** 更合理。"
+  },
+  {
+    "_id": "a7dbbcf5-7110-4a08-8dce-426495858ffc",
+    "id": "a7dbbcf5-7110-4a08-8dce-426495858ffc",
+    "level": "easy",
+    "body": "3m 4m 6m 3p 4p 0p 8p 8p 3s 3s 4s 5s 6s",
+    "draw": "6s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "6m",
+    "ukeire": 14,
+    "shantenAfter": 1,
+    "note": "推荐切 **6m**。手牌已有3p4p赤5p的顺子，保留3m4m的两面搭和索子的复杂结构（3s对子、6s对子、4s5s两面），进张最广。切3s或6s会破坏一个对子，切3m则退化为坎搭，都不如保留万子两面灵活。"
+  },
+  {
+    "_id": "8caca435-f75d-4fcf-bd31-a5892e0be2a0",
+    "id": "8caca435-f75d-4fcf-bd31-a5892e0be2a0",
+    "level": "medium",
+    "body": "6m 7m 8m 2p 3p 3p 4p 6p 7p 6s 7s 2z 4z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s"
+    ],
+    "uraIndicators": [
+      "7m"
+    ],
+    "recommend": "3p",
+    "ukeire": 25,
+    "shantenAfter": 2,
+    "note": "推荐切 **3p**。保留 **2p** **4p** 的坎搭与 **6p** **7p** 两面，且 **南** **北** **中** 三枚字牌均有成对机会，其中 **北** 为自风、**中** 为三元，进张最广。若切字牌虽暂保雀头，但使役牌机会减少，进张也略逊一筹。"
+  },
+  {
+    "_id": "9d48f132-8ba3-4878-81de-a28d78949157",
+    "id": "9d48f132-8ba3-4878-81de-a28d78949157",
+    "level": "easy",
+    "body": "1m 2m 3m 1p 4p 5p 6p 7p 8p 1s 6s 7s 8s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "6m",
+      "5z"
+    ],
+    "uraIndicators": [
+      "9p",
+      "4m"
+    ],
+    "recommend": "1p",
+    "ukeire": 20,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。保留筒子五连形，可灵活组成4p 5p或7p 8p两面搭，听牌时好型更多；切 **1s** 虽进张数相同，但索子只能形成单骑或坎张，后续听牌质量稍逊。立直已宣告，更应追求好型听牌。"
+  },
+  {
+    "_id": "7ec3b26b-2a4f-446f-9c0b-b56b0a5cce33",
+    "id": "7ec3b26b-2a4f-446f-9c0b-b56b0a5cce33",
+    "level": "medium",
+    "body": "9m 3p 4p 0p 8p 9p 9p 2s 3s 6s 8s 8s 1z",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "9m",
+    "ukeire": 22,
+    "shantenAfter": 2,
+    "note": "推荐切 **9m**。手牌有 **1z**(东) 双役牌+宝牌对子，加上 **9p** 和 **8s** 两个对子，保留对子等待碰牌是高效打法。切 **9m** 能维持所有对子和好型搭子，进张最广；若切 **9p** 或 **8s** 则破坏对子，损失碰牌机会，得不偿失。"
+  },
+  {
+    "_id": "03ea0925-9fb7-4348-880c-01c0abfb03f5",
+    "id": "03ea0925-9fb7-4348-880c-01c0abfb03f5",
+    "level": "medium",
+    "body": "1m 1m 2m 7m 5p 6p 7p 8p 9p 5s 6s 7s 4z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1m",
+      "9p",
+      "5s"
+    ],
+    "uraIndicators": [
+      "6p",
+      "8s",
+      "6m"
+    ],
+    "recommend": "7z",
+    "ukeire": 42,
+    "shantenAfter": 2,
+    "note": "推荐切 **4z**，保留 **7z**（中）作为役牌机会。手牌已有5s 6s 7s顺子和5p 6p 7p 8p 9p五连型，进张面极宽，切掉自风北后仍能维持42张有效进张，与切 **7z** 同数，但保留中牌在后续摸成对子时能确保打点提升。相比切 **2m** 或 **7m**，此选择进张最多，且不会损失宝牌 **2m** 的摸进潜力。"
+  },
+  {
+    "_id": "beed64d0-6b8e-4127-b130-5ab3c8d20cdc",
+    "id": "beed64d0-6b8e-4127-b130-5ab3c8d20cdc",
+    "level": "medium",
+    "body": "3m 4m 0m 7m 8m 9m 1p 4p 5p 8p 3s 3z 3z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "4z",
+    "ukeire": 47,
+    "shantenAfter": 2,
+    "note": "推荐切 **4z**。手牌万子已是两组面子，剩下数牌搭子丰富，保留 **1p**、**8p** 等孤张比保留字牌孤张进张更广，且北并非役牌，没有保留价值。"
+  },
+  {
+    "_id": "bfd2ca27-cb76-48c6-b1d1-7604866bd7df",
+    "id": "bfd2ca27-cb76-48c6-b1d1-7604866bd7df",
+    "level": "medium",
+    "body": "3m 1p 1p 2p 3p 4p 5p 6p 6p 7p 9p 3s 8s",
+    "draw": "9s",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m",
+      "2m"
+    ],
+    "uraIndicators": [
+      "1z",
+      "6z"
+    ],
+    "recommend": "9p",
+    "ukeire": 59,
+    "shantenAfter": 2,
+    "note": "推荐切 **9p**。手牌筒子已有 **1p** 对、**6p** 对及 **2p** 至 **7p** 的连续形，切掉 **9p** 后保留两对与顺子骨架，进张最广且好型概率最高。相比切 **6p** 会破坏对子、切 **3s** 或 **3m** 则大幅损失进张数，立直后应优先追求效率和灵活性。"
+  },
+  {
+    "_id": "bad5af99-af63-4f34-be8b-ce3aa8e1924d",
+    "id": "bad5af99-af63-4f34-be8b-ce3aa8e1924d",
+    "level": "medium",
+    "body": "8m 1p 4p 4p 7p 2s 6s 6s 9s 9s 3z 3z 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "1p",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **1p**。手牌对子众多，七对子与面子手并行的两向听，1p是孤张中与周围联络最弱的牌，保留7p和2s更有潜力与4p、6s形成好型，且不损失役牌发与宝牌8m，后续进张灵活。"
+  },
+  {
+    "_id": "6e49ddeb-e060-4409-a9a6-249d48ab5a6e",
+    "id": "6e49ddeb-e060-4409-a9a6-249d48ab5a6e",
+    "level": "medium",
+    "body": "4m 6m 5p 5p 9p 9p 3s 5s 6s 6s 9s 5z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p",
+      "8p"
+    ],
+    "uraIndicators": [
+      "9m",
+      "0s"
+    ],
+    "recommend": "4m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。保留 **6m** 孤张与索子侧 **5s**—**6s** 两面搭、**3s**—**5s** 坎搭，摸进 **5m**、**4s** 或 **7s** 即可直接改善搭子质量，且宝牌 **9p** 对子完好无损。切 **3s** 会放弃 **3s**—**5s** 坎搭的进张潜力，好型率不如保留搭子全面的切法。"
+  },
+  {
+    "_id": "1c2e3de5-557f-4a55-9a7a-95b370b9440c",
+    "id": "1c2e3de5-557f-4a55-9a7a-95b370b9440c",
+    "level": "medium",
+    "body": "2m 4m 6m 5p 8p 9p 3s 3s 3s 3s 4s 5s 8s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1z"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "8s",
+    "ukeire": 24,
+    "shantenAfter": 2,
+    "note": "推荐切 **8s**。当前手牌已立直，保留自风北的役牌能确保打点，且切 **8s** 与切 **5p**、**4z** 的进张数完全相同（均为24张），但后者会丢掉北风的番或破坏搭子结构——切 **4z** 直接损失自风，切 **5p** 则多留一个孤张 **8s**，并不比保留 **8s** 更优。万子两坎和索子暗刻加单张的骨架不变，进张广度一致，因此保留役牌是实战中更合理的判断。"
+  },
+  {
+    "_id": "e3472b0c-5e61-40a2-aa66-139d8a00d604",
+    "id": "e3472b0c-5e61-40a2-aa66-139d8a00d604",
+    "level": "medium",
+    "body": "3m 0m 7m 8m 9m 2p 6p 6p 8p 3s 4s 8s 9s",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p",
+      "3p"
+    ],
+    "uraIndicators": [
+      "3s",
+      "5s"
+    ],
+    "recommend": "2p",
+    "ukeire": 16,
+    "shantenAfter": 2,
+    "note": "推荐切 **2p**。手牌中 **8p** 与 **6p** 对子有成形潜力（摸 **7p** 可成 **7p 8p** 两面），而 **2p** 孤立且与周边搭子关联弱；保留 **7z**（中）作为役牌，后续摸成对子即可增加打点，因此切出最弱的孤张 **2p** 是合理选择。"
+  },
+  {
+    "_id": "5f749843-ba44-43b4-ba22-0c93c0752be6",
+    "id": "5f749843-ba44-43b4-ba22-0c93c0752be6",
+    "level": "medium",
+    "body": "1m 2m 3m 4m 9m 8p 1s 4s 0s 6s 7s 8s 9s",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "6z",
+    "ukeire": 57,
+    "shantenAfter": 2,
+    "note": "推荐切 **6z**。保留万子1m 2m 3m 4m的连续形与索子4s 5s 6s 7s 8s 9s的好型，进张最广且后续好型听牌机会多。其他切法如 **9m** 会破坏万子连续性，进张明显减少，不值得。"
+  },
+  {
+    "_id": "d70366fb-2d57-46f1-8b2c-79d317e08705",
+    "id": "d70366fb-2d57-46f1-8b2c-79d317e08705",
+    "level": "medium",
+    "body": "4m 1p 2p 2p 9p 2s 2s 6s 8s 8s 9s 2z 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "4s"
+    ],
+    "recommend": "4m",
+    "ukeire": 15,
+    "shantenAfter": 2,
+    "note": "推荐切 **4m**。手牌已有四个对子（**2p**、**2s**、**8s**、**2z**），保留 **1p** 能与 **2p** 形成边张搭子，**6s** 与 **8s** **9s** 有连络潜力，而 **4m** 孤立无援，切掉后不影响现有搭子结构，进张走向最自然。"
+  },
+  {
+    "_id": "c8fa732a-6e7b-4a43-b33e-ed0ed4564f90",
+    "id": "c8fa732a-6e7b-4a43-b33e-ed0ed4564f90",
+    "level": "easy",
+    "body": "8m 8m 3p 8p 9p 9p 3s 8s 8s 9s 9s 6z 6z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "9m"
+    ],
+    "recommend": "3p",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **3p**。手牌为五对三单的一向听，摸进剩余单张 **8p**、**3s**、**7z** 之一成对后切另一单张即可听牌，进张均为9张。切 **3p** 保留了役牌 **中** 及 **8p** 与 **9p** 的边张潜力，进张相同下后手更具弹性；若切 **7z** 则损失役牌打点，故不优先。"
+  },
+  {
+    "_id": "41ecf8de-1dcd-436c-bf22-f175b90bb8f4",
+    "id": "41ecf8de-1dcd-436c-bf22-f175b90bb8f4",
+    "level": "medium",
+    "body": "3m 9m 9m 1p 7p 8p 9p 5s 7s 9s 9s 1z 1z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "3m",
+    "ukeire": 10,
+    "shantenAfter": 2,
+    "note": "推荐切 **3m**。手牌已有三组对子，保留自风牌 **3z** 保留役牌机会；**3m** 与 **1p** 虽同为孤张，但 **3m** 与 **9m** 无直接搭子联系，且切掉后不破坏 **7p**-**9p** 顺子与 **5s**-**9s** 的坎搭潜力，后续进张时好型率更优。"
+  },
+  {
+    "_id": "9403deb1-2819-4acd-a185-b17025d8b9d0",
+    "id": "9403deb1-2819-4acd-a185-b17025d8b9d0",
+    "level": "medium",
+    "body": "1m 1m 5m 7m 8m 9m 2p 2p 3p 4p 7p 8p 5z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2p"
+    ],
+    "uraIndicators": [
+      "0p"
+    ],
+    "recommend": "5z",
+    "ukeire": 47,
+    "shantenAfter": 2,
+    "note": "推荐切 **5z**。手牌已有1m和2p两个对子，外加3p 4p、7p 8p两个好搭，打掉孤张字牌能保留全部好形，进张最广；打2p会破坏对子，打5m则会损失一个可能的顺子延伸，进张明显减少。同为三元牌，切 **5z** 与切 **7z** 进张相同，但按牌理优先保留更靠后的字牌更安全，因此推荐 **5z**。"
+  },
+  {
+    "_id": "591f7626-9bdd-4923-a292-b519ad8e7128",
+    "id": "591f7626-9bdd-4923-a292-b519ad8e7128",
+    "level": "easy",
+    "body": "3m 3m 4m 4m 6m 8m 5p 6p 6p 7p 6s 7s 7s",
+    "draw": "8s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7s",
+      "7m"
+    ],
+    "uraIndicators": [
+      "3m",
+      "2z"
+    ],
+    "recommend": "6p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **6p**。切掉 **6p** 后筒子形成 **5p** **6p** **7p** 的完整顺子，万子与索子保留 **6m** **8m** 与 **6s** **7s** **8s** 的复合搭子，同时保住宝牌 **8s** 与 **8m** 的关联，进张集中在 **7m** 与 **7s** 等好型，后续听牌更易形成两面。切 **7s** 虽进张张数相同，但会破坏索子的顺子潜力，使搭子偏恶，实战中不如切 **6p** 灵活。"
+  },
+  {
+    "_id": "f8150e8d-541e-4318-bcc8-2bd805098a0c",
+    "id": "f8150e8d-541e-4318-bcc8-2bd805098a0c",
+    "level": "easy",
+    "body": "5m 7m 8m 9m 3p 3p 3p 5p 7p 5s 6s 8s 2z",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "2s"
+    ],
+    "recommend": "5m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **5m**。手牌已有 **3p** 和 **2z** 两个暗刻，保留 **7m**-**8m**-**9m** 顺子后，主要靠 **5s**-**6s** 两面与 **5p**-**7p** 坎搭推进，进张 **4s**、**7s**、**6p** 共12张，摸到即可听牌。切 **8s** 虽进张数相同，但留下 **5m** 孤张后，摸到 **5m** 反而拖慢节奏，不如切 **5m** 直接锁定两搭方向。"
+  },
+  {
+    "_id": "9f88605f-1c8b-489a-8237-331a99088620",
+    "id": "9f88605f-1c8b-489a-8237-331a99088620",
+    "level": "easy",
+    "body": "3m 0m 1p 2p 3p 6p 7p 1s 2s 3s 5s 6s 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "3m",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **3m**。手牌已有1p 2p 3p和1s 2s 3s两组顺子、北对做雀头，保留 **赤5m** 的孤张能与6p 7p、5s 6s两面搭维持最佳一向听进张（16张）。切 **赤5m** 虽进张相同，但会损失红宝牌的潜在打点，且保留 **3m** 后续只能形成3m 4m搭子，不如保留赤5m以备听牌后形成好形。切 **5s** 或 **6s** 则会破坏5s 6s两面搭，减少进张，显然劣化。"
+  },
+  {
+    "_id": "b466b53c-2a25-45ce-b7c3-1614294a58d5",
+    "id": "b466b53c-2a25-45ce-b7c3-1614294a58d5",
+    "level": "easy",
+    "body": "1m 1m 2m 2m 3m 5m 6m 7m 3p 5p 6p 6p 3s",
+    "draw": "4s",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "1m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1m**。保留 **2m** 对子与 **3m** 形成复合型，摸 **1m** 可构成 **123** 顺子，摸 **3m** 则形成对子，进张面广且不浪费已有搭子。切 **3p** 或 **5p** 会破坏筒子潜在的搭子，进张反而减少。"
+  },
+  {
+    "_id": "0c853d1a-fe2c-48bb-b104-b294ecde5b98",
+    "id": "0c853d1a-fe2c-48bb-b104-b294ecde5b98",
+    "level": "easy",
+    "body": "6m 7m 2p 0p 6p 7p 5s 6s 7s 7s 1z 1z 2z",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p"
+    ],
+    "uraIndicators": [
+      "3s"
+    ],
+    "recommend": "2p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2p**。切掉这张孤张后，手牌可以凑出 **5p** **6p** **7p**（赤 **赤5p**）顺子，同时留下 **7s** 对子与 **1z**（东）双役牌对子，进张面广（摸 **5m**、**8m**、**1z**、**2z**、**7s** 等均可降低向听），且保留了对子带来的打点上限。若切 **7s** 则会损失一个对子，手牌转向顺子方向，但进张数相同，综合来看切 **2p** 更有利于保持牌型灵活性与潜在打点。"
+  },
+  {
+    "_id": "03b29c83-291e-45dd-b062-49bc4c413918",
+    "id": "03b29c83-291e-45dd-b062-49bc4c413918",
+    "level": "easy",
+    "body": "4m 5m 6m 6m 4p 4p 6p 6p 7p 8p 3s 4s 1z",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8s",
+      "2m"
+    ],
+    "uraIndicators": [
+      "1m",
+      "2z"
+    ],
+    "recommend": "6m",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **6m**。切掉多余的6m后，手牌保留三个对子（**4p**、**6p**、**1z**）与两个两面搭（**3s 4s**、**7p 8p**），形成三对两搭的听牌好型，进张包括双面听牌和碰听共16张，比切 **4p** 或 **6p** 多出4张有效进张。实战中这种结构不易绕路，值得优先保留。"
+  },
+  {
+    "_id": "62a47b2e-d2df-4f12-95d7-00fe340fb39a",
+    "id": "62a47b2e-d2df-4f12-95d7-00fe340fb39a",
+    "level": "easy",
+    "body": "1m 2m 3m 4m 5m 6m 3p 5p 5p 3s 0s 6s 7s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "3z",
+    "ukeire": 39,
+    "shantenAfter": 1,
+    "note": "推荐切 **3z**。手牌的六连万子已是两副顺子，索子部分有 **3s**、**赤5s**、**6s**、**7s** 的丰富搭子，再加上 **5p** 对子作雀头候选，切掉孤张 **3z** 能最大化进张，后续摸 **2s**/**4s**/**8s**/**4p** 等都能轻松听牌。相比切 **3p** 或 **3s** 会破坏现有搭子，进张数差了一截，不必因为西是非役牌就犹豫。"
+  },
+  {
+    "_id": "3359ac68-c613-4f24-a638-82836062c2cb",
+    "id": "3359ac68-c613-4f24-a638-82836062c2cb",
+    "level": "easy",
+    "body": "6m 7m 8m 9m 9m 3p 5p 6p 7p 4s 0s 7s 8s",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "1m"
+    ],
+    "recommend": "3p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **3p**。切掉孤张 **3p** 后，手牌保留 **5p 6p 7p** 顺子和 **4s 5s**、**7s 8s** 两面搭，进张稳定且好型多；而打 **3z** 虽保留 **3p**，但需拆散 **5p 6p 7p** 顺子才能利用 **3p 5p** 坎搭，反而不如直接保留现成面子来得简洁。"
+  },
+  {
+    "_id": "238178e4-943d-437f-8e2b-4daff8d8cfd7",
+    "id": "238178e4-943d-437f-8e2b-4daff8d8cfd7",
+    "level": "easy",
+    "body": "5m 6m 7m 1p 9p 9p 3s 4s 5s 8s 9s 9s 9s",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z",
+      "8s"
+    ],
+    "uraIndicators": [
+      "6z",
+      "9p"
+    ],
+    "recommend": "1z",
+    "ukeire": 25,
+    "shantenAfter": 1,
+    "note": "推荐切 **1z**。手牌已有 **9s** 暗刻且宝牌是 **9s**，打点充分；切掉场风牌的 **1z** 保留 **1p** 和 **8s** 两个孤张，进张数远优于切 **1p** 或 **8s**，且摸进 **7s** 可听 **5p** **8p** 两面，摸进 **2p** 可听 **9p** 对倒，后续好型机会更多。"
+  },
+  {
+    "_id": "668e524a-3529-42c2-a882-6213e726052f",
+    "id": "668e524a-3529-42c2-a882-6213e726052f",
+    "level": "easy",
+    "body": "2m 4m 7m 7m 7m 8m 2p 3p 4p 9p 1s 3s 5s",
+    "draw": "5s",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "8m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。保留9p作为孤张，其靠张 **7p** 和 **8p** 能提供更灵活的进张路线，而8m与7m刻子关联有限。切8m后摸进 **3m** 或 **2s** 可直接听牌，与切 **9p** 进张数相同，但后续好型概率更高，实战中更为稳妥。"
+  },
+  {
+    "_id": "34e1ccc3-b0e3-4da4-9edb-5f63bc00e282",
+    "id": "34e1ccc3-b0e3-4da4-9edb-5f63bc00e282",
+    "level": "easy",
+    "body": "6m 8m 9m 6p 7p 8p 2s 4s 5s 6s 7s 2z 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z"
+    ],
+    "uraIndicators": [
+      "6s"
+    ],
+    "recommend": "6m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **6m**。手牌已有南对作为自风役牌，摸进的 **6z** 是宝牌，保留它保留了宝牌成对或刻子的机会。万子部分留下 **8m** **9m** 边张搭子，进张与切 **9m** 或 **6z** 同为 8 张，但边张搭子在后续摸到 **6m** 时可转为 **6m** **8m** 坎搭，比坎张搭子的改良空间稍大；切 **6z** 则过早放弃宝牌且万子复合搭子效率重叠，不如保留宝牌简练。"
+  },
+  {
+    "_id": "c41bbf9d-28b1-41ba-af81-f62b627b1490",
+    "id": "c41bbf9d-28b1-41ba-af81-f62b627b1490",
+    "level": "easy",
+    "body": "2m 3m 4m 7m 4p 4p 6p 7p 8p 1s 3s 4s 1z",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "7m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **7m**。保留 **1s** **3s** **4s** 的复合形，与 **4p** 对子、东暗对搭配，进张面广且摸 **2s** 直接形成顺子，摸 **1s** 或 **4s** 则可转为三对子搏对对和，灵活性优于切 **1s** 后保留 **7m** 孤张加 **3s** **4s** 两面搭的构造。"
+  },
+  {
+    "_id": "d82a291b-0e8f-42f6-b212-f63f319e26bc",
+    "id": "d82a291b-0e8f-42f6-b212-f63f319e26bc",
+    "level": "easy",
+    "body": "6m 7m 8m 1p 2p 6p 7p 8p 8p 3s 4s 5s 1z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5s"
+    ],
+    "uraIndicators": [
+      "1m"
+    ],
+    "recommend": "3z",
+    "ukeire": 13,
+    "shantenAfter": 1,
+    "note": "手牌已有三组顺子，1p2p是边张搭子，8p和两个字牌为孤张。立直下推荐切掉没有役牌的 **3z**，保留场风 **1z** 作为潜在的役牌加番，这样能维持最大进张（13张）且听牌好型机会不低。若切 **1z** 虽然进张相同，但损失役牌价值不划算。"
+  },
+  {
+    "_id": "217c56b6-5aca-4744-a16d-6d632f088239",
+    "id": "217c56b6-5aca-4744-a16d-6d632f088239",
+    "level": "easy",
+    "body": "3m 0m 6p 7p 7p 0s 7s 7s 8s 9s 4z 6z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6s"
+    ],
+    "uraIndicators": [
+      "9m"
+    ],
+    "recommend": "6p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **6p**。保留发刻与宝牌 **7s** 对子，手牌中 **8s** **9s** 边搭和 **3m** **5m** 坎搭提供了清晰的听牌方向，进张数与切 **4z** 相同，但切 **6p** 后听牌形状更紧凑，避免因保留 **6p** 而让 **7p** 对子与搭子产生重叠、导致后续绕路。"
+  },
+  {
+    "_id": "96163225-96d0-4e26-ab99-5ac6454d14ef",
+    "id": "96163225-96d0-4e26-ab99-5ac6454d14ef",
+    "level": "easy",
+    "body": "1m 5m 5m 0m 8m 8m 8m 9m 5p 0p 7p 7s 8s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "8p"
+    ],
+    "recommend": "9m",
+    "ukeire": 28,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。留下 **1m**（可进 **2m** 形成好搭）和 **7p**（可进 **6p**/**8p** 形成两面），进张最广（28张），摸到相关牌后能快速形成好型听牌。切 **1m** 不仅损失 **1m** 的进张，而且 **9m** 孤立无援（仅靠自摸 **9m** 成对），绕路且效率低。**7p** 与 **赤5p** 的切法分别破坏筒子搭子与对子，进张明显更少，故不予推荐。"
+  },
+  {
+    "_id": "eff615cf-ab19-49be-b7dc-576cec2e3b1f",
+    "id": "eff615cf-ab19-49be-b7dc-576cec2e3b1f",
+    "level": "easy",
+    "body": "1m 2m 3m 4m 6m 9m 3p 4p 3s 4s 5s 6s 6s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "1s"
+    ],
+    "recommend": "9m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。已立直，切 **9m** 与切 **4z** 进张数相同，但切 **4z** 会丢掉自风 **北** 的役牌，和牌时损失一番；保留 **北** 则多一番保障，因此 **9m** 是更优选择。"
+  },
+  {
+    "_id": "b65a6b7e-c197-43c6-87fe-c5762f2b8da1",
+    "id": "b65a6b7e-c197-43c6-87fe-c5762f2b8da1",
+    "level": "easy",
+    "body": "3m 3m 7m 8m 9m 4p 7p 8p 7s 7s 7s 9s 2z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "9p"
+    ],
+    "uraIndicators": [
+      "0s"
+    ],
+    "recommend": "4p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **4p**。手牌已有7s暗刻、7m 8m 9m顺子，南对子是双役牌，保留7p 8p两面搭和9s孤张，进张数虽与切9s相同，但好型搭子更宝贵，且9s孤张后续摸进更易形成好型。切9s留下4p孤张，形状略逊一筹。"
+  },
+  {
+    "_id": "323ff1f6-45ba-4928-8f38-d6327bc18ae8",
+    "id": "323ff1f6-45ba-4928-8f38-d6327bc18ae8",
+    "level": "easy",
+    "body": "1m 1m 1m 5m 7m 1p 1p 5p 8p 8p 8p 5s 0s",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "5p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **5p**。手牌已有 **1m** 与 **8p** 两暗刻，**1p**、**5s**"
+  },
+  {
+    "_id": "4d5d4495-264e-42fa-a0cd-bdf0626e6777",
+    "id": "4d5d4495-264e-42fa-a0cd-bdf0626e6777",
+    "level": "easy",
+    "body": "4p 5p 6p 7p 8p 9p 3s 5s 7s 8s 9s 1z 2z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "3p"
+    ],
+    "recommend": "2z",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **2z**。手牌已形成 **4p**～**9p** 和 **7s**～**9s** 三组顺子，剩下 **3s** **5s** 的坎搭和三个字牌孤张。保留 **1z**（双役牌）和 **6z**（三元牌）更有价值，且进张完全相同——摸 **4s**、**1z** 或 **6z** 均可听牌。切掉价值最低的 **2z**，既不影响听牌速度，又能保留高打点机会。"
+  },
+  {
+    "_id": "adcc58de-baba-49e3-a2d1-dea9ada416ae",
+    "id": "adcc58de-baba-49e3-a2d1-dea9ada416ae",
+    "level": "easy",
+    "body": "6m 7m 8m 1p 2p 3p 9p 2s 2s 4s 9s 9s 3z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1m"
+    ],
+    "uraIndicators": [
+      "1s"
+    ],
+    "recommend": "9p",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **9p**。保留三个对子与 **4s** 的良形一向听，进张最广，摸进 **4s** 可形成四对子听牌，摸进 **2s**、**9s**、**3z** 也可直接进入听牌，是立直后保持最大听牌可能性的合理选择。切 **2s** 或 **4s** 会减少有效进张，尤其拆对子后形状变窄，不如留 **9p** 灵活。"
+  },
+  {
+    "_id": "fd46622f-00b4-4f19-9e0f-1c14a65ba558",
+    "id": "fd46622f-00b4-4f19-9e0f-1c14a65ba558",
+    "level": "easy",
+    "body": "4m 5m 9m 9m 9m 1p 1p 3s 3s 4s 5s 6s 9s",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "9s",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **9s**。两者向听和进张数相同，但保留 **1z** 作为浮牌，能使索子部分 **3s** **3s** **4s** **5s** **6s** 保持连续形，后续进张组合更灵活；若切 **1z** 则多出一枚边张孤张，牌型松散，实战中稍逊一筹。"
+  },
+  {
+    "_id": "e2a8e0ab-214d-43c1-8253-17e420bd5dcd",
+    "id": "e2a8e0ab-214d-43c1-8253-17e420bd5dcd",
+    "level": "easy",
+    "body": "3m 4m 5m 6m 7m 8m 1p 6p 3s 4s 4s 0s 6s",
+    "draw": "8s",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "1p",
+    "ukeire": 19,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。手牌万子已固定为345和678两副顺子，剩余索子部分有3~6的连续形、对4s和8s，保留这些好形，切掉孤张1p后，摸进 **2s** 或 **7s** 即可听牌，进张19张与切6p相同，但更利于后续维持对子的灵活性。切8s或4s会破坏搭子或雀头，进张明显减少。"
+  },
+  {
+    "_id": "479d0fbd-1312-41ca-8ffc-7b3769485fc8",
+    "id": "479d0fbd-1312-41ca-8ffc-7b3769485fc8",
+    "level": "easy",
+    "body": "1m 2m 3m 8m 9m 9p 9p 2s 3s 4s 5s 7s 9s",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5z",
+      "4s"
+    ],
+    "uraIndicators": [
+      "9m",
+      "4s"
+    ],
+    "recommend": "6z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **6z**。摸进的 **6z** 虽是宝牌，但作为孤张无法参与搭子，切掉后保留 **2s** 至 **5s** 的四连型，配合 **8m** **"
+  },
+  {
+    "_id": "99a4f8ab-4aa7-4830-9f5a-4377f6ea9bda",
+    "id": "99a4f8ab-4aa7-4830-9f5a-4377f6ea9bda",
+    "level": "easy",
+    "body": "3m 3m 7m 7m 9m 2p 3p 4p 7p 8p 9p 4s 7s",
+    "draw": "7s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "1z"
+    ],
+    "recommend": "4s",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **4s**。这副牌有三对加两个顺子，打掉 **4s** 后保留 **3m**、**7m**、**7s** 三个对子，进张最广（摸到任意对子或 **9m** 都能快速听牌）；若切 **7m** 会破坏一对，进张减少，而切 **9m** 则失去唯一的孤张靠牌机会，绕路更多。"
+  },
+  {
+    "_id": "1e30e02d-ee87-4db6-bb5f-f7c375d1ab28",
+    "id": "1e30e02d-ee87-4db6-bb5f-f7c375d1ab28",
+    "level": "easy",
+    "body": "7m 7m 2p 3p 4p 1s 2s 3s 3s 4s 6s 8s 1z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "3m"
+    ],
+    "recommend": "1z",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **1z**。保留 **6z**（发）的役牌对子机会，且进张同为 **2s** **5s** **7s** 共11张，摸到即可听牌，打点更高。切 **6z** 虽不改变向听与进张数，但损失了役牌价值，实战中应优先保留。"
+  },
+  {
+    "_id": "45329715-9a18-4000-8a38-c942ac44c3e5",
+    "id": "45329715-9a18-4000-8a38-c942ac44c3e5",
+    "level": "easy",
+    "body": "7m 7m 8m 4p 5p 5p 7p 7p 4s 4s 9s 9s 3z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1m"
+    ],
+    "uraIndicators": [
+      "2s"
+    ],
+    "recommend": "8m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。手牌已有五组对子，切 **8m** 可保留 **7m** **8m** 的搭子，摸 **6m** 或 **9m** 就能转向顺子型，比切其他孤张更有弹性。同时保留 **6z（发）** 这一役牌，后续摸到发可增加打点。进张数虽与其他候选相同，但这一选择在好型与打点潜力上更优。"
+  },
+  {
+    "_id": "ba49ee02-abfa-462f-978d-4ffea6ba136b",
+    "id": "ba49ee02-abfa-462f-978d-4ffea6ba136b",
+    "level": "easy",
+    "body": "3m 4m 0m 8m 9m 5p 8p 8p 1s 1s 1s 5s 8s",
+    "draw": "8s",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "5s",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **5s**。保留 **5p** 这张宝牌孤张，后续摸进 **5p** 可形成宝牌对子，大幅提升打点；进 **7m** 后两面顺子形成双碰听牌，与切 **5p** 的听牌形状一致，进张数相同但保有了宝牌上限，是更合理的取舍。"
+  },
+  {
+    "_id": "d4d6d658-755e-45e1-9c73-a7dda0f45e72",
+    "id": "d4d6d658-755e-45e1-9c73-a7dda0f45e72",
+    "level": "easy",
+    "body": "1m 7m 1p 2p 6p 7p 8p 2s 3s 4s 7s 8s 9s",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "1m",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "手牌已形成三组顺子，剩余散牌中保留 **5z** 的白役牌机会以及 **7m** 的中张搭子潜力更佳。切掉边缘的 **1m** 后，听牌方向最广，后续摸进 **7m** 或 **5z** 可形成对子直接听 **3p**，进张效率不逊于其他切法。因此推荐切 **1m**。"
+  },
+  {
+    "_id": "dba61c95-9cdf-4531-b418-481ae53dcb10",
+    "id": "dba61c95-9cdf-4531-b418-481ae53dcb10",
+    "level": "easy",
+    "body": "2m 6m 2p 3p 6p 7p 8p 3s 4s 5s 6s 7s 8s",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "2m",
+    "ukeire": 14,
+    "shantenAfter": 1,
+    "note": "推荐切 **2m**。保留 **6m** 可摸 **5m** 或 **7m** 形成两面听，而保留 **2m** 则只有 **3m** 一面两面，且 **1m** 属边张；切 **2z** 会留下两个万子孤张，降低好型率，因此切 **2m** 最合理。"
+  },
+  {
+    "_id": "619b95a7-e8ac-45bc-ac89-dc2c01b4b510",
+    "id": "619b95a7-e8ac-45bc-ac89-dc2c01b4b510",
+    "level": "easy",
+    "body": "2m 3m 3m 4m 5m 6s 6s 9s 1z 1z 3z 3z 3z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "4m"
+    ],
+    "recommend": "9s",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **9s**。手牌已有三对一暗刻，切掉孤张 **9s** 后万子部仍保留23345的复合好型，进张覆盖 **1m** **4m** **6m** 等关键牌，且有机会听宝牌 **6m**；若切 **4z** 则留下边张 **9s**，靠搭价值更低，且进张数与前者相同，好型率不如保留万子复合型。"
+  },
+  {
+    "_id": "7d9e1645-5049-4358-bfa6-f98baf83fe24",
+    "id": "7d9e1645-5049-4358-bfa6-f98baf83fe24",
+    "level": "easy",
+    "body": "2m 2m 8m 9m 9m 1p 4p 0p 6p 7p 8p 9p 1s",
+    "draw": "3s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2s",
+      "5z",
+      "6p"
+    ],
+    "uraIndicators": [
+      "0s",
+      "3p",
+      "4z"
+    ],
+    "recommend": "1p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。手牌筒子六连形可直接梳理为两组顺子，保留 **1p** 反而多出一枚孤张，切掉后余下两个对子、一个坎搭与孤张 **8m**，进张共 12 张，摸到 **2s**、**2m**、**8m** 等都能快速听牌。若切 **8m** 或 **9m**，虽同为 1 向听但进张仅 8 张，且损失万子搭子潜力，宝牌 **3s** 的坎搭本已存在，不必为此牺牲宽度。"
+  },
+  {
+    "_id": "62f3f88d-8212-469b-b52e-1a070d94987d",
+    "id": "62f3f88d-8212-469b-b52e-1a070d94987d",
+    "level": "easy",
+    "body": "1m 2m 0m 4p 5p 6p 1s 1s 5s 6s 7s 8s 9s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7p"
+    ],
+    "uraIndicators": [
+      "7m"
+    ],
+    "recommend": "3z",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切**3z**。切**3z**能保留赤5m这一红宝牌，尽管向听与进张张数与切赤5m相同，但赤5m在后续摸牌中容易形成好型搭子，且自身有打点加成；而**3z**作为西风既非役牌也无关联，保留纯粹是浪费进张。实战中这种同进张下优先保留有打点潜力的牌。"
+  },
+  {
+    "_id": "cdaad600-0ba9-4277-a153-62df886ad5e0",
+    "id": "cdaad600-0ba9-4277-a153-62df886ad5e0",
+    "level": "easy",
+    "body": "3m 4m 5m 9m 1p 2p 3p 6p 9p 9p 1s 3s 5s",
+    "draw": "6s",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "9m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。保留 **6p** 与索子 **1s** **3s** **5s** **6s** 的复合形，进张灵活，摸到 **2s** **4s** **7s** 即可形成好型听牌，且宝牌 **9p** 已有对子，打点充分。若切 **6p** 则损失筒子侧进张，且 **9m** 作为边张对后续改造助力有限，不如以多面搭子应对下一巡。"
+  },
+  {
+    "_id": "8f4a02bb-dfff-4dcc-86a6-5080e86bf17d",
+    "id": "8f4a02bb-dfff-4dcc-86a6-5080e86bf17d",
+    "level": "easy",
+    "body": "2m 3m 4m 5m 5m 9m 1p 1p 7s 8s 9s 2z 2z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "6p"
+    ],
+    "recommend": "9m",
+    "ukeire": 6,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。手牌已有南（双役牌）对子坐镇，保留白（役牌）有机会摸成对子提升打点，而 **9m** 是边张孤张，切掉不破坏任何搭子。与切 **5z** 相比两者向听与进张数相同，但保留役牌更符合实战权衡。"
+  },
+  {
+    "_id": "b01d1190-6498-42a9-8976-50b17e2f5e64",
+    "id": "b01d1190-6498-42a9-8976-50b17e2f5e64",
+    "level": "easy",
+    "body": "1m 1m 4m 6m 6m 2p 2p 1s 1s 9s 4z 5z 5z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "4p"
+    ],
+    "recommend": "9s",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **9s**。手牌对子过多，需要清理孤张；**9s** 与其他数牌孤张相比价值最低，保留宝牌 **4m** 与三元牌 **7z** 更利于后续发展。几项切法向听与进张相同，但切 **9s** 后手牌形状更易摸进搭子，且不损失役牌与宝牌的潜在机会。"
+  },
+  {
+    "_id": "74a27896-93d1-4704-a53d-32aa16bce670",
+    "id": "74a27896-93d1-4704-a53d-32aa16bce670",
+    "level": "easy",
+    "body": "1m 1m 3m 3m 7m 8m 9m 2p 3p 4p 7p 9s 6z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2p",
+      "7p",
+      "1p"
+    ],
+    "uraIndicators": [
+      "8p",
+      "1z",
+      "5s"
+    ],
+    "recommend": "7p",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **7p**。保留中张 **7p** 的进张潜力优于边张 **9s**，且 **7p** 附近有宝牌 **8p**，摸进后能形成好型搭子并提升打点；切 **9s** 虽进张数相同，但边张成好型的概率更低。"
+  },
+  {
+    "_id": "96e19c67-a73c-46e5-bab6-fc319f03dfa9",
+    "id": "96e19c67-a73c-46e5-bab6-fc319f03dfa9",
+    "level": "easy",
+    "body": "2m 3m 0m 7m 1p 2p 3p 5p 6p 7p 6s 6s 2z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3p",
+      "6s"
+    ],
+    "uraIndicators": [
+      "6m",
+      "4z"
+    ],
+    "recommend": "7z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2z**。保留 **7z**（中）作为三元牌的役牌机会，进张同为 **1m**、**4m**、**6m** 共 12 张，听牌后多为两面或坎张的好型。若切 **7z** 则保留自风南，实质差别不大，但通常优先保留三元牌。"
+  },
+  {
+    "_id": "40edcfef-76ec-4718-86a1-dd3d89265024",
+    "id": "40edcfef-76ec-4718-86a1-dd3d89265024",
+    "level": "easy",
+    "body": "4m 5m 0m 6m 9m 1s 2s 4s 4s 4s 7s 7s 1z",
+    "draw": "1z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "2z",
+      "9m"
+    ],
+    "uraIndicators": [
+      "8p",
+      "7m"
+    ],
+    "recommend": "5m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **赤5m**。切 **赤5m** 后4m 5m 6m形成顺子，手牌成为4s刻子、7s和1z两对、1s2s边搭加9m单张的一向听，进张清晰且听牌后双碰或边张的型容易调整。切 **9m** 虽保留赤5m宝牌对子，但手牌变为三对子，一向听效率略低，且破坏顺子结构，因此不如前方案稳妥。"
+  },
+  {
+    "_id": "c3c12dd9-b8d3-4119-aba4-8361f14a2334",
+    "id": "c3c12dd9-b8d3-4119-aba4-8361f14a2334",
+    "level": "easy",
+    "body": "4m 1p 4p 5p 5p 6p 7p 8p 9p 1s 2s 3s 7s",
+    "draw": "9s",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "3s",
+      "1s"
+    ],
+    "uraIndicators": [
+      "2p",
+      "6p"
+    ],
+    "recommend": "5p",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **5p**。保留 **1p** **4p** 与 **6p** **7p** **8p** **9p** 的四连型，摸 **2p** **3p** **5p** 等都能有效拓展搭子，整体进张优于切 **4m** 或 **1p**；且已有 **1s** **2s** **3s** 顺子含宝牌 **2s**，无需为宝牌调整。"
+  },
+  {
+    "_id": "2f71ddeb-c243-4862-a702-3f990cb32676",
+    "id": "2f71ddeb-c243-4862-a702-3f990cb32676",
+    "level": "easy",
+    "body": "4m 6m 8m 9m 2p 2p 3p 4p 0p 2s 7s 8s 9s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "9p"
+    ],
+    "recommend": "2s",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **2s**。手牌已有一组 **7s** **8s** **9s** 顺子和 **2p** 对子做雀头，筒子 **2p** **3p** **4p** **赤5p** 可组合成 **3p** **4p** **赤5p** 顺子，剩余万子四枚与 **7z**（中）需凑两个面子。切掉孤张 **2s** 保留中，保留了三元牌役牌的对子机会，打点潜力更高；若切 **7z** 则失去这一役牌，且进张数相同，故优先留中。"
+  },
+  {
+    "_id": "8ead6b65-e4ac-4547-9766-9dc05ae841fb",
+    "id": "8ead6b65-e4ac-4547-9766-9dc05ae841fb",
+    "level": "easy",
+    "body": "5m 5m 2s 3s 3s 4s 0s 6s 7s 7s 8s 9s 5z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "8p"
+    ],
+    "recommend": "5z",
+    "ukeire": 23,
+    "shantenAfter": 1,
+    "note": "立直状态下，手牌向听1，切 **5z** 与切 **6z** 进张同为23张，能摸进索子、万子及另一张三元牌快速听牌；而切 **3s** 会破坏2-4索的连贯性，进张骤降至8张，明显绕路。推荐打掉孤张白 **5z**，保留发 **6z** 与索子好型，后续听牌型更优，且赤5s仍能贡献打点。"
+  },
+  {
+    "_id": "f2685ffa-88ab-41d5-97d3-e1154cc19df7",
+    "id": "f2685ffa-88ab-41d5-97d3-e1154cc19df7",
+    "level": "easy",
+    "body": "6m 7m 8m 9m 2p 4p 9p 1s 2s 3s 3s 5s 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6z"
+    ],
+    "uraIndicators": [
+      "1m"
+    ],
+    "recommend": "6m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **6m**。万子6789形切掉 **6m** 后留下789顺子，索子123顺子与 **3s** **5s** 坎搭、筒子 **2p** **4p** 坎搭形成两坎待牌，进张 **3p** 与 **4s** 共8张即可听牌；宝牌 **7z** 已形成刻子无需变动。若切 **9m** 或 **9p** 则破坏好形或失去重要搭子，虽进张数相同但本手牌型更流畅。"
+  },
+  {
+    "_id": "dbf18153-a6c7-4623-b12b-6de4d195a852",
+    "id": "dbf18153-a6c7-4623-b12b-6de4d195a852",
+    "level": "easy",
+    "body": "1m 2m 9m 9m 9p 1s 2s 2s 3s 3s 7s 8s 8s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m",
+      "6p"
+    ],
+    "uraIndicators": [
+      "0p",
+      "7s"
+    ],
+    "recommend": "9p",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **9p**，保留四个对子与索子好型，进张丰富且易转向七对或对对和；若切 **8s** 则会减少一个对子，破坏索子部分的结构，后续发展略逊一筹。"
+  },
+  {
+    "_id": "4fe13977-c28a-42fd-8bb4-f407b6d6833c",
+    "id": "4fe13977-c28a-42fd-8bb4-f407b6d6833c",
+    "level": "easy",
+    "body": "1m 2m 3m 2p 3p 4p 5p 9p 1s 1s 2s 3s 3s",
+    "draw": "0s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2m",
+      "5z"
+    ],
+    "uraIndicators": [
+      "8m",
+      "2m"
+    ],
+    "recommend": "9p",
+    "ukeire": 18,
+    "shantenAfter": 1,
+    "note": "推荐切 **9p**。保留2p 3p 4p 5p的连续形与索子上的宝牌面子，进张最广。切 **2p** 或 **5p** 会破坏筒子好形，进张减少；切 **1s** 则损失对子，效率更低。"
+  },
+  {
+    "_id": "f41ed83c-1dfe-4e9a-a1d0-f46221adc7a9",
+    "id": "f41ed83c-1dfe-4e9a-a1d0-f46221adc7a9",
+    "level": "easy",
+    "body": "2m 3m 6m 6m 8m 2p 3p 4p 6p 8p 9p 2s 3s",
+    "draw": "4s",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6p"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "8m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。此牌以 **2m** **3m**、**6m** **6m** 为核心搭子，保留 **6m** 对子与 **2m** **3m** 两面搭，进 **1m** **4m** **6m** 即可直接听牌；同时保留 **6p** 的宝牌关联（摸 **7p** 成宝牌搭），进张质量优于切 **6p** 或 **9p**。"
+  },
+  {
+    "_id": "168b495b-f112-4bf0-a82d-8df38582f165",
+    "id": "168b495b-f112-4bf0-a82d-8df38582f165",
+    "level": "easy",
+    "body": "6m 8m 4p 0p 6p 3s 9s 9s 1z 1z 2z 2z 2z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p",
+      "4s",
+      "4m"
+    ],
+    "uraIndicators": [
+      "3p",
+      "6s",
+      "8s"
+    ],
+    "recommend": "3s",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **3s**。保留自风 **3z** 的役牌潜力，且进张（**7m**、**1z**、**9s**共8张）与切 **3z** 相同，但保留了后续摸成役牌对子的打点优势，是更为合理的取舍。"
+  },
+  {
+    "_id": "a9e566e6-b1a6-4a73-b33b-6d2abc599305",
+    "id": "a9e566e6-b1a6-4a73-b33b-6d2abc599305",
+    "level": "easy",
+    "body": "2m 3m 4m 2p 8p 8p 1s 2s 3s 4s 4s 8s 9s",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7m"
+    ],
+    "uraIndicators": [
+      "8p"
+    ],
+    "recommend": "2p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **2p**。保留 **6z**（发）作为役牌孤张，后续摸到发即可形成役牌对子，打点提升明显；而切 **6z** 则失去这一潜力，且进张数完全一致。两者向听相同，但保留役牌是更积极的判断。"
+  },
+  {
+    "_id": "fe7e5b90-0729-4f33-a1af-cf6a4a818a2d",
+    "id": "fe7e5b90-0729-4f33-a1af-cf6a4a818a2d",
+    "level": "easy",
+    "body": "6m 7m 7m 9m 5p 7p 1s 2s 3s 7s 8s 9s 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5z",
+      "1s"
+    ],
+    "uraIndicators": [
+      "2s",
+      "8p"
+    ],
+    "recommend": "9m",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。立直后手牌有两对（**7m** 和 **7z**）及6m 7m两面、5p 7p坎搭，切掉孤张 **9m** 保留最多进张，后续摸进5m、6m、8m、6p或7m、7z等16张均能快速听牌，优于切 **7m** 或 **6m** 拆解好形。宝牌6z与手牌无关，无需特别考虑。"
+  },
+  {
+    "_id": "e00fa7eb-c560-4137-91ce-cfbdda5d00eb",
+    "id": "e00fa7eb-c560-4137-91ce-cfbdda5d00eb",
+    "level": "easy",
+    "body": "2m 3m 1p 2p 6p 7p 8p 4s 6s 7s 8s 9s 9s",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4p",
+      "3s"
+    ],
+    "uraIndicators": [
+      "7s",
+      "2z"
+    ],
+    "recommend": "2z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2z**。保留宝牌 **4s** 作为孤张，后续摸到 **2s**‑**5s** 可形成好型搭子直接听牌，且摸 **4s** 宝牌对子更有价值；切 **4s** 则留下南孤张，进张虽同为12张但只能依赖 **1m** **4m** **3p** 后打南听边张或坎张，听牌质量明显逊色。"
+  },
+  {
+    "_id": "eaa93683-26b9-41c0-b72f-90b7de2d1ec3",
+    "id": "eaa93683-26b9-41c0-b72f-90b7de2d1ec3",
+    "level": "easy",
+    "body": "3m 3m 7m 7m 2p 4p 7p 7p 9s 9s 1z 1z 4z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "3z"
+    ],
+    "recommend": "2p",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "手牌五对子带 **2p** **4p** 坎搭和 **4z**、**5z** 两个孤张，已立直且向听均为1，进张数相同。保留宝牌 **5z** 和自风 **1z** 对子，切 **2p** 后留下 **4p**，后续摸进 **3p** 或 **5p** 均能形成两面搭，比切 **4p** 留下 **2p** 更易转化为好型听牌。"
+  },
+  {
+    "_id": "b418c777-e1fb-4440-92c7-5a6e5a5762e6",
+    "id": "b418c777-e1fb-4440-92c7-5a6e5a5762e6",
+    "level": "easy",
+    "body": "0m 6m 8m 3p 4p 5p 0p 6p 7p 4s 7s 3z 3z",
+    "draw": "3z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "4s",
+    "ukeire": 17,
+    "shantenAfter": 1,
+    "note": "推荐切 **4s**。牌型已形成宝牌 **3z** 暗刻和 **5p** 雀头，筒子有两组两面搭，切掉 **4s** 保留 **7s**，进张数最大（17张），且后续摸到 **5s** **6s** 或万子 **4m** **7m** 时易形成好型听牌。切 **7s** 进张相同，但本局切 **4s** 更利于后续搭子平衡。"
+  },
+  {
+    "_id": "5e63fe79-3dd2-4e24-ad69-b35377841112",
+    "id": "5e63fe79-3dd2-4e24-ad69-b35377841112",
+    "level": "easy",
+    "body": "2m 3m 4m 6m 7m 8m 1p 4p 6p 2s 2s 4s 5s",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4z"
+    ],
+    "uraIndicators": [
+      "1m"
+    ],
+    "recommend": "1p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。手牌已有两组万子顺子、**2s** 对子、**4s5s** 两面搭与 **4p6p** 坎搭，进张 **3s**、**6s**、**5p** 均可直接听牌，两种切法进张数相同；但立直后保留字牌 **3z** 作为安全牌，比打出 **1p** 更不易放铳，因此选择切 **1p**。"
+  },
+  {
+    "_id": "f678dc7d-0ad5-4046-940a-b94216d9f05f",
+    "id": "f678dc7d-0ad5-4046-940a-b94216d9f05f",
+    "level": "easy",
+    "body": "4m 5m 5m 7m 7m 1p 1p 1s 0s 6s 3z 3z 4z",
+    "draw": "4z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7z",
+      "2p"
+    ],
+    "uraIndicators": [
+      "5p",
+      "2p"
+    ],
+    "recommend": "4m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **1s**。保留 **4m** 能与 **5m** 组成两面搭，加上已有的 **赤5s** 与 **6s** 的56两面，手牌搭子更均衡，摸进后听好型的概率更高。切 **4m** 则留下孤张 **1s**，与次优切法相比损失了万子的好搭。\n\n注意：虽然各切法向听与进张数相同，但 **1s** 作为孤立牌价值最低，优先处理。"
+  },
+  {
+    "_id": "29206eaa-86a7-4c6d-9c4e-1aa56b985ac3",
+    "id": "29206eaa-86a7-4c6d-9c4e-1aa56b985ac3",
+    "level": "easy",
+    "body": "1m 2m 1p 1p 2p 2p 3p 3p 3p 4p 5p 0p 1s",
+    "draw": "3s",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s",
+      "1z",
+      "1m"
+    ],
+    "uraIndicators": [
+      "5m",
+      "2s",
+      "7m"
+    ],
+    "recommend": "5p",
+    "ukeire": 20,
+    "shantenAfter": 1,
+    "note": "推荐切 **赤5p**。切掉红宝牌后，手牌留下3p刻子、1p与2p对子，以及1m 2m边搭、1s 3s坎搭、45两面搭，构成非常均衡的一向听，有效进张达20张，远多于其他切法。若切 **1m**、**1s** 或 **3s**，会破坏搭子或产生孤张，进张仅11张，在立直中明显不利。"
+  },
+  {
+    "_id": "90e11d2f-d69e-4622-8c5e-699bcce01e89",
+    "id": "90e11d2f-d69e-4622-8c5e-699bcce01e89",
+    "level": "easy",
+    "body": "2m 3m 4m 6m 7m 8m 3p 5p 7p 9p 9s 2z 6z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "9s",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **9s**。保留场风 **2z**（南），有后续摸成对子获得役牌一番的潜力，而切掉 **2z** 后留下的 **9s** 几乎毫无价值。两者向听、进张张数相同，但 **9s** 的进张不含宝牌相关，实战中保留役牌搭子是更优选择。"
+  },
+  {
+    "_id": "61638103-7c8f-43ba-8649-f990afad9359",
+    "id": "61638103-7c8f-43ba-8649-f990afad9359",
+    "level": "easy",
+    "body": "2p 2p 6p 4s 0s 6s 6s 8s 8s 1z 1z 6z 7z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "6p",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切**6p**。手牌已形成一组4-5-6索的顺子，加上**2p**、**8s**、**1z**、**7z**四个对子，保留**赤5s**的红宝牌价值与**6z**的役牌机会。切**6p**不破坏任何搭子，后续进张主要围绕将剩余对子转化为刻子或与**6s**、**6z**组成好型搭子，进张质量优于破坏顺子的切**4s**或**赤5s**。"
+  },
+  {
+    "_id": "bb3f1a0c-b691-40a7-91c0-26b9dd2122fe",
+    "id": "bb3f1a0c-b691-40a7-91c0-26b9dd2122fe",
+    "level": "easy",
+    "body": "2m 3m 4m 3p 4p 1s 2s 3s 4s 4s 6s 7s 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3s"
+    ],
+    "uraIndicators": [
+      "7p"
+    ],
+    "recommend": "4z",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **4z**。打掉北保留发的役牌价值，在立直状态下这能提升和牌打点；两者进张数相同，保留有役的孤张是合理的取舍。"
+  },
+  {
+    "_id": "f9f6e11b-7ec1-401c-b4d8-71e4ae4fdc8b",
+    "id": "f9f6e11b-7ec1-401c-b4d8-71e4ae4fdc8b",
+    "level": "easy",
+    "body": "1m 5m 6m 6m 7m 7m 8m 7p 9p 6s 6s 6s 3z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4s",
+      "7p"
+    ],
+    "uraIndicators": [
+      "7m",
+      "2z"
+    ],
+    "recommend": "1m",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切**1m**。万子部分去掉边张后形成**5m**～**8m**的连续形，两面搭子丰富，同时保留**3z**（自风）和**6z**（发）两个役牌机会，打点潜力更高。切**3z**或**6z**虽进张数相同，但会留下**1m**孤张，好型率与打点均不如切**1m**。"
+  },
+  {
+    "_id": "8c2f146f-f14b-442c-842f-7bbbb97be79a",
+    "id": "8c2f146f-f14b-442c-842f-7bbbb97be79a",
+    "level": "easy",
+    "body": "1m 1m 1p 2p 3p 8p 2s 3s 3s 4s 0s 6z 7z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m",
+      "2s",
+      "6s"
+    ],
+    "uraIndicators": [
+      "4m",
+      "7p",
+      "4p"
+    ],
+    "recommend": "8p",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **8p**。保留 **6z**（发）可保留役牌对子的机会，与切 **6z** 相比进张数同为 11 张，但打点潜力更高；索子部分 **2s** **3s** **3s** **4s** **赤5s** 的连续形本身就有良好扩展性，不影响听牌速度。"
+  },
+  {
+    "_id": "e75ed565-cc59-4412-b614-93c55d4daf6a",
+    "id": "e75ed565-cc59-4412-b614-93c55d4daf6a",
+    "level": "easy",
+    "body": "1p 1p 3p 6p 7p 8p 1s 3s 4s 0s 6s 8s 9s",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4p"
+    ],
+    "uraIndicators": [
+      "5m"
+    ],
+    "recommend": "3p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **3p**。保留 **7z**（中）的役牌，同时手牌中 **1p** 对子、 **6p** **7p** **8p** 顺子已成形，索子部分有 **3s** **4s** 与 **8s** **9s** 两副好搭，切掉 **3p** 不影响进张数，且使听牌后多了三元牌的安牌价值。次优切 **7z** 会浪费役牌，虽然向听相同，但打点潜力明显降低。"
+  },
+  {
+    "_id": "9b8f1239-f052-4ea4-952c-54dfd2b724d9",
+    "id": "9b8f1239-f052-4ea4-952c-54dfd2b724d9",
+    "level": "easy",
+    "body": "2m 2m 6m 8m 7p 8p 1s 3s 3s 3s 0s 6s 6s",
+    "draw": "7s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "2z",
+      "5z",
+      "9s"
+    ],
+    "uraIndicators": [
+      "0m",
+      "6m",
+      "6z"
+    ],
+    "recommend": "6s",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **6s**。保留 **1s** 宝牌是关键——切 **1s** 虽然进张数相同，但会丢掉这枚价值一枚的宝牌。切 **6s** 后手牌仍保留 **5s**-**6s**-**7s** 顺子搭，配合 **7p**-**8p** 两面和 **6m**-**8m** 坎搭，进张依然有12张，且宝牌完好，明显更优。"
+  },
+  {
+    "_id": "fa01731a-ce8b-4188-b002-7c8481211dee",
+    "id": "fa01731a-ce8b-4188-b002-7c8481211dee",
+    "level": "easy",
+    "body": "3m 3m 6m 6m 9m 2p 2s 2s 3s 7s 9s 9s 3z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "9m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **9m**。虽然四张孤张的进张数相同，但打掉最没用的 **9m** 后，手上剩下的 **2p**、**3s**、**7s** 与现有对子更容易结合成两面或坎搭，改良空间更大；尤其 **2p** 后续摸 **1p** 或 **3p** 即可形成边搭，而 **9m** 与宝牌 **6m** 对毫无关联，及早排除更利于听牌质量。"
+  },
+  {
+    "_id": "df4099a1-6add-47b6-ba32-df7cfe5c03c5",
+    "id": "df4099a1-6add-47b6-ba32-df7cfe5c03c5",
+    "level": "easy",
+    "body": "1m 2m 7m 8m 2p 2p 3p 4p 5p 1s 2s 3s 4s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "east",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1p"
+    ],
+    "uraIndicators": [
+      "5z"
+    ],
+    "recommend": "1s",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1s**。切掉 **1s** 后索子固定为 **2s**-**3s**-**4s** 顺子，手牌简化为两个搭子加宝牌 **2p** 对子，进张明确；摸到 **2p** 时可转为两面听，兼顾打点与好型。切 **7z** 虽保留四连形，但多出边张愚型，不如切 **1s** 直接。"
+  },
+  {
+    "_id": "12bf7442-facf-4ad5-b650-f9c1166ea157",
+    "id": "12bf7442-facf-4ad5-b650-f9c1166ea157",
+    "level": "easy",
+    "body": "6m 7m 8m 0p 6p 2s 2s 4s 5s 6s 7s 9s 4z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6p",
+      "6z"
+    ],
+    "uraIndicators": [
+      "6z",
+      "9p"
+    ],
+    "recommend": "4z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **4z**。保留 **5z** （白）的役牌对子，既能作为雀头候选，也有碰出机会增加打点；切掉孤张 **4z** 后，手牌只剩 **9s** 一个孤张，而 **赤5p**、**6p** 的两面搭与 **4s**~**7s** 的四连型提供充足进张，摸到 **3s**、**8s** 或 **4p**、**7p** 等牌便可快速听牌。若切 **5z** 则会拆掉宝贵的役牌对子，徒留 **4z** 与 **9s** 两个孤张，绕路且损失打点。"
+  },
+  {
+    "_id": "f05abfa5-4031-48c2-8d9e-7ed6a9c737ca",
+    "id": "f05abfa5-4031-48c2-8d9e-7ed6a9c737ca",
+    "level": "easy",
+    "body": "1m 2m 2m 3m 4m 8m 6p 8p 1s 2s 3s 7s 2z",
+    "draw": "2z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z"
+    ],
+    "uraIndicators": [
+      "9s"
+    ],
+    "recommend": "8m",
+    "ukeire": 7,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。立直后手牌保留 **1m**—**4m** 的复合型，摸进 **5m** 或 **1m** 等牌能直接听好型；切 **7s** 则留下 **8m** 孤张，进张虽然相同但好型率降低，实战中应优先选择更易形成双面听的切法。"
+  },
+  {
+    "_id": "c65611ed-e2d7-45ae-802d-287b9bbe2289",
+    "id": "c65611ed-e2d7-45ae-802d-287b9bbe2289",
+    "level": "easy",
+    "body": "4m 0m 6m 1p 2p 4p 0p 6p 2s 4s 3z 3z 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "4z",
+      "3p",
+      "3s"
+    ],
+    "uraIndicators": [
+      "1m",
+      "7p",
+      "8s"
+    ],
+    "recommend": "4z",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **4z**（北）。保留 **6z**（发）可使孤张具备役牌价值，未来摸成对子能显著提升打点；两种切法的进张数虽同为8张，但保留 **6z** 优于保留无役的 **4z**，且当前已有的 **3z**（西）对子已确保自风役，不影响向听结构。"
+  },
+  {
+    "_id": "6741937e-26a3-4ac4-ba85-cc2d59802e39",
+    "id": "6741937e-26a3-4ac4-ba85-cc2d59802e39",
+    "level": "easy",
+    "body": "5m 5m 8m 9m 9m 1p 1p 3p 3p 8p 8p 2z 4z",
+    "draw": "6z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "3s"
+    ],
+    "recommend": "8m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **8m**。手牌已是五对子一向听，保留三枚字牌孤张（**2z**、**4z**、**6z**），其中 **4z** 是自风役牌、**6z** 是三元牌，打点潜力大；切 **8m** 后进张均能直接听牌（七对子或刻子对碰），形状浑厚。相比之下，切字牌会丢掉役牌或破坏五对子结构，且进张数相同，因此保留字牌、舍弃边张搭子更符合实战取舍。"
+  },
+  {
+    "_id": "b3bf8e57-b774-4ec8-a26f-bd94d414c33d",
+    "id": "b3bf8e57-b774-4ec8-a26f-bd94d414c33d",
+    "level": "easy",
+    "body": "2m 4m 8m 8m 6p 6p 6p 2s 3s 5s 6s 7s 9s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z",
+      "8p"
+    ],
+    "uraIndicators": [
+      "2z",
+      "6m"
+    ],
+    "recommend": "2m",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **2m**。手牌有 **6p** 暗刻，索子方面 **2s** **3s** 两面、**5s** **6s** **7s** 三连和 **9s** 对子，万子则保留 **8m** 对子和 **4m** 单张。切 **2m** 后保留所有好型搭子与对子，进张面广且易形成良听，而切 **4m** 或 **8m** 会拆掉坎搭或对子，同等向听下略显绕路。"
+  },
+  {
+    "_id": "86b75a61-4d9e-4bd7-bf8e-c2fd11932b1a",
+    "id": "86b75a61-4d9e-4bd7-bf8e-c2fd11932b1a",
+    "level": "easy",
+    "body": "4m 9m 5p 6p 7p 6s 7s 7s 9s 3z 3z 4z 4z",
+    "draw": "4z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7z"
+    ],
+    "uraIndicators": [
+      "1p"
+    ],
+    "recommend": "4m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **4m**。打掉 **4m** 后，保留 **9m** 可与 **8m** 形成边张搭子，同时 **6s** 与 **9s** 能通过 **8s** 或摸进 **7s** 与对子 **7s** 产生更灵活的连接，整体进张质量略优于切 **9m**；两者向听与进张数虽相同，但切 **4m** 后续形成好型的可能性稍高。"
+  },
+  {
+    "_id": "b93d3c7b-0c0e-41ad-a1f6-1f1d09482ac4",
+    "id": "b93d3c7b-0c0e-41ad-a1f6-1f1d09482ac4",
+    "level": "easy",
+    "body": "2m 4m 2p 2p 2p 6p 7p 2s 3s 4s 1z 1z 2z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "5s",
+      "3p"
+    ],
+    "uraIndicators": [
+      "8s",
+      "3p"
+    ],
+    "recommend": "3z",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **3z**。保留 **2z**（南）作为双役牌，不仅立直后和牌价值更高，而且 **3z** 的进张与 **2z** 完全一致（均为12张），没有任何绕路损失。恐怕不少人会切掉孤张南，但在同向听同进张下，保住役牌搭子是更优的实战选择。"
+  },
+  {
+    "_id": "1cd93c8b-e23b-41a8-86e2-b3d629eb4e2a",
+    "id": "1cd93c8b-e23b-41a8-86e2-b3d629eb4e2a",
+    "level": "easy",
+    "body": "1m 1m 3m 4m 3p 3p 4p 7p 7p 9s 9s 1z 1z",
+    "draw": "3z",
+    "roundWind": "south",
+    "seatWind": "east",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "9m"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "3m",
+    "ukeire": 9,
+    "shantenAfter": 1,
+    "note": "推荐切 **3m**。手牌是纯粹的搭子过度形，切掉 **3m** 保留 **4m** 与 **3p** **4p** 的双面两坎，摸进 **2m** 或 **5p** 可直接听牌，进张不差且好型率高。若保留 **3m** 切 **4m**，则损失 **2m** 的进张，形状反而变窄，因此 **3m** 是效率最优的一打。"
+  },
+  {
+    "_id": "26a13d75-b3bb-4009-94cd-8789352d0326",
+    "id": "26a13d75-b3bb-4009-94cd-8789352d0326",
+    "level": "easy",
+    "body": "1m 2m 2m 2m 3m 4m 4m 6m 7m 8m 0s 6s 1z",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "4m"
+    ],
+    "uraIndicators": [
+      "3s"
+    ],
+    "recommend": "7z",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **1z**。手牌已有2m暗刻、678顺子，搭配4m对子和5s 6s两面搭，保留 **7z** 可保留三元役牌，而 **1z** 是场风役牌，两者价值相当。但切除 **1z** 后，保留刚摸的 **7z**，后续进张如 **1m**、**3m**、**4m**、**5m** 等均可形成听牌，且 **7z** 作为中张字牌更易成对，打点潜力不亚于保留 **1z**，故推荐切 **1z**。"
+  },
+  {
+    "_id": "7b6d6167-be64-4e8f-8030-829cd37dc974",
+    "id": "7b6d6167-be64-4e8f-8030-829cd37dc974",
+    "level": "easy",
+    "body": "2m 4p 5p 6p 7p 8p 9p 2s 6s 8s 4z 4z 4z",
+    "draw": "7z",
+    "roundWind": "south",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s",
+      "6p"
+    ],
+    "uraIndicators": [
+      "9p",
+      "7p"
+    ],
+    "recommend": "7z",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **2m**。手牌已有北刻和456·7p 8p 9p两副顺子，保留 **2s**（宝牌）和 **7z**（三元牌）在进张数相同的前提下能保留更高打点机会；若打 **7z** 失去役牌可能，打 **2s** 损失宝牌，都不如切 **2m** 理想。"
+  },
+  {
+    "_id": "b8b2a870-1538-4391-9397-e26a820350f9",
+    "id": "b8b2a870-1538-4391-9397-e26a820350f9",
+    "level": "easy",
+    "body": "4m 6m 7m 8m 4p 5p 6p 7p 7p 4s 4s 5s 8s",
+    "draw": "9s",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "7s",
+      "5z"
+    ],
+    "uraIndicators": [
+      "4z",
+      "6p"
+    ],
+    "recommend": "4m",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **4m**。切掉孤张 **4m** 后，**6m** **7m** **8m** 恰好成顺，手牌形成两副面子加 **4s 5s** 和 **8s 9s** 两个两面搭，进张最广。若切 **4s** 或 **5s**，会破坏索子的好型复合搭子，导致进张减少。"
+  },
+  {
+    "_id": "574e01dd-f794-4067-9196-2a598341b704",
+    "id": "574e01dd-f794-4067-9196-2a598341b704",
+    "level": "easy",
+    "body": "0m 7m 8m 1p 3p 4p 5p 6s 6s 7s 8s 9s 1z",
+    "draw": "1z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8p"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "1p",
+    "ukeire": 12,
+    "shantenAfter": 1,
+    "note": "推荐切 **1p**。1p 是孤张，切掉后保留赤5m 的宝牌价值，且手牌形成 **7m** **8m** 的搭子与 **3p** **4p** **5p** 顺子、**6s** **6s** 对子、**7s** **8s** **9s** 顺子、**1z** 役牌对子，进张面广。次优切法 **赤5m** 进张数相同但损失红宝牌，而切 **8m** 进张少且打乱万子衔接，都不如切 **1p** 合理。"
+  },
+  {
+    "_id": "d4411b70-6585-4e19-ac23-811c3dd8b665",
+    "id": "d4411b70-6585-4e19-ac23-811c3dd8b665",
+    "level": "easy",
+    "body": "2m 3m 4m 6m 6m 8m 8m 8m 0p 2s 3s 6s 7s",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "1s"
+    ],
+    "uraIndicators": [
+      "7z"
+    ],
+    "recommend": "5z",
+    "ukeire": 16,
+    "shantenAfter": 1,
+    "note": "推荐切 **赤5p**。保留手牌的6m对子与 **2s** **3s**、**6s** **7s** 两面搭，切掉红宝牌孤张后，摸进 **6m**、**1s** **4s**、**5s** **8s** 或 **5z** 均可形成听牌，进张数与切 **5z** 相同，但保留 **赤5p** 若后续成对可直接收获宝牌番，而白对子无役，打点潜力更优。"
+  },
+  {
+    "_id": "a800eb32-dd15-466b-a1ae-ba397943dfdc",
+    "id": "a800eb32-dd15-466b-a1ae-ba397943dfdc",
+    "level": "easy",
+    "body": "3m 6m 8m 9m 9m 2p 3p 4p 1s 3s 4s 5s 6s",
+    "draw": "2z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": true,
+    "doraIndicators": [
+      "1s",
+      "9p"
+    ],
+    "uraIndicators": [
+      "4m",
+      "5m"
+    ],
+    "recommend": "3m",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **3m**。保留 **2z** 作为安全牌，立直后能降低放铳风险；若切 **2z**，手牌留下孤张 **3m**，听牌后防守难度更大。两者进张数相同，但切 **3m** 的听牌形状更易转化成好型，且不影响宝牌 **2s** 周围的 **1s** 搭子，综合更优。"
+  },
+  {
+    "_id": "b93984dd-a1b3-4e1f-a996-25a72577f337",
+    "id": "b93984dd-a1b3-4e1f-a996-25a72577f337",
+    "level": "easy",
+    "body": "1m 3m 4m 5m 6m 2p 3p 4p 1s 2s 3s 3s 2z",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "north",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5m"
+    ],
+    "uraIndicators": [
+      "6s"
+    ],
+    "recommend": "3s",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **3s**。手牌已有 **2p** **3p** **4p** 和 **1s** **2s** **3s** 两个顺子，万子部分 **1m** **3m** **4m** **5m** **6m** 构成多个两面搭子，保留 **2z** 和 **5z** 两个孤张不影响搭子数量，且役牌 **白** 有摸对机会；拆掉 **3s** 对子后进张最广，与切 **2z** 或 **5z** 相比多出 **2m** 等有效进张，后续听牌更易定型。"
+  },
+  {
+    "_id": "8ae48500-060c-41a1-a397-85e1de299942",
+    "id": "8ae48500-060c-41a1-a397-85e1de299942",
+    "level": "easy",
+    "body": "1m 2m 3m 6m 7m 8m 1p 3p 0p 1s 2s 3s 3z",
+    "draw": "5z",
+    "roundWind": "south",
+    "seatWind": "north",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "7s"
+    ],
+    "uraIndicators": [
+      "8m"
+    ],
+    "recommend": "3z",
+    "ukeire": 17,
+    "shantenAfter": 1,
+    "note": "推荐切 **3z**。保留 **5z** 役牌对子可能，手牌已具三组顺子，1p 3p 5p 形成两坎，切掉孤张西后进张包括 **2p**、**4p** 及摸 **5z** 成对等共17张，听牌路线顺畅。若切 **5z** 则损失三元牌打点，进张相同却得不偿失；切 **1p** 或 **赤5p** 会破坏搭子结构，进张大幅减少，明显不及前者。"
+  },
+  {
+    "_id": "e756b899-2ba5-4c55-a41b-20c3d771d9fc",
+    "id": "e756b899-2ba5-4c55-a41b-20c3d771d9fc",
+    "level": "easy",
+    "body": "2m 7m 7m 4p 5p 5p 6p 7p 2s 4s 5s 6s 7s",
+    "draw": "7z",
+    "roundWind": "east",
+    "seatWind": "west",
+    "riichi": true,
+    "ippatsu": false,
+    "doraIndicators": [
+      "6m"
+    ],
+    "uraIndicators": [
+      "6m"
+    ],
+    "recommend": "2m",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **2m**。保留 **7z**（中）能在后续摸到成对时增加一枚役牌，提升打点；手牌已有 **7m** 的宝牌对子和筒索的好形搭子，切掉 **2m** 不影响现有搭子，进张与切 **7z** 相同但打点期望更高。"
+  },
+  {
+    "_id": "23f519fc-0c60-4a98-a9a0-31b8c17201f7",
+    "id": "23f519fc-0c60-4a98-a9a0-31b8c17201f7",
+    "level": "easy",
+    "body": "4p 5p 6p 7p 9p 4s 4s 6s 7s 7s 8s 9s 5z",
+    "draw": "6z",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "8m"
+    ],
+    "uraIndicators": [
+      "2p"
+    ],
+    "recommend": "5z",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **5z**。手牌已有 **4s 4s** 与 **7s 7s** 两对，以及 **4p 5p 6p 7p** 四连型，保留 **6z**（发）作为役牌机会，与切 **6z** 相比进张数相同（均为 11 张），但保留发在实战中更常见，且摸进 **3p**、**8p** 或索子相关牌即可听牌，路线清晰。"
+  },
+  {
+    "_id": "e8c90cef-9191-437c-85f1-28ba12993813",
+    "id": "e8c90cef-9191-437c-85f1-28ba12993813",
+    "level": "easy",
+    "body": "1m 2m 3m 4m 5m 6m 8m 9m 5p 8p 1s 2s 3s",
+    "draw": "5s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3m"
+    ],
+    "uraIndicators": [
+      "2m"
+    ],
+    "recommend": "8p",
+    "ukeire": 10,
+    "shantenAfter": 1,
+    "note": "推荐切 **8p**。手牌已有三组顺子，剩余 **8m** **9m** 边张搭子和 **5p**、**8p**、**5s** 三张孤张。切掉最差的边张孤张 **8p**，保留 **5p** 与 **5s** 两个中张，后续摸进 **4p**/**6p** 或 **4s**/**6s** 都能形成两面搭，进张数相同但好型率明显优于保留 **8p** 的切法。"
+  },
+  {
+    "_id": "d44392c6-3ee7-4e0c-916e-f386fc9dfd4b",
+    "id": "d44392c6-3ee7-4e0c-916e-f386fc9dfd4b",
+    "level": "easy",
+    "body": "1m 3m 1p 1p 2p 2p 2p 3p 4p 6p 7p 8p 2s",
+    "draw": "5z",
+    "roundWind": "east",
+    "seatWind": "south",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "5s"
+    ],
+    "uraIndicators": [
+      "2z"
+    ],
+    "recommend": "2s",
+    "ukeire": 11,
+    "shantenAfter": 1,
+    "note": "推荐切 **2s**。保留 **5z**（白）的役牌价值，进张数与切 **5z** 相同，但未来听牌后打点更高。**2s** 是毫无作用的孤张，优先处理掉。"
+  },
+  {
+    "_id": "3546d2f1-4ae0-4f74-a0fd-f91816ab5e06",
+    "id": "3546d2f1-4ae0-4f74-a0fd-f91816ab5e06",
+    "level": "easy",
+    "body": "5m 6m 7m 1p 1p 2p 3p 4p 8p 1s 6s 6s 7s",
+    "draw": "9s",
+    "roundWind": "south",
+    "seatWind": "west",
+    "riichi": false,
+    "ippatsu": false,
+    "doraIndicators": [
+      "3z",
+      "8s"
+    ],
+    "uraIndicators": [
+      "6z",
+      "8p"
+    ],
+    "recommend": "8p",
+    "ukeire": 8,
+    "shantenAfter": 1,
+    "note": "推荐切 **8p**。切 **8p** 保留 **1s**，使索子方向保有 **1s**、**6s** 对、**7s** **9s** 坎搭，进张更易导向两面听牌；而切 **1s** 留下的 **8p** 是远张，后续好型形成几率略低。两者向听与进张张数相同，但从牌型流畅度看，**8p** 优先。"
+  }
+]

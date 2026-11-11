@@ -1,0 +1,476 @@
+/* ============================================================
+   熊熊雀庄 · 役种一览  assets/tools/modules/yaku.css
+   仅本模块私有样式；tab / 卡片 / 徽章 / 牌面复用 ../tools.css
+   ============================================================ */
+
+/* ---- 顶部工具条：搜索 + 番数筛选 ---- */
+.yaku-toolbar {
+  margin-bottom: 14px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+.yaku-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.yaku-search {
+  position: relative;
+  display: flex;
+  flex: 1 1 320px;
+  align-items: center;
+  height: 42px;
+  padding: 0 40px 0 40px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.yaku-search:focus-within {
+  background: var(--surface);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .12);
+}
+
+.yaku-search-icon {
+  position: absolute;
+  left: 13px;
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.yaku-search-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.yaku-search-input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.yaku-search-input::placeholder {
+  color: var(--muted-2, #94A3B8);
+}
+
+.yaku-search-input::-webkit-search-cancel-button,
+.yaku-search-input::-webkit-search-decoration {
+  display: none;
+}
+
+.yaku-search-input:disabled {
+  cursor: progress;
+  opacity: .6;
+}
+
+.yaku-search-clear {
+  position: absolute;
+  right: 7px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--line);
+  color: var(--body);
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+
+.yaku-search-clear[hidden] {
+  display: none !important;
+}
+
+.yaku-search-clear:hover {
+  background: var(--muted-3, #CBD5E1);
+  color: var(--ink);
+}
+
+.yaku-search-clear svg {
+  width: 13px;
+  height: 13px;
+}
+
+.yaku-total {
+  flex: 0 0 auto;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 9 个筛选标签：桌面换行，窄屏横向滚动 */
+.yaku-seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 3px;
+}
+
+.yaku-seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 12px;
+}
+
+.yaku-seg-num {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--muted-2, #94A3B8);
+  font-variant-numeric: tabular-nums;
+}
+
+.yaku-seg-num:empty {
+  display: none;
+}
+
+.yaku-seg-btn.is-active .yaku-seg-num {
+  color: var(--accent);
+}
+
+/* ---- 结果摘要 ---- */
+.yaku-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 14px;
+  margin: 0 2px 12px;
+  font-size: 13px;
+  color: var(--body-2, var(--body));
+}
+
+.yaku-count {
+  font-weight: 600;
+  color: var(--body);
+  font-variant-numeric: tabular-nums;
+}
+
+.yaku-hint {
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- 卡片列表 ---- */
+.yaku-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.yaku-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  transition: border-color .16s ease, box-shadow .16s ease;
+}
+
+.yaku-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: var(--shadow-2, 0 10px 30px rgba(15, 23, 42, .08));
+}
+
+.yaku-card.is-focus {
+  background: #FBFDFF;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow-2, 0 10px 30px rgba(15, 23, 42, .08));
+  animation: yaku-focus-in .45s ease-out;
+}
+
+@keyframes yaku-focus-in {
+  from {
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 9px rgba(37, 99, 235, .16);
+  }
+  to {
+    background: #FBFDFF;
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+}
+
+.yaku-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px 12px;
+}
+
+.yaku-name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.45;
+  letter-spacing: .01em;
+  color: var(--ink);
+}
+
+.yaku-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.yaku-desc {
+  flex: 1 1 auto;
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  line-height: 1.82;
+  color: var(--body);
+}
+
+/* ---- 示例和牌 ---- */
+.yaku-hand {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+}
+
+.yaku-hand-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 10px;
+  margin-bottom: 9px;
+}
+
+.yaku-hand-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--muted);
+}
+
+.yaku-win-note {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.yaku-win-note b {
+  font-weight: 650;
+  color: var(--accent-dark, var(--accent));
+}
+
+.yaku-hand .mj-tiles {
+  --tile-w: 32px;
+  --tile-gap: 4px;
+}
+
+.yaku-dora {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.yaku-dora .mj-tiles {
+  --tile-w: 26px;
+  --tile-gap: 3px;
+}
+
+.yaku-dora-label {
+  font-weight: 650;
+  letter-spacing: .04em;
+}
+
+/* ---- 分页 / 底部 ---- */
+.yaku-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 4px;
+}
+
+.yaku-more[hidden],
+.yaku-end[hidden] {
+  display: none !important;
+}
+
+.yaku-end {
+  margin: 18px 0 4px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.yaku-sentinel {
+  height: 1px;
+}
+
+/* ---- 空状态 / 骨架 ---- */
+.yaku-empty {
+  grid-column: 1 / -1;
+}
+
+.yaku-skeleton-card {
+  pointer-events: none;
+}
+
+.yaku-sk-name {
+  width: 38%;
+  height: 18px;
+  margin-bottom: 16px;
+}
+
+.yaku-sk-line {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 9px;
+}
+
+.yaku-sk-line.is-short {
+  width: 68%;
+}
+
+.yaku-sk-hand {
+  width: 100%;
+  height: 46px;
+  margin-top: 18px;
+  border-radius: 6px;
+}
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (min-width: 1200px) {
+  .yaku-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .yaku-toolbar {
+    padding: 14px;
+  }
+
+  .yaku-search-row {
+    gap: 10px;
+  }
+
+  .yaku-search {
+    flex-basis: 100%;
+  }
+
+  .yaku-total {
+    font-size: 12px;
+  }
+
+  .yaku-card {
+    padding: 18px;
+  }
+
+  .yaku-name {
+    font-size: 16.5px;
+  }
+
+  .yaku-hand .mj-tiles {
+    --tile-w: 30px;
+    --tile-gap: 3px;
+  }
+}
+
+@media (max-width: 520px) {
+  .yaku-seg {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .yaku-seg::-webkit-scrollbar {
+    display: none;
+  }
+
+  .yaku-seg-btn {
+    flex: 0 0 auto;
+  }
+
+  .yaku-summary {
+    font-size: 12.5px;
+  }
+
+  .yaku-card {
+    padding: 16px;
+  }
+
+  .yaku-hand .mj-tiles {
+    --tile-w: 21px;
+    --tile-gap: 1px;
+  }
+}
+
+@media (max-width: 390px) {
+  .yaku-toolbar {
+    padding: 12px;
+  }
+
+  .yaku-card {
+    padding: 14px;
+  }
+
+  .yaku-name {
+    font-size: 16px;
+  }
+
+  .yaku-desc {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .yaku-hand .mj-tiles {
+    --tile-w: 20px;
+    --tile-gap: 1px;
+  }
+
+  .yaku-dora .mj-tiles {
+    --tile-w: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yaku-card,
+  .yaku-search,
+  .yaku-search-clear {
+    transition: none;
+  }
+
+  .yaku-card.is-focus {
+    animation: none;
+  }
+}

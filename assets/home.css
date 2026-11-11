@@ -1,0 +1,28 @@
+/* ============================================================
+   熊熊雀庄 · 细节层（在 site.css 之后加载）
+   版式与配色由 site.css 决定，这里只做页面级的微调
+   ============================================================ */
+
+/* 内页没有页脚，用底部留白收尾，避免内容顶住窗口边缘 */
+body.site-page:not(.has-foot) main.wrap{padding-bottom:72px !important}
+
+/* ---- 按钮：等宽数字、按压只缩不跳 ---- */
+.btn{font-variant-numeric:tabular-nums}
+
+/* ---- 区块节奏：上一块收尾、下一块开始 ---- */
+.section + .section{padding-top:56px}
+
+/* ---- 双赛制区块：左右两列卡片贴紧一点 ---- */
+.split .grid-2{gap:16px}
+
+/* ---- 首屏标题：允许两行内自然断行，不再把「两套规则。」挤成孤行 ---- */
+.hero h1{text-wrap:balance}
+
+/* ---- FAQ 手风琴：内联 SVG 没有尺寸会被 flex 拉满，导致单条高达 1000px ---- */
+.faq-q .chev{width:18px;height:18px;flex:0 0 18px;display:block}
+.faq-a{margin:0}
+
+@media (max-width:520px){
+  body.site-page:not(.has-foot) main.wrap{padding-bottom:48px !important}
+  .section + .section{padding-top:36px}
+}
